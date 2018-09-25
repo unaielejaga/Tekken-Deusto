@@ -83,7 +83,7 @@ public class PantallaMenuPrin extends JFrame{
 		bSalir.setForeground(Color.RED);
 		bSalir.setBorder(new LineBorder(Color.RED));
 		
-		lTi.setBounds(350, 50, 900, 200);
+		lTi.setBounds(450, 50, 900, 200);
 		bJ1.setBounds(350, 400, 500, 100);
 		bJ2.setBounds(500, 600, 500, 100);
 		bMarc.setBounds(650, 800, 500, 100);
