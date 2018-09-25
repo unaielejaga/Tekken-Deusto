@@ -10,7 +10,16 @@ public class Personajes {
 	private double posY;
 	private double vel;
 	private String cabeza;
+	private int damageSA;
 	
+	public int getDamageSA() {
+		return damageSA;
+	}
+
+	public void setDamageSA(int damageSA) {
+		this.damageSA = damageSA;
+	}
+
 	public String getCabeza() {
 		return cabeza;
 	}
@@ -83,7 +92,7 @@ public class Personajes {
 		this.vel = vel;
 	}
 
-	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel, String cabeza) {
+	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel, String cabeza, int damageSA) {
 		this.nombre = nombre;
 		this.vida = vida;
 		this.energia = energia;
@@ -93,6 +102,7 @@ public class Personajes {
 		this.posY = posY;
 		this.vel = vel;
 		this.cabeza = cabeza;
+		this.damageSA = damageSA;
 	}
 	
 	public void RecebirDamage(int damageRecibido) {
