@@ -60,7 +60,7 @@ public class PantallaMenuPrin extends JFrame{
 		lJ2 = new JLabel(iJ2);
 		iMarc = new  ImageIcon("Marc.gif");
 		lMarc = new JLabel(iMarc);
-		iImagen = new ImageIcon("imagen.gif");
+		iImagen = new ImageIcon("alber-einstein.gif");
 		lImagen = new JLabel(iImagen);
 		
 		bJ1 = new JButton();
@@ -88,7 +88,7 @@ public class PantallaMenuPrin extends JFrame{
 		bJ2.setBounds(500, 600, 500, 100);
 		bMarc.setBounds(650, 800, 500, 100);
 		bSalir.setBounds(1700, 1000, 100, 50);
-		lImagen.setBounds(50, 500, 450, 550);
+		lImagen.setBounds(15, 400, 450, 550);
 		
 		fondo.add(lTi);	
 		fondo.add(bJ1);
