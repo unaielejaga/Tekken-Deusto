@@ -44,7 +44,7 @@ public class PantallaMenuPrin extends JFrame{
 		setSize(1920, 1080);
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
-		loop = Sonido.music("menu.wav");
+		loop = Sonido.music("Dracukeo.wav");
 		fondo = new JPanelBackground();
 		fondo.setBackground("fondo.jpg");
 		setUndecorated(true);
