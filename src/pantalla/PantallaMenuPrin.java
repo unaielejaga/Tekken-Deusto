@@ -110,7 +110,8 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				p.dispatchEvent(new WindowEvent(p, WindowEvent.WINDOW_CLOSING));
+				//System.exit(0);
+				p.dispatchEvent(new WindowEvent( p, WindowEvent.WINDOW_CLOSING));
 			}
 		});
 	}
