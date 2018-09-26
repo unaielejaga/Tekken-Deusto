@@ -37,6 +37,7 @@ public class PantallaMenuPrin extends JFrame{
 	private JButton bMarc;
 	private JButton bSalir;
 	private Clip loop;
+	private static PantallaMenuPrin p;
 	
 	
 	public PantallaMenuPrin() {
@@ -109,13 +110,13 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				p.dispatchEvent(new WindowEvent(p, WindowEvent.WINDOW_CLOSING));
 			}
 		});
 	}
 
 	public static void main(String[] args) {
-		PantallaMenuPrin p = new PantallaMenuPrin();
+		p = new PantallaMenuPrin();
 		p.setVisible(true);
 				
 
