@@ -121,6 +121,16 @@ public class PantallaMenuPrin extends JFrame{
 				p.dispatchEvent(new WindowEvent( p, WindowEvent.WINDOW_CLOSING));
 			}
 		});
+		
+		bJ1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Pantalla1Jugador p1 = new Pantalla1Jugador();
+				p1.setVisible(true);
+				
+			}
+		});
 	}
 
 	public static void main(String[] args) {
