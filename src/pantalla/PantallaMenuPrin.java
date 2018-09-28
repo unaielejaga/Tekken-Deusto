@@ -26,12 +26,14 @@ public class PantallaMenuPrin extends JFrame{
 	private JLabel lJ1;
 	private JLabel lJ2;
 	private JLabel lMarc;
-	private JLabel lImagen;
+	private JLabel lIzqu;
+	private JLabel lDere;
 	private Icon iTi;
 	private Icon iJ1;
 	private Icon iJ2;
 	private Icon iMarc;
-	private Icon iImagen;
+	private Icon iIzqu;
+	private Icon iDere;
 	private JButton bJ1;
 	private JButton bJ2;
 	private JButton bMarc;
@@ -45,9 +47,9 @@ public class PantallaMenuPrin extends JFrame{
 		setSize(1920, 1080);
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
-		loop = Sonido.music("Dracukeo.wav");
+		loop = Sonido.music("menu.wav");
 		fondo = new JPanelBackground();
-		fondo.setBackground("fondo.jpg");
+		fondo.setBackground("fondo1.jpg");
 		setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());
 		fondo.setLayout(null);	
@@ -61,8 +63,11 @@ public class PantallaMenuPrin extends JFrame{
 		lJ2 = new JLabel(iJ2);
 		iMarc = new  ImageIcon("Marc.gif");
 		lMarc = new JLabel(iMarc);
-		iImagen = new ImageIcon("alber-einstein.gif");
-		lImagen = new JLabel(iImagen);
+		iIzqu = new ImageIcon("Izqu.gif");
+		lIzqu = new JLabel(iIzqu);
+		iDere = new ImageIcon("Dere.gif");
+		lDere = new JLabel(iDere);
+		
 		
 		bJ1 = new JButton();
 		bJ1.setLayout(new BorderLayout());
@@ -84,19 +89,21 @@ public class PantallaMenuPrin extends JFrame{
 		bSalir.setForeground(Color.RED);
 		bSalir.setBorder(new LineBorder(Color.RED));
 		
-		lTi.setBounds(450, 50, 900, 200);
-		bJ1.setBounds(400, 400, 500, 100);
-		bJ2.setBounds(550, 600, 500, 100);
+		lTi.setBounds(450, 25, 900, 200);
+		bJ1.setBounds(350, 500, 500, 100);
+		bJ2.setBounds(1050, 500, 500, 100);
 		bMarc.setBounds(700, 800, 500, 100);
-		bSalir.setBounds(1700, 1000, 100, 50);
-		lImagen.setBounds(80, 450, 450, 550);
+		bSalir.setBounds(1750, 1000, 100, 50);
+		lIzqu.setBounds(150, -125, 450, 550);
+		lDere.setBounds(1210, -125, 450, 550);
 		
 		fondo.add(lTi);	
 		fondo.add(bJ1);
 		fondo.add(bJ2);
 		fondo.add(bMarc);
 		fondo.add(bSalir);
-		fondo.add(lImagen);
+		fondo.add(lIzqu);
+		fondo.add(lDere);
 		
 		
 		addWindowListener(new WindowAdapter() {
