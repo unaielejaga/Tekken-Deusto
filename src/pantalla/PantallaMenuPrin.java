@@ -47,25 +47,25 @@ public class PantallaMenuPrin extends JFrame{
 		setSize(1920, 1080);
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
-		loop = Sonido.music("menu.wav");
+		loop = Sonido.music("canciones/menu.wav");
 		fondo = new JPanelBackground();
-		fondo.setBackground("fondo1.jpg");
+		fondo.setBackground("imagenes/fondo1.jpg");
 		setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());
 		fondo.setLayout(null);	
 		getContentPane().add(fondo, BorderLayout.CENTER);
 		
-		iTi = new ImageIcon("titulo.gif");
+		iTi = new ImageIcon("imagenes/titulo.gif");
 		lTi = new JLabel(iTi);
-		iJ1 = new ImageIcon("J1.gif");
+		iJ1 = new ImageIcon("imagenes/J1.gif");
 		lJ1 = new JLabel(iJ1);
-		iJ2 = new ImageIcon("J2.gif");
+		iJ2 = new ImageIcon("imagenes/J2.gif");
 		lJ2 = new JLabel(iJ2);
-		iMarc = new  ImageIcon("Marc.gif");
+		iMarc = new  ImageIcon("imagenes/Marc.gif");
 		lMarc = new JLabel(iMarc);
-		iIzqu = new ImageIcon("Izqu.gif");
+		iIzqu = new ImageIcon("imagenes/Izqu.gif");
 		lIzqu = new JLabel(iIzqu);
-		iDere = new ImageIcon("Dere.gif");
+		iDere = new ImageIcon("imagenes/Dere.gif");
 		lDere = new JLabel(iDere);
 		
 		
@@ -117,7 +117,6 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//System.exit(0);
 				dispose();
 			}
 		});
@@ -126,11 +125,24 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Pantalla1Jugador p1 = new Pantalla1Jugador();
+				Pantalla1Jugador p1 = new Pantalla1Jugador(p);
 				p1.setVisible(true);
+				setEnabled(false);
 				
 			}
 		});
+		
+		bJ2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Pantalla2Jugadores p1 = new Pantalla2Jugadores(p);
+				p1.setVisible(true);
+				setEnabled(false);
+				
+			}
+		});
+	
 	}
 
 	public static void main(String[] args) {

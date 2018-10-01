@@ -2,9 +2,11 @@ package pantalla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -26,9 +28,11 @@ public class Pantalla1Jugador extends JFrame{
 	JLabel contrasenyal;
 	JTextField usuariot;
 	JPasswordField contrasenyap;
+	JFrame ventanaAnterior;
 	
 	
-	public Pantalla1Jugador() {
+	public Pantalla1Jugador(JFrame v) {
+		ventanaAnterior = v;
 		JFrame frame = new JFrame();
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(800, 1000);
@@ -37,17 +41,22 @@ public class Pantalla1Jugador extends JFrame{
 		setLocationRelativeTo(null);
 		setUndecorated(true);
 		fondo = new JPanelBackground();
-		fondo.setBackground("fondoRegistro.jpg");
+		fondo.setBackground("imagenes/fondoRegistro1.jpg");
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(fondo, BorderLayout.CENTER);
 		fondo.setLayout(null);
 		
-		usuarioi = new ImageIcon("nick.gif");
+		
+		
+		Font fuente = new Font("Dialog", Font.BOLD, 40);
+		usuarioi = new ImageIcon("imagenes/nick.gif");
 		usuariol = new JLabel(usuarioi);
 		usuariot = new JTextField(20);
-		contrasenyai = new ImageIcon("contraseña.gif");
+		usuariot.setFont(fuente);
+		contrasenyai = new ImageIcon("imagenes/contraseña.gif");
 		contrasenyal = new JLabel(contrasenyai);
 		contrasenyap = new JPasswordField(20);
+		contrasenyap.setFont(fuente);
 	
 		bAceptar = new JButton("Aceptar");
 		bAceptar.setBackground(Color.BLACK);
@@ -76,6 +85,7 @@ public class Pantalla1Jugador extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				ventanaAnterior.setEnabled(true);	
 				dispose();
 			}
 		});
