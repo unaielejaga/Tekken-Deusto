@@ -49,7 +49,7 @@ public class Pantalla2Jugadores extends JFrame{
 		getContentPane().add(fondo, BorderLayout.CENTER);
 		fondo.setLayout(null);
 		
-		Font fuente = new Font("Dialog", Font.BOLD, 20);
+		Font fuente = new Font("Dialog", Font.BOLD, 40);
 		usuarioi1 = new ImageIcon("imagenes/nick.gif");
 		usuariol1 = new JLabel(usuarioi1);
 		usuariot1 = new JTextField(20);
