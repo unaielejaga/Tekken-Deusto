@@ -92,6 +92,7 @@ public class Personajes {
 		this.vel = vel;
 	}
 
+	// Constructor de la clase personajes
 	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel, String cabeza, int damageSA) {
 		this.nombre = nombre;
 		this.vida = vida;
@@ -105,14 +106,18 @@ public class Personajes {
 		this.damageSA = damageSA;
 	}
 	
+	
+	//Metodo en el que se le resta vida al Personaje utilizado cuando recibe daño
 	public void RecebirDamage(int damageRecibido) {
 		this.vida = this.vida - damageRecibido;
 	}
 	
+	//Metodo en el que se le cambia la posicion al personaje en el eje X
 	public void MoverseX (int movidoX) {
 		this.posX = this.posX + movidoX;
 	}
 	
+	//Metodo en el que se le cambia la posicion al personaje en el eje Y
 	public void MoverseY (int movidoY) {
 		this.posY = this.posY + movidoY;
 	}

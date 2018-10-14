@@ -39,15 +39,19 @@ public class Usuario {
 		this.combP = combP;
 	}
 	
+	
+	// Constructor que pide nombre y contraseña
 	public Usuario(String nombre, String contrasenya) {
 		this.nombre = nombre;
 		this.contrasenya = contrasenya;
 	}
 	
+	// Metodo en el que se le suma uno a la variable combG del Usuario si ha ganado el combate
 	public void GanarComb() {
 		this.combG = this.combG + 1;
 	}
 	
+	// Metodo en el que se le suma uno a la variable combP del Usuario si ha perdido el combate
 	public void PerderComb( ) {
 		this.combP = this.combP + 1;
 	}
