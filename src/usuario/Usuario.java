@@ -1,18 +1,18 @@
 package usuario;
 
 public class Usuario {
-	private String nombre;
+	private String nick;
 	private String contrasenya;
 	private int combG;
 	private int combP;
 	
 	
-	public String getNombre() {
-		return nombre;
+	public String getNick() {
+		return nick;
 	}
 	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNick(String nombre) {
+		this.nick = nombre;
 	}
 	
 	public String getContrasenya() {
@@ -42,7 +42,7 @@ public class Usuario {
 	
 	// Constructor que pide nombre y contraseña
 	public Usuario(String nombre, String contrasenya) {
-		this.nombre = nombre;
+		this.nick = nombre;
 		this.contrasenya = contrasenya;
 	}
 	

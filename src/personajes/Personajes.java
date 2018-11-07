@@ -9,24 +9,7 @@ public class Personajes {
 	private double posX;
 	private double posY;
 	private double vel;
-	private String cabeza;
-	private int damageSA;
-	
-	public int getDamageSA() {
-		return damageSA;
-	}
 
-	public void setDamageSA(int damageSA) {
-		this.damageSA = damageSA;
-	}
-
-	public String getCabeza() {
-		return cabeza;
-	}
-
-	public void setCabeza(String cabeza) {
-		this.cabeza = cabeza;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -93,7 +76,7 @@ public class Personajes {
 	}
 
 	// Constructor de la clase personajes
-	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel, String cabeza, int damageSA) {
+	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel) {
 		this.nombre = nombre;
 		this.vida = vida;
 		this.energia = energia;
@@ -102,8 +85,7 @@ public class Personajes {
 		this.posX = posX;
 		this.posY = posY;
 		this.vel = vel;
-		this.cabeza = cabeza;
-		this.damageSA = damageSA;
+
 	}
 	
 	
