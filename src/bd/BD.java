@@ -157,5 +157,7 @@ public class BD {
 			logger.log( level, msg );
 		else
 			logger.log( level, msg, excepcion );
+		
+		//prueba
 	}
 }
