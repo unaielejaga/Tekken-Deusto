@@ -69,9 +69,7 @@ public class BD {
 	public static boolean usuarioInsert( Statement st, Usuario u ) {
 		String sentSQL = "";
 		try {
-			String listaEms = "";
-			String sep = "";
-
+	
 			sentSQL = "insert into usuario values(" +
 					"'" + secu(u.getNick()) + "', " +
 					"'" + secu(u.getContrasenya()) + "', " +
@@ -95,9 +93,7 @@ public class BD {
 	public static boolean personajesInsert( Statement st, Personajes p ) {
 		String sentSQL = "";
 		try {
-			String listaEms = "";
-			String sep = "";
-
+			
 			sentSQL = "insert into personajes values(" +
 					"'" + secu(p.getNombre()) + "', " +
 					"'" + p.getVida() + "', " +
@@ -111,6 +107,29 @@ public class BD {
 			log( Level.INFO, "BD añadida " + val + " fila\t" + sentSQL, null );
 			if (val!=1) {  // Se tiene que añadir 1 - error si no
 				log( Level.SEVERE, "Error en insert de BD\t" + sentSQL, null );
+				return false;  
+			}
+			return true;
+		} catch (SQLException e) {
+			log( Level.SEVERE, "Error en BD\t" + sentSQL, e );
+			lastError = e;
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public static boolean usuarioUpdate( Statement st, Usuario u ) {
+		String sentSQL = "";
+		try {
+			
+			sentSQL = "update usuario set" +
+					" combG='" + u.getCombG() + "'," +
+					"combP='" + u.getCombP() + "'";
+			// System.out.println( sentSQL );  // para ver lo que se hace en consola
+			int val = st.executeUpdate( sentSQL );
+			log( Level.INFO, "BD modificada " + val + " fila\t" + sentSQL, null );
+			if (val!=1) {  // Se tiene que modificar 1 - error si no
+				log( Level.SEVERE, "Error en update de BD\t" + sentSQL, null );
 				return false;  
 			}
 			return true;
