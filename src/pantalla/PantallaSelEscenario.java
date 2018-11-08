@@ -1,7 +1,9 @@
 package pantalla;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.Panel;
 
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -18,10 +20,14 @@ public class PantallaSelEscenario extends JFrame {
 	private JPanelBackground fondo;
 	private Clip loop;
 	private String imagenfondo;
-	private JPanel PanelSup;
-	private JPanel PanelJ1;
-	private JPanel PanelJ2;
 
+	JPanel panelNorte;
+	JPanel panelCentral;
+	JPanel panelSur;
+
+	JPanel panelIzquierdo;
+	JPanel panelDerecho;
+	
 	private JButton bAleatorio;
 	private JButton bEscenario1;
 	private JButton bEscenario2;
@@ -32,12 +38,16 @@ public class PantallaSelEscenario extends JFrame {
 	
 	
 	public PantallaSelEscenario() {
+		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
 		setTitle("Pantalla Seleccion Escenario");
 		setResizable(false);
 		loop = Sonido.music("canciones/juego.wav");
 		getContentPane().setLayout(new BorderLayout());	
+		
+		
+		
 		
 		escenario1=new ImageIcon("imagenes/escenario1.jpg");
 		escenario2=new ImageIcon("imagenes/escenario2.jpg");
@@ -48,23 +58,35 @@ public class PantallaSelEscenario extends JFrame {
 		bEscenario1.setIcon(escenario1);
 		bEscenario2.setIcon(escenario2);
 		
-		bEscenario1.setSize(50, 50);
-		bEscenario2.setSize(50, 50);
+		
 		
 		bAleatorio= new JButton("Aleatorio");
 		
 		
-		PanelSup = new JPanel();
-		PanelSup.setOpaque(false);
-		PanelSup.setLayout(new GridLayout(1, 3));
+		JPanel panelSup = new JPanel();
+		panelSup.setLayout( new FlowLayout( FlowLayout.LEFT ) );
+		JPanel panelCentral = new JPanel();
+		JPanel panelInferior = new JPanel();
+		JPanel panelDerecho = new JPanel();
+		JPanel panelIzquierdo = new JPanel();
 		
+		panelIzquierdo.setLayout(new GridLayout(1,2));
+		panelDerecho.setLayout(new GridLayout(2,1));
+
+		panelInferior.add(bEscenario1);
+		panelDerecho.add(bEscenario2);
 		
-		this.add(PanelSup, BorderLayout.NORTH);
+		this.setLayout( new BorderLayout() );
+		this.add(panelSup, BorderLayout.NORTH );
+		this.add(panelCentral, BorderLayout.CENTER );
+		panelCentral.add(panelIzquierdo);
+		panelCentral.add(panelDerecho);
+		
+		this.add(panelInferior, BorderLayout.SOUTH );
 
 		
-		PanelSup.add(bEscenario1);
-		PanelSup.add(bEscenario2);
 		
+
 		
 	}
 	public static void main(String[] args) {
