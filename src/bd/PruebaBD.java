@@ -11,20 +11,15 @@ public class PruebaBD {
 		Connection con = BD.initBD("BD");
 		BD.usarBD(con);
 		BD.usarCrearTablasBD(con);
-		Usuario u = new Usuario("Pepo", "juan");
-		Personajes p = new Personajes("Donatell", 100, 20, 10, 15, 0, 0, 4);
+		Usuario u = new Usuario("Pepe", "juan");
+		Personajes p = new Personajes("Donatllo", 100, 20, 10, 15, 0, 0, 4);
 		Statement st1;
 		try {
 			st1 = con.createStatement();
 			BD.usuarioInsert(st1, u);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Statement st12;
-		try {
-			st12 = con.createStatement();
-			BD.personajesInsert(st12, p);
+			BD.personajesInsert(st1, p);
+			BD.partidaInsert(st1, u, p, 10, 3, 1);
+			BD.partidaUpdate(st1, 11, 2, 1);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

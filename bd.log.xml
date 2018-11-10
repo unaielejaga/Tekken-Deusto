@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-11-09T18:07:44</date>
-  <millis>1541783264766</millis>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190094</millis>
   <sequence>0</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -13,34 +13,8 @@
   <message>Conectada base de datos BD</message>
 </record>
 <record>
-  <date>2018-11-09T18:07:44</date>
-  <millis>1541783264799</millis>
-  <sequence>1</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Creada base de datos</message>
-</record>
-</log>
-<?xml version="1.0" encoding="windows-1252" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2018-11-09T18:11:30</date>
-  <millis>1541783490209</millis>
-  <sequence>0</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Conectada base de datos BD</message>
-</record>
-<record>
-  <date>2018-11-09T18:11:30</date>
-  <millis>1541783490213</millis>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190127</millis>
   <sequence>1</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -50,8 +24,8 @@
   <message>Creada base de datos</message>
 </record>
 <record>
-  <date>2018-11-09T18:11:30</date>
-  <millis>1541783490225</millis>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190142</millis>
   <sequence>2</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -60,364 +34,37 @@
   <thread>1</thread>
   <message>BD añadida 1 fila	insert into usuario values('Pepe', 'juan')</message>
 </record>
-</log>
-<?xml version="1.0" encoding="windows-1252" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
 <record>
-  <date>2018-11-09T18:12:49</date>
-  <millis>1541783569787</millis>
-  <sequence>0</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Conectada base de datos BD</message>
-</record>
-<record>
-  <date>2018-11-09T18:12:49</date>
-  <millis>1541783569791</millis>
-  <sequence>1</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Creada base de datos</message>
-</record>
-<record>
-  <date>2018-11-09T18:12:49</date>
-  <millis>1541783569791</millis>
-  <sequence>2</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>SEVERE</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Error en BD	insert into usuario values('Pepe', 'juan')</message>
-  <exception>
-    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: usuario.nick)</message>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>909</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>921</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>throwex</method>
-      <line>886</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec_utf8</method>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec</method>
-      <line>87</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.jdbc3.JDBC3Statement</class>
-      <method>executeUpdate</method>
-      <line>116</line>
-    </frame>
-    <frame>
-      <class>bd.BD</class>
-      <method>usuarioInsert</method>
-      <line>82</line>
-    </frame>
-    <frame>
-      <class>bd.PruebaBD</class>
-      <method>main</method>
-      <line>19</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2018-11-09T18:12:49</date>
-  <millis>1541783569803</millis>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190158</millis>
   <sequence>3</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
   <class>bd.BD</class>
   <method>log</method>
   <thread>1</thread>
-  <message>BD añadida 1 fila	insert into personajes values('Donatello', '100', '20', '10','15','0.0','0.0','4.0')</message>
+  <message>BD añadida 1 fila	insert into personajes values('Donatllo', 100, 20, 10,15,0.0,0.0,4.0)</message>
 </record>
-</log>
-<?xml version="1.0" encoding="windows-1252" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
 <record>
-  <date>2018-11-09T18:14:11</date>
-  <millis>1541783651907</millis>
-  <sequence>0</sequence>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190158</millis>
+  <sequence>4</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
   <class>bd.BD</class>
   <method>log</method>
   <thread>1</thread>
-  <message>Conectada base de datos BD</message>
+  <message>BD añadida 1 fila	insert into partida values(1, 10, 3, 'Pepe', 'Donatllo')</message>
 </record>
 <record>
-  <date>2018-11-09T18:14:11</date>
-  <millis>1541783651911</millis>
-  <sequence>1</sequence>
+  <date>2018-11-10T14:39:50</date>
+  <millis>1541857190173</millis>
+  <sequence>5</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
   <class>bd.BD</class>
   <method>log</method>
   <thread>1</thread>
-  <message>Creada base de datos</message>
-</record>
-<record>
-  <date>2018-11-09T18:14:11</date>
-  <millis>1541783651911</millis>
-  <sequence>2</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>SEVERE</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Error en BD	insert into usuario values('Pepe', 'juan')</message>
-  <exception>
-    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: usuario.nick)</message>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>909</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>921</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>throwex</method>
-      <line>886</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec_utf8</method>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec</method>
-      <line>87</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.jdbc3.JDBC3Statement</class>
-      <method>executeUpdate</method>
-      <line>116</line>
-    </frame>
-    <frame>
-      <class>bd.BD</class>
-      <method>usuarioInsert</method>
-      <line>82</line>
-    </frame>
-    <frame>
-      <class>bd.PruebaBD</class>
-      <method>main</method>
-      <line>19</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2018-11-09T18:14:11</date>
-  <millis>1541783651915</millis>
-  <sequence>3</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>SEVERE</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Error en BD	insert into personajes values('Donatello', '100', '20', '10','15','0.0','0.0','4.0')</message>
-  <exception>
-    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: personajes.nombre)</message>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>909</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>921</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>throwex</method>
-      <line>886</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec_utf8</method>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec</method>
-      <line>87</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.jdbc3.JDBC3Statement</class>
-      <method>executeUpdate</method>
-      <line>116</line>
-    </frame>
-    <frame>
-      <class>bd.BD</class>
-      <method>personajesInsert</method>
-      <line>110</line>
-    </frame>
-    <frame>
-      <class>bd.PruebaBD</class>
-      <method>main</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-</log>
-<?xml version="1.0" encoding="windows-1252" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2018-11-09T18:15:40</date>
-  <millis>1541783740307</millis>
-  <sequence>0</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Conectada base de datos BD</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:40</date>
-  <millis>1541783740311</millis>
-  <sequence>1</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Creada base de datos</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:40</date>
-  <millis>1541783740325</millis>
-  <sequence>2</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>BD añadida 1 fila	insert into usuario values('Pep', 'juan')</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:40</date>
-  <millis>1541783740325</millis>
-  <sequence>3</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>SEVERE</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Error en BD	insert into personajes values('Donatello', '100', '20', '10','15','0.0','0.0','4.0')</message>
-  <exception>
-    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: personajes.nombre)</message>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>909</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>newSQLException</method>
-      <line>921</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.DB</class>
-      <method>throwex</method>
-      <line>886</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec_utf8</method>
-    </frame>
-    <frame>
-      <class>org.sqlite.core.NativeDB</class>
-      <method>_exec</method>
-      <line>87</line>
-    </frame>
-    <frame>
-      <class>org.sqlite.jdbc3.JDBC3Statement</class>
-      <method>executeUpdate</method>
-      <line>116</line>
-    </frame>
-    <frame>
-      <class>bd.BD</class>
-      <method>personajesInsert</method>
-      <line>110</line>
-    </frame>
-    <frame>
-      <class>bd.PruebaBD</class>
-      <method>main</method>
-      <line>27</line>
-    </frame>
-  </exception>
-</record>
-</log>
-<?xml version="1.0" encoding="windows-1252" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2018-11-09T18:15:56</date>
-  <millis>1541783756509</millis>
-  <sequence>0</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Conectada base de datos BD</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:56</date>
-  <millis>1541783756514</millis>
-  <sequence>1</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>Creada base de datos</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:56</date>
-  <millis>1541783756528</millis>
-  <sequence>2</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>BD añadida 1 fila	insert into usuario values('Pepo', 'juan')</message>
-</record>
-<record>
-  <date>2018-11-09T18:15:56</date>
-  <millis>1541783756536</millis>
-  <sequence>3</sequence>
-  <logger>BD-server-ejemplocs</logger>
-  <level>INFO</level>
-  <class>bd.BD</class>
-  <method>log</method>
-  <thread>1</thread>
-  <message>BD añadida 1 fila	insert into personajes values('Donatell', '100', '20', '10','15','0.0','0.0','4.0')</message>
+  <message>BD modificada 1 fila	update partida set combG=11,  combP=2 where cod_partida=1</message>
 </record>
 </log>
