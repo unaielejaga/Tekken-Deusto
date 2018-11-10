@@ -7,6 +7,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.nio.file.attribute.UserDefinedFileAttributeView;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -16,6 +19,9 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+
+import bd.BD;
+import usuario.Usuario;
 
 public class Pantalla1Jugador extends JFrame{
 	
@@ -87,6 +93,25 @@ public class Pantalla1Jugador extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				ventanaAnterior.setEnabled(true);	
 				dispose();
+			}
+		});
+		
+		bAceptar.addActionListener( new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Usuario u = new Usuario(usuariot.getText(), contrasenyap.getText());
+				Connection con = BD.initBD("BD");
+				BD.usarBD(con);
+				BD.usarCrearTablasBD(con);
+				Statement st;
+				try {
+					st = con.createStatement();
+					BD.usuarioInsert(st, u);
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}
+				
 			}
 		});
 		

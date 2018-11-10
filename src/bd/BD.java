@@ -4,6 +4,8 @@ import java.sql.*;
 import java.util.*; 
 import java.util.logging.*;
 
+import javax.swing.JOptionPane;
+
 import usuario.Usuario;
 import personajes.Personajes;
 
@@ -93,6 +95,15 @@ public class BD {
 			e.printStackTrace();
 			return false;
 		}
+	}
+	
+	public static boolean usuarioSelec( Statement st, Usuario u) {
+		String sentSQL = "";
+		sentSQL = "select * from usuario";
+		if (u.getNick()!=null && !u.getNick().equals(""))
+			sentSQL = sentSQL + " where " + u.getNick();
+		log( Level.INFO, "BD\t" + sentSQL, null );
+		return true;
 	}
 	
 	public static boolean personajesInsert( Statement st, Personajes p ) {
