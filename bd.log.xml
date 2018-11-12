@@ -120,3 +120,77 @@
   <message>BD	select * from usuario where Juan</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T08:02:54</date>
+  <millis>1542006174348</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-12T08:02:54</date>
+  <millis>1542006174353</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T08:02:54</date>
+  <millis>1542006174378</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario where Juan</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T08:03:14</date>
+  <millis>1542006194034</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-12T08:03:14</date>
+  <millis>1542006194037</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T08:03:14</date>
+  <millis>1542006194047</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD añadida 1 fila	insert into usuario values('javi', 'nazi')</message>
+</record>
+</log>
