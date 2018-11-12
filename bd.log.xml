@@ -194,3 +194,963 @@
   <message>BD añadida 1 fila	insert into usuario values('javi', 'nazi')</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095286</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095318</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095326</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095326</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095338</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Unai', 'hola')</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095346</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Lola', 'wapos')</message>
+</record>
+<record>
+  <date>2018-11-12T18:18:15</date>
+  <millis>1542043095360</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into personajes values('Koldo', 200, 1000, 10,20,50.0,70.0,100.0)</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:19:17</date>
+  <millis>1542043157384</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:17</date>
+  <millis>1542043157388</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:17</date>
+  <millis>1542043157392</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:17</date>
+  <millis>1542043157392</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:17</date>
+  <millis>1542043157392</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into usuario values('Unai', 'hola')</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: usuario.nick)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>bd.BD</class>
+      <method>usuarioInsert</method>
+      <line>85</line>
+    </frame>
+    <frame>
+      <class>BDTest</class>
+      <method>usuarioInsertTest</method>
+      <line>43</line>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke0</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.DelegatingMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Method</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod$1</class>
+      <method>runReflectiveCall</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.model.ReflectiveCallable</class>
+      <method>run</method>
+      <line>12</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod</class>
+      <method>invokeExplosively</method>
+      <line>47</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.InvokeMethod</class>
+      <method>evaluate</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.RunBefores</class>
+      <method>evaluate</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runLeaf</method>
+      <line>325</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>78</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>57</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$3</class>
+      <method>run</method>
+      <line>290</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$1</class>
+      <method>schedule</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runChildren</method>
+      <line>288</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>access$000</method>
+      <line>58</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$2</class>
+      <method>evaluate</method>
+      <line>268</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>run</method>
+      <line>363</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference</class>
+      <method>run</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.TestExecution</class>
+      <method>run</method>
+      <line>38</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>538</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>760</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>run</method>
+      <line>460</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>main</method>
+      <line>206</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190146</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190176</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190184</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190188</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190200</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Unai', 'hola')</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190212</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Lola', 'wapos')</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190220</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into personajes values('Rafael', 100, 50, 40,50,1.0,0.0,10.0)</message>
+</record>
+<record>
+  <date>2018-11-12T18:19:50</date>
+  <millis>1542043190231</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into personajes values('Koldo', 200, 1000, 10,20,50.0,70.0,100.0)</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:23:55</date>
+  <millis>1542043435234</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:23:55</date>
+  <millis>1542043435238</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:23:55</date>
+  <millis>1542043435242</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:23:55</date>
+  <millis>1542043435242</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:23:55</date>
+  <millis>1542043435242</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into usuario values('Unai', 'hola')</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: usuario.nick)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>bd.BD</class>
+      <method>usuarioInsert</method>
+      <line>101</line>
+    </frame>
+    <frame>
+      <class>BDTest</class>
+      <method>usuarioInsertTest</method>
+      <line>43</line>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke0</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.DelegatingMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Method</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod$1</class>
+      <method>runReflectiveCall</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.model.ReflectiveCallable</class>
+      <method>run</method>
+      <line>12</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod</class>
+      <method>invokeExplosively</method>
+      <line>47</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.InvokeMethod</class>
+      <method>evaluate</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.RunBefores</class>
+      <method>evaluate</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runLeaf</method>
+      <line>325</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>78</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>57</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$3</class>
+      <method>run</method>
+      <line>290</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$1</class>
+      <method>schedule</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runChildren</method>
+      <line>288</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>access$000</method>
+      <line>58</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$2</class>
+      <method>evaluate</method>
+      <line>268</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>run</method>
+      <line>363</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference</class>
+      <method>run</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.TestExecution</class>
+      <method>run</method>
+      <line>38</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>538</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>760</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>run</method>
+      <line>460</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>main</method>
+      <line>206</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476293</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476293</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476297</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476319</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476339</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476351</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Unai', 'hola')</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476363</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Lola', 'wapos')</message>
+</record>
+<record>
+  <date>2018-11-12T18:24:36</date>
+  <millis>1542043476363</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into personajes values('Rafael', 100, 50, 40,50,1.0,0.0,10.0)</message>
+  <exception>
+    <message>org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY]  A PRIMARY KEY constraint failed (UNIQUE constraint failed: personajes.nombre)</message>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>909</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>newSQLException</method>
+      <line>921</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.DB</class>
+      <method>throwex</method>
+      <line>886</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec_utf8</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+      <line>87</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>bd.BD</class>
+      <method>personajesInsert</method>
+      <line>138</line>
+    </frame>
+    <frame>
+      <class>BDTest</class>
+      <method>usuarioInsertTest</method>
+      <line>45</line>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke0</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.DelegatingMethodAccessorImpl</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Method</class>
+      <method>invoke</method>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod$1</class>
+      <method>runReflectiveCall</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.model.ReflectiveCallable</class>
+      <method>run</method>
+      <line>12</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod</class>
+      <method>invokeExplosively</method>
+      <line>47</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.InvokeMethod</class>
+      <method>evaluate</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.RunBefores</class>
+      <method>evaluate</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runLeaf</method>
+      <line>325</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>78</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>57</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$3</class>
+      <method>run</method>
+      <line>290</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$1</class>
+      <method>schedule</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runChildren</method>
+      <line>288</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>access$000</method>
+      <line>58</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$2</class>
+      <method>evaluate</method>
+      <line>268</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>run</method>
+      <line>363</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference</class>
+      <method>run</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.TestExecution</class>
+      <method>run</method>
+      <line>38</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>538</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>760</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>run</method>
+      <line>460</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>main</method>
+      <line>206</line>
+    </frame>
+  </exception>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-12T18:25:21</date>
+  <millis>1542043521983</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522020</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522024</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522048</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522075</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522083</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Unai', 'hola')</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522095</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Lola', 'wapos')</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522107</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into personajes values('Rafael', 100, 50, 40,50,1.0,0.0,10.0)</message>
+</record>
+<record>
+  <date>2018-11-12T18:25:22</date>
+  <millis>1542043522119</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into personajes values('Koldo', 200, 1000, 10,20,50.0,70.0,100.0)</message>
+</record>
+</log>

@@ -75,6 +75,22 @@ public class BD {
 		}
 	}
 	
+	public static Statement reiniciarBD( Connection con ) {
+		try {
+			Statement statement = con.createStatement();
+			statement.setQueryTimeout(30);  // poner timeout 30 msg
+			statement.executeUpdate("drop table if exists usuario");
+			statement.executeUpdate("drop table if exists partida");
+			log( Level.INFO, "Reiniciada base de datos", null );
+			return usarCrearTablasBD( con );
+		} catch (SQLException e) {
+			log( Level.SEVERE, "Error en reinicio de base de datos", e );
+			lastError = e;
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 	public static boolean usuarioInsert( Statement st, Usuario u ) {
 		String sentSQL = "";
 		try {
@@ -165,7 +181,6 @@ public class BD {
 					" combG=" + combG + ", " +
 					" combP=" + combP + "" + 
 					" where cod_partida=" + cod_partida;
-			// System.out.println( sentSQL );  // para ver lo que se hace en consola
 			int val = st.executeUpdate( sentSQL );
 			log( Level.INFO, "BD modificada " + val + " fila\t" + sentSQL, null );
 			if (val!=1) {  // Se tiene que modificar 1 - error si no
