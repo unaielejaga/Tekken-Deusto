@@ -23,8 +23,8 @@ public class BDTest {
 	public void setUp() throws Exception {
 		u1 = new Usuario("Unai", "hola");
 		u2 = new Usuario("Lola", "wapos");
-		p1 = new Personajes("Rafael", 100, 50, 40, 50, 1, 0, 10);
-		p2 = new Personajes("Koldo", 200, 1000, 10, 20, 50, 70, 100);
+		p1 = new Personajes("Rafoeli", 100, 50, 40, 50, 1, 0, 10);
+		p2 = new Personajes("Koldii", 200, 1000, 10, 20, 50, 70, 100);
 	}
 	
 	@Test
