@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557127</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284504</millis>
   <sequence>0</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -13,8 +13,8 @@
   <message>Conectada base de datos bd-test</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557130</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284506</millis>
   <sequence>1</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -24,8 +24,8 @@
   <message>Reiniciada base de datos</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557169</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284539</millis>
   <sequence>2</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -35,8 +35,8 @@
   <message>Creada base de datos</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557184</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284548</millis>
   <sequence>3</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -46,8 +46,8 @@
   <message>BD añadida 1 fila	insert into usuario values('Unai', 'hola')</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557199</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284558</millis>
   <sequence>4</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -57,8 +57,8 @@
   <message>BD añadida 1 fila	insert into usuario values('Lola', 'wapos')</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557216</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284568</millis>
   <sequence>5</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -68,8 +68,8 @@
   <message>BD añadida 1 fila	insert into personajes values('Rafoeli', 100, 50, 40,50,1.0,0.0,10.0)</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557233</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284577</millis>
   <sequence>6</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -79,8 +79,8 @@
   <message>BD añadida 1 fila	insert into personajes values('Koldii', 200, 1000, 10,20,50.0,70.0,100.0)</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557251</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284588</millis>
   <sequence>7</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -90,8 +90,8 @@
   <message>BD añadida 1 fila	insert into partida values( 0, 0, 'Unai', 'Rafoeli')</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557272</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284599</millis>
   <sequence>8</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -101,8 +101,8 @@
   <message>BD modificada 1 fila	update partida set combG=1,  combP=0 where (usuario='Unai' and personaje='Rafoeli' )</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557275</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284600</millis>
   <sequence>9</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -112,8 +112,8 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: hola</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557288</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284608</millis>
   <sequence>10</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -123,8 +123,8 @@
   <message>Conectada base de datos bd-test</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:37</date>
-  <millis>1542812557293</millis>
+  <date>2018-11-21T20:08:04</date>
+  <millis>1542827284610</millis>
   <sequence>11</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -138,8 +138,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569282</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302447</millis>
   <sequence>0</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -149,8 +149,8 @@
   <message>Conectada base de datos BD</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569323</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302479</millis>
   <sequence>1</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -160,8 +160,8 @@
   <message>Creada base de datos</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569337</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302493</millis>
   <sequence>2</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -171,8 +171,8 @@
   <message>BD añadida 1 fila	insert into usuario values('Guilemo', 'juan')</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569350</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302504</millis>
   <sequence>3</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -182,8 +182,8 @@
   <message>BD añadida 1 fila	insert into personajes values('Jvie', 100, 20, 10,15,0.0,0.0,4.0)</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569363</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302514</millis>
   <sequence>4</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -193,8 +193,8 @@
   <message>BD añadida 1 fila	insert into partida values( 10, 3, 'Guilemo', 'Jvie')</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569376</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302527</millis>
   <sequence>5</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -204,8 +204,8 @@
   <message>BD modificada 1 fila	update partida set combG=11,  combP=2 where (usuario='Guilemo' and personaje='Jvie' )</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569377</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302528</millis>
   <sequence>6</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
@@ -215,8 +215,8 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Guilemo'valor: juan</message>
 </record>
 <record>
-  <date>2018-11-21T16:02:49</date>
-  <millis>1542812569378</millis>
+  <date>2018-11-21T20:08:22</date>
+  <millis>1542827302529</millis>
   <sequence>7</sequence>
   <logger>BD-server-ejemplocs</logger>
   <level>INFO</level>
