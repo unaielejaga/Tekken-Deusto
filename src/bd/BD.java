@@ -60,8 +60,7 @@ public class BD {
 			} catch (SQLException e) {} // Tabla ya existe. Nada que hacer
 			try {
 				statement.executeUpdate("create table partida" +
-			"(cod_partida integer PRIMARY KEY"
-			+ ", combG integer, combP integer" +
+			"( combG integer, combP integer" +
 			", usuario string REFERENCES usuario(nick) ON DELETE CASCADE" +
 			", personaje string REFERENCES personajes(nombre) ON DELETE CASCADE)");
 			} catch (SQLException e) {} //Tabla ya existe. Nada que hacer
@@ -113,13 +112,37 @@ public class BD {
 		}
 	}
 	
-	public static boolean usuarioSelec( Statement st, Usuario u) {
+	public static boolean usuarioExiste( Statement st, String nombre ) {
 		String sentSQL = "";
-		sentSQL = "select * from usuario";
-		if (u.getNick()!=null && !u.getNick().equals(""))
-			sentSQL = sentSQL + " where " + u.getNick();
-		log( Level.INFO, "BD\t" + sentSQL, null );
-		return true;
+		try {
+			sentSQL = "select * from usuario where nick='" + nombre + "'";
+			ResultSet rs = st.executeQuery( sentSQL );
+			boolean existe = rs.next();
+			rs.close();
+			return existe;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	public static String usuarioSelect( Statement st, String nombre ) {
+		String sentSQL = "";
+		try {
+			sentSQL = "select contrasenya from usuario where nick='" + nombre + "'";
+			// System.out.println( sentSQL );  // Para ver lo que se hace en consola
+			ResultSet rs = st.executeQuery( sentSQL );
+			while(rs.next()) {
+				String nick = rs.getString("contrasenya");
+				rs.close();
+				return nick;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return null;
 	}
 	
 	public static boolean personajesInsert( Statement st, Personajes p ) {
@@ -150,11 +173,11 @@ public class BD {
 		}
 	}
 	
-	public static boolean partidaInsert( Statement st, Usuario u, Personajes p, int combG, int combP, int cod_partida ) {
+	public static boolean partidaInsert( Statement st, Usuario u, Personajes p, int combG, int combP ) {
 		String sentSQL = "";
 		try {
 	
-			sentSQL = "insert into partida values(" + "" + cod_partida + ", " +
+			sentSQL = "insert into partida values(" + " " +
 					 combG + ", " + combP + ", " +
 					"'" + secu(u.getNick()) + "', " +
 					"'" + secu(p.getNombre()) + "')";
@@ -173,14 +196,15 @@ public class BD {
 		}
 	}
 	
-	public static boolean partidaUpdate( Statement st, int combG, int combP, int cod_partida ) {
+	public static boolean partidaUpdate( Statement st, int combG, int combP, Usuario u, Personajes p) {
 		String sentSQL = "";
 		try {
 			
 			sentSQL = "update partida set" +
 					" combG=" + combG + ", " +
 					" combP=" + combP + "" + 
-					" where cod_partida=" + cod_partida;
+					" where (usuario='" + secu(u.getNick()) + "' and" +
+					" personaje='" + secu(p.getNombre()) + "' )";
 			int val = st.executeUpdate( sentSQL );
 			log( Level.INFO, "BD modificada " + val + " fila\t" + sentSQL, null );
 			if (val!=1) {  // Se tiene que modificar 1 - error si no
