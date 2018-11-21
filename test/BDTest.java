@@ -37,13 +37,18 @@ public class BDTest {
 	}
 	
 	@Test
-	public void usuarioInsertTest() {
+	public void Test() {
 		Connection con = BD.initBD( "bd-test" );
 		Statement stat =  BD.reiniciarBD(con);
 		assertTrue( BD.usuarioInsert( stat, u1 ) );
 		assertTrue( BD.usuarioInsert( stat, u2 ) );
 		assertTrue(BD.personajesInsert(stat, p1));
 		assertTrue(BD.personajesInsert(stat, p2));
+		assertTrue(BD.partidaInsert(stat, u1, p1, 0, 0));
+		assertTrue(BD.partidaUpdate(stat, 1, 0, u1, p1));
+		assertTrue(BD.usuarioExiste(stat, u1.getNick()));
+		assertEquals("hola", BD.usuarioSelect(stat, u1.getNick()));
+		
 		BD.cerrarBD( con, stat );
 	}
 	

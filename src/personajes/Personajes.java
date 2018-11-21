@@ -6,9 +6,9 @@ public class Personajes {
 	private int energia;
 	private int damageB;
 	private int damageP;
-	private double posX;
-	private double posY;
-	private double vel;
+	private int posX;
+	private int posY;
+	private int vel;
 
 
 	public String getNombre() {
@@ -55,7 +55,7 @@ public class Personajes {
 		return posX;
 	}
 
-	public void setPosX(double posX) {
+	public void setPosX(int posX) {
 		this.posX = posX;
 	}
 
@@ -63,7 +63,7 @@ public class Personajes {
 		return posY;
 	}
 
-	public void setPosY(double posY) {
+	public void setPosY(int posY) {
 		this.posY = posY;
 	}
 
@@ -71,12 +71,12 @@ public class Personajes {
 		return vel;
 	}
 
-	public void setVel(double vel) {
+	public void setVel(int vel) {
 		this.vel = vel;
 	}
 
 	// Constructor de la clase personajes
-	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, double posX, double posY, double vel) {
+	public Personajes(String nombre, int vida, int energia, int damageB, int damageP, int posX, int posY, int vel) {
 		this.nombre = nombre;
 		this.vida = vida;
 		this.energia = energia;

@@ -16,6 +16,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
@@ -28,6 +29,7 @@ public class Pantalla1Jugador extends JFrame{
 	JPanelBackground fondo;
 	JButton bSalir;
 	JButton bAceptar;
+	JButton bRegistrar;
 	Icon usuarioi;
 	Icon contrasenyai;
 	JLabel usuariol;
@@ -68,6 +70,10 @@ public class Pantalla1Jugador extends JFrame{
 		bAceptar.setBackground(Color.BLACK);
 		bAceptar.setForeground(Color.RED);
 		bAceptar.setBorder(new LineBorder(Color.RED));
+		bRegistrar = new JButton("Registrar");
+		bRegistrar.setBackground(Color.BLACK);
+		bRegistrar.setForeground(Color.RED);
+		bRegistrar.setBorder(new LineBorder(Color.RED));
 		bSalir = new JButton("Salir");
 		bSalir.setBackground(Color.BLACK);
 		bSalir.setForeground(Color.RED);
@@ -78,6 +84,7 @@ public class Pantalla1Jugador extends JFrame{
 		contrasenyal.setBounds(0, 500, 400, 200);
 		contrasenyap.setBounds(400, 585, 300, 50);
 		bAceptar.setBounds(350, 900, 100, 50);
+		bRegistrar.setBounds(50, 900, 100, 50);
 		bSalir.setBounds(650, 900, 100, 50);
 	
 		fondo.add(usuariol);
@@ -86,6 +93,7 @@ public class Pantalla1Jugador extends JFrame{
 		fondo.add(contrasenyap);
 		fondo.add(bAceptar);
 		fondo.add(bSalir);
+		fondo.add(bRegistrar);
 		
 		bSalir.addActionListener(new ActionListener() {
 			
@@ -100,22 +108,38 @@ public class Pantalla1Jugador extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Usuario u = new Usuario(usuariot.getText(), contrasenyap.getText());
 				Connection con = BD.initBD("BD");
-				BD.usarBD(con);
-				BD.usarCrearTablasBD(con);
-				Statement st;
-				try {
-					st = con.createStatement();
+				Statement st = BD.usarBD(con);
+				if(BD.usuarioExiste(st, usuariot.getText())) {
+					String contra = BD.usuarioSelect(st, usuariot.getText());
+					if(contra.equals(contrasenyap.getText())) {
+						JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has loggeado corectamente");
+					}else {
+						JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
+					}
+				}else {
+					JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+	
+		});
+		
+		bRegistrar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Connection con = BD.initBD("BD");
+				Statement st = BD.usarBD(con);
+				if(!BD.usuarioExiste(st, usuariot.getText())) {
+					Usuario u = new Usuario(usuariot.getText(), contrasenyap.getText());
 					BD.usuarioInsert(st, u);
-				} catch (SQLException e1) {
-					e1.printStackTrace();
+					JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has registrado correctamente");
+				}else {
+					JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Nombre de Usuario ya existe", "Warning!", JOptionPane.ERROR_MESSAGE);
 				}
 				
 			}
 		});
 		
 	}
-	
-
 }

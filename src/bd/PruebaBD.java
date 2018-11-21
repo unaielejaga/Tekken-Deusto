@@ -1,6 +1,7 @@
 package bd;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 import personajes.Personajes;
 import usuario.Usuario;
@@ -21,8 +22,8 @@ public class PruebaBD {
 			BD.personajesInsert(st1, p);
 			BD.partidaInsert(st1, u, p, 10, 3);
 			BD.partidaUpdate(st1, 11, 2, u, p);
-			String contra = BD.usuarioSelect(st1, u1.getNick());
-			System.out.println(contra);
+			String contra = BD.usuarioSelect(st1, u.getNick());
+			ArrayList<Integer> array = BD.personajeSelect(st1, p.getNombre());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

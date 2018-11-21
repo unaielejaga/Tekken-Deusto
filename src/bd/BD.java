@@ -128,21 +128,22 @@ public class BD {
 	
 	public static String usuarioSelect( Statement st, String nombre ) {
 		String sentSQL = "";
+		String contra = "";
 		try {
 			sentSQL = "select contrasenya from usuario where nick='" + nombre + "'";
-			// System.out.println( sentSQL );  // Para ver lo que se hace en consola
 			ResultSet rs = st.executeQuery( sentSQL );
 			while(rs.next()) {
-				String nick = rs.getString("contrasenya");
-				rs.close();
-				return nick;
+				contra = rs.getString("contrasenya");
 			}
+			rs.close();
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + contra, null);
+			return contra;
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
-		return null;
 	}
 	
 	public static boolean personajesInsert( Statement st, Personajes p ) {
@@ -170,6 +171,35 @@ public class BD {
 			lastError = e;
 			e.printStackTrace();
 			return false;
+		}
+	}
+	
+	public static ArrayList<Integer> personajeSelect( Statement st, String nombre ) {
+		String sentSQL = "";
+		ArrayList<Integer> personaje = new ArrayList<>();
+		try {
+			sentSQL = "select * from personajes where nombre='" + nombre + "'";
+			ResultSet rs = st.executeQuery( sentSQL );
+			while(rs.next()) {
+				int vida = rs.getInt("vida");
+				int energia = rs.getInt("energia");
+				int damageB = rs.getInt("damageB");
+				int damageP = rs.getInt("damageP");
+				int posX = rs.getInt("posX");
+				int posY = rs.getInt("posY");
+				int vel = rs.getInt("vel");
+				
+				personaje.add(vida); personaje.add(energia); personaje.add(damageB); personaje.add(damageP);
+				personaje.add(posX); personaje.add(posY); personaje.add(vel);
+			}
+			rs.close();
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + personaje, null);
+			return personaje;
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
 	
