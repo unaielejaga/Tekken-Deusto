@@ -132,10 +132,22 @@ public class Pantalla1Jugador extends JFrame{
 				if(BD.usuarioExiste(st, usuariot.getText())) {
 					String contra = BD.usuarioSelect(st, usuariot.getText());
 					if(contra.equals(contrasenyap.getText())) {
-						JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has loggeado corectamente");
+					//	JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has loggeado corectamente");
+						PantallaSelEscenario p = new PantallaSelEscenario();
+						p.setVisible(true);
+						dispose();
+						v.dispose();
 						if(usuarioAnterior.isSelected()) {
 							try {
 								USUARIO_ANTERIOR = usuariot.getText();
+								properties.setProperty( "USUARIO_ANTERIOR", USUARIO_ANTERIOR );
+								properties.storeToXML( new FileOutputStream( "usuario.ini" ), "Usuario Anterior" );
+							} catch (Exception e1) {
+								e1.printStackTrace();
+							}
+						}else {
+							try {
+								USUARIO_ANTERIOR = "";
 								properties.setProperty( "USUARIO_ANTERIOR", USUARIO_ANTERIOR );
 								properties.storeToXML( new FileOutputStream( "usuario.ini" ), "Usuario Anterior" );
 							} catch (Exception e1) {

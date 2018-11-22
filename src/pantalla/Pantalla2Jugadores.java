@@ -113,7 +113,11 @@ public class Pantalla2Jugadores extends JFrame{
 					String contra1 = BD.usuarioSelect(st, usuariot1.getText());
 					String contra2 = BD.usuarioSelect(st, usuariot2.getText());
 					if(contra1.equals(contrasenyap1.getText()) && contra2.equals(contrasenyap2.getText())) {
-						JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Enhorabuena, te has loggeado corectamente");
+					//	JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Enhorabuena, te has loggeado corectamente");
+						PantallaSelEscenario p = new PantallaSelEscenario();
+						p.setVisible(true);
+						dispose();
+						v.dispose();
 					}else {
 						JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
 					}
