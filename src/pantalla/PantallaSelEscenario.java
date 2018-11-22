@@ -53,7 +53,8 @@ public class PantallaSelEscenario extends JFrame {
 		setSize(1920, 1080);
 		setTitle("Pantalla Seleccion Escenario");
 		setResizable(false);
-		loop = Sonido.music("canciones/juego.wav");
+		setUndecorated(true);
+		loop = Sonido.music("canciones/seleccion.wav");
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().setBackground(Color.BLACK);
 		
