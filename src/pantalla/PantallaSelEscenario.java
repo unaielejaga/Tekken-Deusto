@@ -2,6 +2,7 @@ package pantalla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Panel;
@@ -29,18 +30,26 @@ public class PantallaSelEscenario extends JFrame {
 	private JPanel panelNorte;
 	private JPanel panelCentral;
 	private JPanel panelSup;
+	private JPanel panelInferior;
 
-	private JPanel panelIzquierdo;
-	private JPanel panelDerecho;
+	private JPanel panelSelJ1;
+	private JPanel panelSelJ2;
 	
-	private JButton bAleatorio;
+	private JButton bAceptar;
 	private JButton bEscenario1;
 	private JButton bEscenario2;
 	private JButton bEscenario3;
 	private JButton bEscenario4;
-	private JButton botonAnterior;
+	private JButton botonAnteriorEsc;
 	
-
+	private JButton b1;
+	private JButton b2;
+	private JButton b3;
+	private JButton b4;
+	private JButton b5;
+	private JButton b6;
+	private JButton b7;
+	private JButton b8;
 	
 	private ImageIcon escenario1;
 	private ImageIcon escenario2;
@@ -65,7 +74,16 @@ public class PantallaSelEscenario extends JFrame {
 		bEscenario2= new JButton();	
 		bEscenario3= new JButton();
 		bEscenario4= new JButton();	
-		botonAnterior = new JButton();
+		botonAnteriorEsc = new JButton();
+		
+		b1 = new JButton("Hola");
+		b2 = new JButton("Hola");
+		b3 = new JButton("Hola");
+		b4 = new JButton("Hola");
+		b5 = new JButton("Hola");
+		b6 = new JButton("Hola");
+		b7 = new JButton("Hola");
+		b8 = new JButton("Hola");
 		
 		bEscenario1.setIcon(escenario1);
 		bEscenario2.setIcon(escenario2);
@@ -86,13 +104,20 @@ public class PantallaSelEscenario extends JFrame {
 		bEscenario4.setBorder(new LineBorder(Color.BLACK));
 		
 		
-		bAleatorio= new JButton("Aleatorio");
+		
+		bAceptar = new JButton("Aceptar");
+		bAceptar.setBackground(Color.BLACK);
+		bAceptar.setForeground(Color.RED);
+		bAceptar.setBorder(new LineBorder(Color.RED));
+		bAceptar.setPreferredSize(new Dimension(100, 50));
 		
 		panelSup = new JPanel();
 		panelSup.setLayout( new FlowLayout( FlowLayout.LEFT ) );
-		panelCentral = new JPanel();
 		panelSup.setOpaque(false);
-
+		panelCentral = new JPanel();
+		panelCentral.setLayout(new GridLayout(1, 2));
+		panelInferior = new JPanel();
+		panelInferior.setLayout(new BorderLayout());
 		
 		
 		panelSup.setLayout(new FlowLayout());
@@ -101,8 +126,29 @@ public class PantallaSelEscenario extends JFrame {
 		panelSup.add(bEscenario3);
 		panelSup.add(bEscenario4);
 
+		panelInferior.add(bAceptar);
+		
+		panelSelJ1 = new JPanel();
+		panelSelJ1.setLayout(new GridLayout(2, 2));
+		panelSelJ2 = new JPanel();
+		panelSelJ2.setLayout(new GridLayout(2, 2));
+		
+		panelSelJ1.add(b1);
+		panelSelJ1.add(b2);
+		panelSelJ1.add(b3);
+		panelSelJ1.add(b4);
+		
+		panelSelJ2.add(b5);
+		panelSelJ2.add(b6);
+		panelSelJ2.add(b7);
+		panelSelJ2.add(b8);
+		
+		panelCentral.add(panelSelJ1);
+		panelCentral.add(panelSelJ2);
 		
 		this.setLayout( new BorderLayout() );
+		this.add(panelInferior, BorderLayout.SOUTH);
+		this.add(panelCentral, BorderLayout.CENTER);
 		this.add(panelSup, BorderLayout.NORTH );
 
 
@@ -112,8 +158,8 @@ public class PantallaSelEscenario extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				bEscenario1.setBorder(new LineBorder(Color.RED));
 				bEscenario1.setBorderPainted(true);
-				botonAnterior.setBorderPainted(false);
-				botonAnterior = bEscenario1;
+				botonAnteriorEsc.setBorderPainted(false);
+				botonAnteriorEsc = bEscenario1;
 				
 			}
 		});
@@ -124,8 +170,8 @@ public class PantallaSelEscenario extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				bEscenario2.setBorder(new LineBorder(Color.RED));
 				bEscenario2.setBorderPainted(true);
-				botonAnterior.setBorderPainted(false);
-				botonAnterior = bEscenario2;
+				botonAnteriorEsc.setBorderPainted(false);
+				botonAnteriorEsc = bEscenario2;
 				
 			}
 		});
@@ -137,8 +183,8 @@ public class PantallaSelEscenario extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			bEscenario3.setBorder(new LineBorder(Color.RED));
 			bEscenario3.setBorderPainted(true);
-			botonAnterior.setBorderPainted(false);
-			botonAnterior = bEscenario3;
+			botonAnteriorEsc.setBorderPainted(false);
+			botonAnteriorEsc = bEscenario3;
 			
 		}
 	});
@@ -149,8 +195,17 @@ public class PantallaSelEscenario extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			bEscenario4.setBorder(new LineBorder(Color.RED));
 			bEscenario4.setBorderPainted(true);
-			botonAnterior.setBorderPainted(false);
-			botonAnterior = bEscenario4;
+			botonAnteriorEsc.setBorderPainted(false);
+			botonAnteriorEsc = bEscenario4;
+			
+		}
+	});
+	
+	bAceptar.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			dispose();
 			
 		}
 	});

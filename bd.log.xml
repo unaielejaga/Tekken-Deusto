@@ -819,3 +819,55 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Rodolfo'valor: rodolfo</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T20:33:53</date>
+  <millis>1542915233466</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-22T20:33:53</date>
+  <millis>1542915233469</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Rodolfo'valor: rodolfo</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-22T20:34:47</date>
+  <millis>1542915287489</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-22T20:34:47</date>
+  <millis>1542915287492</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Rodolfo'valor: rodolfo</message>
+</record>
+</log>
