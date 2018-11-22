@@ -5,15 +5,20 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.Statement;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+
+import bd.BD;
 
 public class Pantalla2Jugadores extends JFrame{
 	
@@ -97,6 +102,26 @@ public class Pantalla2Jugadores extends JFrame{
 		fondo.add(contrasenyap2);
 		fondo.add(bAceptar);
 		fondo.add(bSalir);
+		
+		bAceptar.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Connection con = BD.initBD("BD");
+				Statement st = BD.usarBD(con);
+				if(BD.usuarioExiste(st, usuariot1.getText()) && BD.usuarioExiste(st, usuariot2.getText())) {
+					String contra1 = BD.usuarioSelect(st, usuariot1.getText());
+					String contra2 = BD.usuarioSelect(st, usuariot2.getText());
+					if(contra1.equals(contrasenyap1.getText()) && contra2.equals(contrasenyap2.getText())) {
+						JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Enhorabuena, te has loggeado corectamente");
+					}else {
+						JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
+					}
+				}else {
+					JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
 		
 		bSalir.addActionListener(new ActionListener() {
 			

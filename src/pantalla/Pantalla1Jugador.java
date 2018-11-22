@@ -6,14 +6,18 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -37,7 +41,9 @@ public class Pantalla1Jugador extends JFrame{
 	JTextField usuariot;
 	JPasswordField contrasenyap;
 	JFrame ventanaAnterior;
-	
+	Properties properties;
+	String USUARIO_ANTERIOR;
+	JCheckBox usuarioAnterior;
 	
 	public Pantalla1Jugador(JFrame v) {
 		ventanaAnterior = v;
@@ -78,6 +84,10 @@ public class Pantalla1Jugador extends JFrame{
 		bSalir.setBackground(Color.BLACK);
 		bSalir.setForeground(Color.RED);
 		bSalir.setBorder(new LineBorder(Color.RED));
+		usuarioAnterior = new JCheckBox("Recuerda el Usuario");
+		usuarioAnterior.setForeground(Color.RED);
+		usuarioAnterior.setFont(new Font("Dialog", Font.BOLD, 30));
+		usuarioAnterior.setOpaque(false);
 		
 		usuariol.setBounds(150, 250, 300, 200);
 		usuariot.setBounds(400, 335, 300, 50);
@@ -86,6 +96,7 @@ public class Pantalla1Jugador extends JFrame{
 		bAceptar.setBounds(350, 900, 100, 50);
 		bRegistrar.setBounds(50, 900, 100, 50);
 		bSalir.setBounds(650, 900, 100, 50);
+		usuarioAnterior.setBounds(250, 800, 400,50 );
 	
 		fondo.add(usuariol);
 		fondo.add(usuariot);
@@ -94,6 +105,14 @@ public class Pantalla1Jugador extends JFrame{
 		fondo.add(bAceptar);
 		fondo.add(bSalir);
 		fondo.add(bRegistrar);
+		fondo.add(usuarioAnterior);
+		
+		try {
+			properties = new Properties();
+			properties.loadFromXML( new FileInputStream( "usuario.ini" ) );
+			USUARIO_ANTERIOR = properties.getProperty( "USUARIO_ANTERIOR" );
+			usuariot.setText(USUARIO_ANTERIOR);
+		}catch (Exception i) {}
 		
 		bSalir.addActionListener(new ActionListener() {
 			
@@ -114,6 +133,15 @@ public class Pantalla1Jugador extends JFrame{
 					String contra = BD.usuarioSelect(st, usuariot.getText());
 					if(contra.equals(contrasenyap.getText())) {
 						JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has loggeado corectamente");
+						if(usuarioAnterior.isSelected()) {
+							try {
+								USUARIO_ANTERIOR = usuariot.getText();
+								properties.setProperty( "USUARIO_ANTERIOR", USUARIO_ANTERIOR );
+								properties.storeToXML( new FileOutputStream( "usuario.ini" ), "Usuario Anterior" );
+							} catch (Exception e1) {
+								e1.printStackTrace();
+							}
+						}
 					}else {
 						JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
 					}
