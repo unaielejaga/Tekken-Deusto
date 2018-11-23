@@ -8,6 +8,9 @@ import java.awt.GridLayout;
 import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -64,9 +67,13 @@ public class PantallaSelEscenario extends JFrame {
 	private ImageIcon mike;
 	private ImageIcon J1;
 	private ImageIcon J2;
+	private ImageIcon donatelloG;
+	private ImageIcon leonardoG;
+	private ImageIcon mikeG;
+	private ImageIcon raphaelG;
 	
-	
-	
+	private String J1t;
+	private String J2t;
 	
 	
 	public PantallaSelEscenario(boolean J2B) {
@@ -86,11 +93,16 @@ public class PantallaSelEscenario extends JFrame {
 		leonardo = new ImageIcon("imagenes/Leonardo.png");
 		raphael = new ImageIcon("imagenes/Raphael.png");
 		mike = new ImageIcon("imagenes/Mike.png");
+		donatelloG = new ImageIcon("imagenes/DonatelloG.png");
+		leonardoG = new ImageIcon("imagenes/LeonardoG.png");
+		mikeG = new ImageIcon("imagenes/MikeG.png");
+		raphaelG = new ImageIcon("imagenes/RaphaelG.png");
 		
 		J1 = new ImageIcon("imagenes/J1l.gif");
 		J1l = new JLabel(J1);
 		J2 = new ImageIcon("imagenes/J2l.gif");
 		J2l = new JLabel(J2);
+		
 		
 		bEscenario1= new JButton();
 		bEscenario2= new JButton();	
@@ -277,6 +289,7 @@ public class PantallaSelEscenario extends JFrame {
 			b1.setBorderPainted(true);
 			botonAntriorJ1.setBorderPainted(false);
 			botonAntriorJ1 = b1;
+			J1t = "Donatello";
 			
 		}
 	});
@@ -289,6 +302,7 @@ public class PantallaSelEscenario extends JFrame {
 			b2.setBorderPainted(true);
 			botonAntriorJ1.setBorderPainted(false);
 			botonAntriorJ1 = b2;
+			J1t = "Leonardo";
 			
 		}
 	});
@@ -301,6 +315,7 @@ public class PantallaSelEscenario extends JFrame {
 			b3.setBorderPainted(true);
 			botonAntriorJ1.setBorderPainted(false);
 			botonAntriorJ1 = b3;
+			J1t = "Raphael";
 			
 		}
 	});
@@ -313,6 +328,7 @@ public class PantallaSelEscenario extends JFrame {
 			b4.setBorderPainted(true);
 			botonAntriorJ1.setBorderPainted(false);
 			botonAntriorJ1 = b4;
+			J1t = "Mike";
 			
 		}
 	});
@@ -325,6 +341,7 @@ public class PantallaSelEscenario extends JFrame {
 			b5.setBorderPainted(true);
 			botonAntriorJ2.setBorderPainted(false);
 			botonAntriorJ2 = b5;
+			J2t = "Donatello";
 			
 		}
 	});
@@ -337,6 +354,7 @@ public class PantallaSelEscenario extends JFrame {
 			b6.setBorderPainted(true);
 			botonAntriorJ2.setBorderPainted(false);
 			botonAntriorJ2 = b6;
+			J2t = "Leonardo";
 			
 		}
 	});
@@ -349,6 +367,7 @@ public class PantallaSelEscenario extends JFrame {
 			b7.setBorderPainted(true);
 			botonAntriorJ2.setBorderPainted(false);
 			botonAntriorJ2 = b7;
+			J2t = "Raphael";
 			
 		}
 	});
@@ -361,6 +380,7 @@ public class PantallaSelEscenario extends JFrame {
 			b8.setBorderPainted(true);
 			botonAntriorJ2.setBorderPainted(false);
 			botonAntriorJ2 = b8;
+			J2t = "Mike";
 			
 		}
 	});
@@ -374,16 +394,136 @@ public class PantallaSelEscenario extends JFrame {
 		}
 	});
 	
+	b1.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b1.setIcon(donatello);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b1.setIcon(donatelloG);
+		}
+
+		
+	});
+	
+	b2.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b2.setIcon(leonardo);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b2.setIcon(leonardoG);
+		}
+			
+	});
+	
+	b3.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b3.setIcon(raphael);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b3.setIcon(raphaelG);
+		}
+	});
+	
+	b4.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b4.setIcon(mike);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b4.setIcon(mikeG);
+		}
+	});
+	
+	b5.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b5.setIcon(donatello);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b5.setIcon(donatelloG);
+		}
+
+		
+	});
+	
+	b6.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b6.setIcon(leonardo);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b6.setIcon(leonardoG);
+		}
+			
+	});
+	
+	b7.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b7.setIcon(raphael);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b7.setIcon(raphaelG);
+		}
+	});
+	
+	b8.addMouseListener(new MouseAdapter() {
+		
+		@Override
+		public void mouseExited(MouseEvent e) {
+			b8.setIcon(mike);
+			
+		}
+		
+		@Override
+		public void mouseEntered(MouseEvent e) {
+			b8.setIcon(mikeG);
+		}
+	});
+	
 	addWindowListener(new WindowAdapter() {
 		@Override
 		public void windowClosed(WindowEvent e) {
 			Sonido.stop(loop);
+			System.out.println(J1t);
+			System.out.println(J2t);
 		}
 	});
 		
 	}
 //	public static void main(String[] args) {
-//		PantallaSelEscenario p = new PantallaSelEscenario(false);
+//		PantallaSelEscenario p = new PantallaSelEscenario(true);
 //		p.setVisible(true);
 //
 //	}
