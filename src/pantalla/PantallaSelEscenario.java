@@ -53,6 +53,10 @@ public class PantallaSelEscenario extends JFrame {
 	
 	private ImageIcon escenario1;
 	private ImageIcon escenario2;
+	private ImageIcon donatello;
+	private ImageIcon leonardo;
+	private ImageIcon raphael;
+	private ImageIcon mike;
 	
 	
 	
@@ -69,6 +73,10 @@ public class PantallaSelEscenario extends JFrame {
 		
 		escenario1 = new ImageIcon("imagenes/escenario1.jpg");
 		escenario2 = new ImageIcon("imagenes/escenario2.jpg");
+		donatello = new ImageIcon("imagenes/Donatello.png");
+		leonardo = new ImageIcon("imagenes/Leonardo.png");
+		raphael = new ImageIcon("imagenes/Raphael.png");
+		mike = new ImageIcon("imagenes/Mike.png");
 		
 		bEscenario1= new JButton();
 		bEscenario2= new JButton();	
@@ -76,19 +84,28 @@ public class PantallaSelEscenario extends JFrame {
 		bEscenario4= new JButton();	
 		botonAnteriorEsc = new JButton();
 		
-		b1 = new JButton("Hola");
-		b2 = new JButton("Hola");
-		b3 = new JButton("Hola");
-		b4 = new JButton("Hola");
-		b5 = new JButton("Hola");
-		b6 = new JButton("Hola");
-		b7 = new JButton("Hola");
-		b8 = new JButton("Hola");
+		b1 = new JButton();
+		b2 = new JButton();
+		b3 = new JButton();
+		b4 = new JButton();
+		b5 = new JButton();
+		b6 = new JButton();
+		b7 = new JButton();
+		b8 = new JButton();
 		
 		bEscenario1.setIcon(escenario1);
 		bEscenario2.setIcon(escenario2);
 		bEscenario3.setIcon(escenario1);
 		bEscenario4.setIcon(escenario2);
+		b1.setIcon(donatello);
+		b5.setIcon(donatello);
+		b2.setIcon(leonardo);
+		b6.setIcon(leonardo);
+		b3.setIcon(raphael);
+		b7.setIcon(raphael);
+		b4.setIcon(mike);
+		b8.setIcon(mike);
+		
 		
 		bEscenario1.setOpaque(false);
 		bEscenario1.setContentAreaFilled(false);
@@ -103,6 +120,30 @@ public class PantallaSelEscenario extends JFrame {
 		bEscenario4.setContentAreaFilled(false);
 		bEscenario4.setBorder(new LineBorder(Color.BLACK));
 		
+		b1.setOpaque(false);
+		b1.setContentAreaFilled(false);
+		b1.setBorder(new LineBorder(Color.BLACK));
+		b2.setOpaque(false);
+		b2.setContentAreaFilled(false);
+		b2.setBorder(new LineBorder(Color.BLACK));
+		b3.setOpaque(false);
+		b3.setContentAreaFilled(false);
+		b3.setBorder(new LineBorder(Color.BLACK));
+		b4.setOpaque(false);
+		b4.setContentAreaFilled(false);
+		b4.setBorder(new LineBorder(Color.BLACK));
+		b5.setOpaque(false);
+		b5.setContentAreaFilled(false);
+		b5.setBorder(new LineBorder(Color.BLACK));
+		b6.setOpaque(false);
+		b6.setContentAreaFilled(false);
+		b6.setBorder(new LineBorder(Color.BLACK));
+		b7.setOpaque(false);
+		b7.setContentAreaFilled(false);
+		b7.setBorder(new LineBorder(Color.BLACK));
+		b8.setOpaque(false);
+		b8.setContentAreaFilled(false);
+		b8.setBorder(new LineBorder(Color.BLACK));
 		
 		
 		bAceptar = new JButton("Aceptar");
@@ -116,6 +157,7 @@ public class PantallaSelEscenario extends JFrame {
 		panelSup.setOpaque(false);
 		panelCentral = new JPanel();
 		panelCentral.setLayout(new GridLayout(1, 2));
+		panelCentral.setOpaque(false);
 		panelInferior = new JPanel();
 		panelInferior.setLayout(new BorderLayout());
 		
@@ -130,8 +172,10 @@ public class PantallaSelEscenario extends JFrame {
 		
 		panelSelJ1 = new JPanel();
 		panelSelJ1.setLayout(new GridLayout(2, 2));
+		panelSelJ1.setOpaque(false);
 		panelSelJ2 = new JPanel();
 		panelSelJ2.setLayout(new GridLayout(2, 2));
+		panelSelJ2.setOpaque(false);
 		
 		panelSelJ1.add(b1);
 		panelSelJ1.add(b2);
