@@ -133,7 +133,7 @@ public class Pantalla1Jugador extends JFrame{
 					String contra = BD.usuarioSelect(st, usuariot.getText());
 					if(contra.equals(contrasenyap.getText())) {
 					//	JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Enhorabuena, te has loggeado corectamente");
-						PantallaSelEscenario p = new PantallaSelEscenario();
+						PantallaSelEscenario p = new PantallaSelEscenario(false);
 						p.setVisible(true);
 						dispose();
 						v.dispose();

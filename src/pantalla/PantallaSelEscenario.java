@@ -41,6 +41,8 @@ public class PantallaSelEscenario extends JFrame {
 	private JButton bEscenario3;
 	private JButton bEscenario4;
 	private JButton botonAnteriorEsc;
+	private JButton botonAntriorJ1;
+	private JButton botonAntriorJ2;
 	
 	private JButton b1;
 	private JButton b2;
@@ -51,16 +53,23 @@ public class PantallaSelEscenario extends JFrame {
 	private JButton b7;
 	private JButton b8;
 	
+	private JLabel J1l;
+	private JLabel J2l;
+	
 	private ImageIcon escenario1;
 	private ImageIcon escenario2;
 	private ImageIcon donatello;
 	private ImageIcon leonardo;
 	private ImageIcon raphael;
 	private ImageIcon mike;
+	private ImageIcon J1;
+	private ImageIcon J2;
 	
 	
 	
-	public PantallaSelEscenario() {
+	
+	
+	public PantallaSelEscenario(boolean J2B) {
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
@@ -78,11 +87,18 @@ public class PantallaSelEscenario extends JFrame {
 		raphael = new ImageIcon("imagenes/Raphael.png");
 		mike = new ImageIcon("imagenes/Mike.png");
 		
+		J1 = new ImageIcon("imagenes/J1l.gif");
+		J1l = new JLabel(J1);
+		J2 = new ImageIcon("imagenes/J2l.gif");
+		J2l = new JLabel(J2);
+		
 		bEscenario1= new JButton();
 		bEscenario2= new JButton();	
 		bEscenario3= new JButton();
 		bEscenario4= new JButton();	
 		botonAnteriorEsc = new JButton();
+		botonAntriorJ1 = new JButton();
+		botonAntriorJ2 = new JButton();
 		
 		b1 = new JButton();
 		b2 = new JButton();
@@ -92,6 +108,12 @@ public class PantallaSelEscenario extends JFrame {
 		b6 = new JButton();
 		b7 = new JButton();
 		b8 = new JButton();
+		
+		b5.setEnabled(J2B);
+		b6.setEnabled(J2B);
+		b7.setEnabled(J2B);
+		b8.setEnabled(J2B);
+		
 		
 		bEscenario1.setIcon(escenario1);
 		bEscenario2.setIcon(escenario2);
@@ -163,10 +185,12 @@ public class PantallaSelEscenario extends JFrame {
 		
 		
 		panelSup.setLayout(new FlowLayout());
+		panelSup.add(J1l);
 		panelSup.add(bEscenario1);
 		panelSup.add(bEscenario2);
 		panelSup.add(bEscenario3);
 		panelSup.add(bEscenario4);
+		panelSup.add(J2l);
 
 		panelInferior.add(bAceptar);
 		
@@ -245,6 +269,102 @@ public class PantallaSelEscenario extends JFrame {
 		}
 	});
 	
+	b1.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b1.setBorder(new LineBorder(Color.BLUE));
+			b1.setBorderPainted(true);
+			botonAntriorJ1.setBorderPainted(false);
+			botonAntriorJ1 = b1;
+			
+		}
+	});
+	
+	b2.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b2.setBorder(new LineBorder(Color.BLUE));
+			b2.setBorderPainted(true);
+			botonAntriorJ1.setBorderPainted(false);
+			botonAntriorJ1 = b2;
+			
+		}
+	});
+	
+	b3.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b3.setBorder(new LineBorder(Color.BLUE));
+			b3.setBorderPainted(true);
+			botonAntriorJ1.setBorderPainted(false);
+			botonAntriorJ1 = b3;
+			
+		}
+	});
+	
+	b4.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b4.setBorder(new LineBorder(Color.BLUE));
+			b4.setBorderPainted(true);
+			botonAntriorJ1.setBorderPainted(false);
+			botonAntriorJ1 = b4;
+			
+		}
+	});
+	
+	b5.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b5.setBorder(new LineBorder(Color.ORANGE));
+			b5.setBorderPainted(true);
+			botonAntriorJ2.setBorderPainted(false);
+			botonAntriorJ2 = b5;
+			
+		}
+	});
+	
+	b6.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b6.setBorder(new LineBorder(Color.ORANGE));
+			b6.setBorderPainted(true);
+			botonAntriorJ2.setBorderPainted(false);
+			botonAntriorJ2 = b6;
+			
+		}
+	});
+	
+	b7.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b7.setBorder(new LineBorder(Color.ORANGE));
+			b7.setBorderPainted(true);
+			botonAntriorJ2.setBorderPainted(false);
+			botonAntriorJ2 = b7;
+			
+		}
+	});
+	
+	b8.addActionListener(new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			b8.setBorder(new LineBorder(Color.ORANGE));
+			b8.setBorderPainted(true);
+			botonAntriorJ2.setBorderPainted(false);
+			botonAntriorJ2 = b8;
+			
+		}
+	});
+	
 	bAceptar.addActionListener(new ActionListener() {
 		
 		@Override
@@ -262,11 +382,11 @@ public class PantallaSelEscenario extends JFrame {
 	});
 		
 	}
-	public static void main(String[] args) {
-		PantallaSelEscenario p = new PantallaSelEscenario();
-		p.setVisible(true);
-
-	}
+//	public static void main(String[] args) {
+//		PantallaSelEscenario p = new PantallaSelEscenario(false);
+//		p.setVisible(true);
+//
+//	}
 }
 
 
