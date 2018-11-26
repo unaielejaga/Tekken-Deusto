@@ -2,6 +2,7 @@ package pantalla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -23,7 +24,10 @@ public class PantallaJuego extends JFrame{
 	private String imagenfondo;
 	private JPanel PanelSup;
 	private JPanel PanelJ1;
+	private JPanel PanelJ1Int;
 	private JPanel PanelJ2;
+	private JPanel PanelJ2Int;
+	private JPanel vacio;
 	private JProgressBar JPB11;
 	private JProgressBar JPB21;
 	private JProgressBar JPB12;
@@ -48,15 +52,24 @@ public class PantallaJuego extends JFrame{
 		
 		PanelSup = new JPanel();
 		PanelSup.setOpaque(false);
-		PanelSup.setLayout(new GridLayout(1, 3));
+		vacio = new JPanel();
+		vacio.setOpaque(false);
+		PanelSup.setLayout(new FlowLayout());
 		PanelJ1 = new JPanel();
 		PanelJ1.setOpaque(false);
 		PanelJ1.setLayout(new GridLayout(2, 1));
 		PanelJ2 = new JPanel();
 		PanelJ2.setOpaque(false);
 		PanelJ2.setLayout(new GridLayout(2, 1));
+		PanelJ1Int = new JPanel();
+		PanelJ1Int.setOpaque(false);
+		PanelJ1Int.setLayout(new GridLayout(1, 2));
+		PanelJ2Int = new JPanel();
+		PanelJ2Int.setOpaque(false);
+		PanelJ2Int.setLayout(new GridLayout(1, 2));
 		
 		JPB11 = new JProgressBar(0, 100);
+		JPB11.setSize(100, 50);
 		JPB21 = new JProgressBar(0, 100);
 		JPB12 = new JProgressBar(0, 100);
 		JPB22 = new JProgressBar(0, 100);
@@ -76,33 +89,21 @@ public class PantallaJuego extends JFrame{
 		JPB12.setValue(6);
 		JPB22.setValue(40);
 		
+		PanelJ1Int.add(vacio);
+		PanelJ1Int.add(JPB12);
+		PanelJ2Int.add(vacio);
+		PanelJ2Int.add(JPB22);
+		
 		PanelJ1.add(JPB11);
 		PanelJ1.add(JPB21);
-		
 		PanelJ2.add(JPB12);
-		PanelJ2.add(JPB22);
+		PanelJ2.add(PanelJ1Int);
 		
 		PanelSup.add(PanelJ1);
 		PanelSup.add(lTiempo);
 		PanelSup.add(PanelJ2);
 
-		fondo.add(PanelSup, BorderLayout.NORTH);
-
-		JButton prueba = new JButton("Hola");
-		
-		fondo.add(prueba);
-		
-		prueba.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				vida1 = vida1 - 10;
-				JPB11.setValue(vida1);
-				
-			}
-		});
-		
-		
+		fondo.add(PanelSup, BorderLayout.NORTH);		
 	}
 
 	public static void main(String[] args) {

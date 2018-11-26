@@ -1423,3 +1423,88 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Samu'valor: samu</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-26T15:07:12</date>
+  <millis>1543241232446</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-26T15:07:12</date>
+  <millis>1543241232470</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD añadida 1 fila	insert into usuario values('hulu', 'hulu')</message>
+</record>
+<record>
+  <date>2018-11-26T15:07:16</date>
+  <millis>1543241236090</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-26T15:07:16</date>
+  <millis>1543241236091</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='hulu'valor: hulu</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-26T15:08:10</date>
+  <millis>1543241290486</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-26T15:08:10</date>
+  <millis>1543241290489</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Rodolfo'valor: rodolfo</message>
+</record>
+<record>
+  <date>2018-11-26T15:08:10</date>
+  <millis>1543241290489</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Julian'valor: julian</message>
+</record>
+</log>
