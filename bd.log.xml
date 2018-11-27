@@ -1508,3 +1508,28 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Julian'valor: julian</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-11-27T07:58:24</date>
+  <millis>1543301904562</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-11-27T07:58:24</date>
+  <millis>1543301904565</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='hulu'valor: hulu</message>
+</record>
