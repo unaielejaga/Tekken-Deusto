@@ -19,6 +19,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
@@ -74,6 +75,7 @@ public class PantallaSelEscenario extends JFrame {
 	
 	private String J1t;
 	private String J2t;
+	private String fondoImagen;
 	
 	
 	public PantallaSelEscenario(boolean J2B) {
@@ -87,7 +89,7 @@ public class PantallaSelEscenario extends JFrame {
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().setBackground(Color.BLACK);
 		
-		escenario1 = new ImageIcon("imagenes/escenario1.jpg");
+		escenario1 = new ImageIcon("imagenes/escenario1.gif");
 		escenario2 = new ImageIcon("imagenes/escenario2.jpg");
 		donatello = new ImageIcon("imagenes/Donatello.png");
 		leonardo = new ImageIcon("imagenes/Leonardo.png");
@@ -240,6 +242,7 @@ public class PantallaSelEscenario extends JFrame {
 				bEscenario1.setBorderPainted(true);
 				botonAnteriorEsc.setBorderPainted(false);
 				botonAnteriorEsc = bEscenario1;
+				fondoImagen = "Escenario1";
 				
 			}
 		});
@@ -252,6 +255,7 @@ public class PantallaSelEscenario extends JFrame {
 				bEscenario2.setBorderPainted(true);
 				botonAnteriorEsc.setBorderPainted(false);
 				botonAnteriorEsc = bEscenario2;
+				fondoImagen = "Escenario2";
 				
 			}
 		});
@@ -389,7 +393,24 @@ public class PantallaSelEscenario extends JFrame {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			dispose();
+			if(J2B) {
+				if(fondoImagen != null && J1t != null && J2t != null) {
+					PantallaJuego p = new PantallaJuego(fondoImagen);
+					p.setVisible(true);
+					dispose();
+				}else {
+					JOptionPane.showMessageDialog(PantallaSelEscenario.this, "Faltan campos por rellenar", "Warning!", JOptionPane.WARNING_MESSAGE);
+				}
+			}else {
+				if(fondoImagen != null && J1t != null) {
+					PantallaJuego p = new PantallaJuego(fondoImagen);
+					p.setVisible(true);
+					dispose();
+				}else {
+					JOptionPane.showMessageDialog(PantallaSelEscenario.this, "Faltan campos por rellenar", "Warning!", JOptionPane.WARNING_MESSAGE);
+				}
+			}
+			
 			
 		}
 	});

@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.sound.sampled.Clip;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,7 +20,7 @@ import sonido.Sonido;
 
 public class PantallaJuego extends JFrame{
 	
-	private JPanelBackground fondo;
+	private JPanelBackgroundGif fondo;
 	private Clip loop;
 	private String imagenfondo;
 	private JPanel PanelSup;
@@ -35,7 +36,7 @@ public class PantallaJuego extends JFrame{
 	private JLabel lTiempo;
 	private int vida1;
 	
-	public PantallaJuego() {
+	public PantallaJuego(String fondoImagen) {
 		
 		vida1 = 100;
 		
@@ -44,8 +45,7 @@ public class PantallaJuego extends JFrame{
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
 		loop = Sonido.music("canciones/juego.wav");
-		fondo = new JPanelBackground();
-		fondo.setBackground("imagenes/fondo1.jpg");
+		fondo = new JPanelBackgroundGif("imagenes/" + fondoImagen + ".gif");
 		//setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());	
 		getContentPane().add(fondo);
@@ -106,10 +106,10 @@ public class PantallaJuego extends JFrame{
 		fondo.add(PanelSup, BorderLayout.NORTH);		
 	}
 
-	public static void main(String[] args) {
-		PantallaJuego p = new PantallaJuego();
-		p.setVisible(true);
-
-	}
+//	public static void main(String[] args) {
+//		PantallaJuego p = new PantallaJuego("Escenario1");
+//		p.setVisible(true);
+//
+//	}
 
 }
