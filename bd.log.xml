@@ -1789,3 +1789,55 @@
   <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-12T12:03:46</date>
+  <millis>1544612626607</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-12T12:03:46</date>
+  <millis>1544612626610</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-12T12:09:30</date>
+  <millis>1544612970420</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-12T12:09:30</date>
+  <millis>1544612970422</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+</log>

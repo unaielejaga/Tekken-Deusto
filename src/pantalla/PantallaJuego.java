@@ -2,6 +2,7 @@ package pantalla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -28,7 +29,9 @@ public class PantallaJuego extends JFrame{
 	private JPanel PanelJ1Int;
 	private JPanel PanelJ2;
 	private JPanel PanelJ2Int;
-	private JPanel vacio;
+	private JPanel vacio1;
+	private JPanel vacio2;
+	private JPanel vacio3;
 	private JProgressBar JPB11;
 	private JProgressBar JPB21;
 	private JProgressBar JPB12;
@@ -38,7 +41,7 @@ public class PantallaJuego extends JFrame{
 	
 	public PantallaJuego(String fondoImagen) {
 		
-		vida1 = 100;
+		vida1 = 10;
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
@@ -52,32 +55,39 @@ public class PantallaJuego extends JFrame{
 		
 		PanelSup = new JPanel();
 		PanelSup.setOpaque(false);
-		vacio = new JPanel();
-		vacio.setOpaque(false);
-		PanelSup.setLayout(new FlowLayout());
+		vacio1 = new JPanel();
+		vacio1.setOpaque(false);
+		vacio2 = new JPanel();
+		vacio2.setOpaque(false);
+		vacio3 = new JPanel();
+		vacio3.setOpaque(false);
+		PanelSup.setLayout(new GridLayout(1, 3, 100, 100));
 		PanelJ1 = new JPanel();
 		PanelJ1.setOpaque(false);
 		PanelJ1.setLayout(new GridLayout(2, 1));
 		PanelJ2 = new JPanel();
 		PanelJ2.setOpaque(false);
 		PanelJ2.setLayout(new GridLayout(2, 1));
-		PanelJ1Int = new JPanel();
-		PanelJ1Int.setOpaque(false);
-		PanelJ1Int.setLayout(new GridLayout(1, 2));
-		PanelJ2Int = new JPanel();
-		PanelJ2Int.setOpaque(false);
-		PanelJ2Int.setLayout(new GridLayout(1, 2));
+//		PanelJ1Int = new JPanel();
+//		PanelJ1Int.setOpaque(false);
+//		PanelJ1Int.setLayout(new GridLayout(1, 2));
+//		PanelJ2Int = new JPanel();
+//		PanelJ2Int.setOpaque(false);
+//		PanelJ2Int.setLayout(new GridLayout(1, 2));
 		
 		JPB11 = new JProgressBar(0, 100);
-		JPB11.setSize(100, 50);
+		JPB11.setPreferredSize(new Dimension(500, 50));
 		JPB21 = new JProgressBar(0, 100);
 		JPB12 = new JProgressBar(0, 100);
+		JPB12.setPreferredSize(new Dimension(500, 50));
 		JPB22 = new JProgressBar(0, 100);
 		
-		JPB11.setForeground(Color.RED);
-		JPB21.setForeground(Color.BLUE);
 		JPB12.setForeground(Color.RED);
 		JPB22.setForeground(Color.BLUE);
+		JPB11.setBackground(Color.RED);
+		JPB11.setForeground(Color.WHITE);
+		JPB21.setBackground(Color.BLUE);
+		JPB21.setForeground(Color.WHITE);
 		
 		lTiempo = new JLabel("5");
 		lTiempo.setFont(new Font("Apple Casual", Font.BOLD, 60));
@@ -89,27 +99,39 @@ public class PantallaJuego extends JFrame{
 		JPB12.setValue(6);
 		JPB22.setValue(40);
 		
-		PanelJ1Int.add(vacio);
-		PanelJ1Int.add(JPB12);
-		PanelJ2Int.add(vacio);
-		PanelJ2Int.add(JPB22);
+//		PanelJ1Int.add(vacio);
+//		PanelJ1Int.add(JPB12);
+//		PanelJ2Int.add(vacio);
+//		PanelJ2Int.add(JPB22);
 		
 		PanelJ1.add(JPB11);
 		PanelJ1.add(JPB21);
 		PanelJ2.add(JPB12);
-		PanelJ2.add(PanelJ1Int);
+		PanelJ2.add(JPB22);
 		
-		PanelSup.add(PanelJ1);
-		PanelSup.add(lTiempo);
-		PanelSup.add(PanelJ2);
+		vacio1.add(PanelJ1);
+		vacio2.add(lTiempo);
+		vacio3.add(PanelJ2);
+		
+		
+		
+		PanelJ1.setAlignmentX(CENTER_ALIGNMENT);
+		vacio2.setAlignmentX(CENTER_ALIGNMENT);
+		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
+		
+		PanelSup.add(vacio1);
+		PanelSup.add(vacio2);
+		PanelSup.add(vacio3);
+		
+		
 
 		fondo.add(PanelSup, BorderLayout.NORTH);		
 	}
 
-//	public static void main(String[] args) {
-//		PantallaJuego p = new PantallaJuego("Escenario1");
-//		p.setVisible(true);
-//
-//	}
+	public static void main(String[] args) {
+		PantallaJuego p = new PantallaJuego("Escenario1");
+		p.setVisible(true);
+
+	}
 
 }

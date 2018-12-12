@@ -89,7 +89,7 @@ public class PantallaSelEscenario extends JFrame {
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().setBackground(Color.BLACK);
 		
-		escenario1 = new ImageIcon("imagenes/escenario1.gif");
+		escenario1 = new ImageIcon("imagenes/Escenario1Icono.gif");
 		escenario2 = new ImageIcon("imagenes/escenario2.jpg");
 		donatello = new ImageIcon("imagenes/Donatello.png");
 		leonardo = new ImageIcon("imagenes/Leonardo.png");
