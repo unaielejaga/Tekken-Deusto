@@ -8,6 +8,8 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -68,12 +70,6 @@ public class PantallaJuego extends JFrame{
 		PanelJ2 = new JPanel();
 		PanelJ2.setOpaque(false);
 		PanelJ2.setLayout(new GridLayout(2, 1));
-//		PanelJ1Int = new JPanel();
-//		PanelJ1Int.setOpaque(false);
-//		PanelJ1Int.setLayout(new GridLayout(1, 2));
-//		PanelJ2Int = new JPanel();
-//		PanelJ2Int.setOpaque(false);
-//		PanelJ2Int.setLayout(new GridLayout(1, 2));
 		
 		JPB11 = new JProgressBar(0, 100);
 		JPB11.setPreferredSize(new Dimension(500, 50));
@@ -91,18 +87,13 @@ public class PantallaJuego extends JFrame{
 		
 		lTiempo = new JLabel("5");
 		lTiempo.setFont(new Font("Apple Casual", Font.BOLD, 60));
-		lTiempo.setForeground(Color.RED);
+		lTiempo.setForeground(Color.BLACK);
 		lTiempo.setHorizontalAlignment(JLabel.CENTER);
 		
 		JPB11.setValue(vida1);
 		JPB21.setValue(30);
 		JPB12.setValue(6);
 		JPB22.setValue(40);
-		
-//		PanelJ1Int.add(vacio);
-//		PanelJ1Int.add(JPB12);
-//		PanelJ2Int.add(vacio);
-//		PanelJ2Int.add(JPB22);
 		
 		PanelJ1.add(JPB11);
 		PanelJ1.add(JPB21);
@@ -113,8 +104,6 @@ public class PantallaJuego extends JFrame{
 		vacio2.add(lTiempo);
 		vacio3.add(PanelJ2);
 		
-		
-		
 		PanelJ1.setAlignmentX(CENTER_ALIGNMENT);
 		vacio2.setAlignmentX(CENTER_ALIGNMENT);
 		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
@@ -123,9 +112,16 @@ public class PantallaJuego extends JFrame{
 		PanelSup.add(vacio2);
 		PanelSup.add(vacio3);
 		
+		fondo.add(PanelSup, BorderLayout.NORTH);
 		
-
-		fondo.add(PanelSup, BorderLayout.NORTH);		
+		
+		
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosed(WindowEvent e) {
+				Sonido.stop(loop);
+			}
+		});
 	}
 
 	public static void main(String[] args) {

@@ -62,6 +62,8 @@ public class PantallaSelEscenario extends JFrame {
 	
 	private ImageIcon escenario1;
 	private ImageIcon escenario2;
+	private ImageIcon escenario3;
+	private ImageIcon escenario4;
 	private ImageIcon donatello;
 	private ImageIcon leonardo;
 	private ImageIcon raphael;
@@ -90,7 +92,9 @@ public class PantallaSelEscenario extends JFrame {
 		getContentPane().setBackground(Color.BLACK);
 		
 		escenario1 = new ImageIcon("imagenes/Escenario1Icono.gif");
-		escenario2 = new ImageIcon("imagenes/escenario2.jpg");
+		escenario2 = new ImageIcon("imagenes/escenario2Icono.gif");
+		escenario3 = new ImageIcon("imagenes/Escenario3Icono.gif");
+		escenario4 = new ImageIcon("imagenes/escenario4Icono.gif");
 		donatello = new ImageIcon("imagenes/Donatello.png");
 		leonardo = new ImageIcon("imagenes/Leonardo.png");
 		raphael = new ImageIcon("imagenes/Raphael.png");
@@ -131,8 +135,8 @@ public class PantallaSelEscenario extends JFrame {
 		
 		bEscenario1.setIcon(escenario1);
 		bEscenario2.setIcon(escenario2);
-		bEscenario3.setIcon(escenario1);
-		bEscenario4.setIcon(escenario2);
+		bEscenario3.setIcon(escenario3);
+		bEscenario4.setIcon(escenario4);
 		b1.setIcon(donatello);
 		b5.setIcon(donatello);
 		b2.setIcon(leonardo);
@@ -269,6 +273,7 @@ public class PantallaSelEscenario extends JFrame {
 			bEscenario3.setBorderPainted(true);
 			botonAnteriorEsc.setBorderPainted(false);
 			botonAnteriorEsc = bEscenario3;
+			fondoImagen = "Escenario3";
 			
 		}
 	});
@@ -281,6 +286,7 @@ public class PantallaSelEscenario extends JFrame {
 			bEscenario4.setBorderPainted(true);
 			botonAnteriorEsc.setBorderPainted(false);
 			botonAnteriorEsc = bEscenario4;
+			fondoImagen = "Escenario4";
 			
 		}
 	});
@@ -543,11 +549,11 @@ public class PantallaSelEscenario extends JFrame {
 	});
 		
 	}
-//	public static void main(String[] args) {
-//		PantallaSelEscenario p = new PantallaSelEscenario(true);
-//		p.setVisible(true);
-//
-//	}
+	public static void main(String[] args) {
+		PantallaSelEscenario p = new PantallaSelEscenario(true);
+		p.setVisible(true);
+
+	}
 }
 
 
