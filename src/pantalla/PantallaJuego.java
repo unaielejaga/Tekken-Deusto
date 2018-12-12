@@ -40,6 +40,7 @@ public class PantallaJuego extends JFrame{
 	private JProgressBar JPB22;
 	private JLabel lTiempo;
 	private int vida1;
+	private int contador = 60;
 	
 	public PantallaJuego(String fondoImagen) {
 		
@@ -54,6 +55,7 @@ public class PantallaJuego extends JFrame{
 		//setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());	
 		getContentPane().add(fondo);
+
 		
 		PanelSup = new JPanel();
 		PanelSup.setOpaque(false);
@@ -85,7 +87,7 @@ public class PantallaJuego extends JFrame{
 		JPB21.setBackground(Color.BLUE);
 		JPB21.setForeground(Color.WHITE);
 		
-		lTiempo = new JLabel("5");
+		lTiempo = new JLabel();
 		lTiempo.setFont(new Font("Apple Casual", Font.BOLD, 60));
 		lTiempo.setForeground(Color.BLACK);
 		lTiempo.setHorizontalAlignment(JLabel.CENTER);
@@ -114,18 +116,40 @@ public class PantallaJuego extends JFrame{
 		
 		fondo.add(PanelSup, BorderLayout.NORTH);
 		
+		Thread cuentaAtras = new Thread() {
+			public void run() {
+				while(contador>=0) {
+					try {
+						if(contador == 0) {
+							lTiempo.setText("¡Muerte Subita!");
+							repaint();
+						}else {
+							contador--;
+							lTiempo.setText(String.valueOf(contador));
+							repaint();
+							Thread.sleep(1000);
+						}
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		};
+		cuentaAtras.start();
+		
 		
 		
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosed(WindowEvent e) {
 				Sonido.stop(loop);
+				cuentaAtras.stop();
 			}
 		});
 	}
 
 	public static void main(String[] args) {
-		PantallaJuego p = new PantallaJuego("Escenario1");
+		PantallaJuego p = new PantallaJuego("Escenario2");
 		p.setVisible(true);
 
 	}
