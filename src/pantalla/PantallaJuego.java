@@ -31,6 +31,7 @@ public class PantallaJuego extends JFrame{
 	private Clip loop;
 	private String imagenfondo;
 	private JPanel PanelSup;
+	private JPanel PanelCentral;
 	private JPanel PanelJ1;
 	private JPanel PanelJ1Int;
 	private JPanel PanelJ2;
@@ -48,6 +49,7 @@ public class PantallaJuego extends JFrame{
 	private Personajes J2;
 	private int J1VidaIni;
 	private int J1EnergiaIni;
+	private JLabelGraficoAjustado imagen;
 	
 	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
 		
@@ -78,6 +80,8 @@ public class PantallaJuego extends JFrame{
 		
 		PanelSup = new JPanel();
 		PanelSup.setOpaque(false);
+		PanelCentral = new JPanel();
+		PanelCentral.setOpaque(false);
 		vacio1 = new JPanel();
 		vacio1.setOpaque(false);
 		vacio2 = new JPanel();
@@ -129,11 +133,21 @@ public class PantallaJuego extends JFrame{
 		vacio2.setAlignmentX(CENTER_ALIGNMENT);
 		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
 		
+		imagen = new JLabelGraficoAjustado("imagenes/raphael/rojo-quieto-1.png", 50, 100);
+		imagen.setBounds(50, 200, 50, 100);
+		
 		PanelSup.add(vacio1);
 		PanelSup.add(vacio2);
 		PanelSup.add(vacio3);
+
+		
+		PanelCentral.setLayout(null);
 		
 		fondo.add(PanelSup, BorderLayout.NORTH);
+		fondo.add(PanelCentral, BorderLayout.CENTER);
+		
+		
+		PanelCentral.add(imagen);
 		
 		loop = Sonido.music("canciones/juego.wav");
 
