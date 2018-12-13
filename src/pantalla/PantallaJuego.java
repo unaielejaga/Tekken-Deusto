@@ -2,6 +2,7 @@ package pantalla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.ComponentOrientation;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -20,6 +21,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
+import javax.swing.SwingConstants;
 
 import bd.BD;
 import personajes.Personajes;
@@ -49,7 +51,8 @@ public class PantallaJuego extends JFrame{
 	private Personajes J2;
 	private int J1VidaIni;
 	private int J1EnergiaIni;
-	private JLabelGraficoAjustado imagen;
+	private JLabelGraficoAjustado imagen1;
+	private JLabelGraficoAjustado imagen2;
 	
 	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
 		
@@ -60,6 +63,7 @@ public class PantallaJuego extends JFrame{
 		fondo = new JPanelBackgroundGif("imagenes/" + fondoImagen + ".gif");
 		//setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());	
+		fondo.setLayout(new BorderLayout());
 		getContentPane().add(fondo);
 
 		Connection con = BD.initBD("BD");
@@ -133,21 +137,27 @@ public class PantallaJuego extends JFrame{
 		vacio2.setAlignmentX(CENTER_ALIGNMENT);
 		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
 		
-		imagen = new JLabelGraficoAjustado("imagenes/raphael/rojo-quieto-1.png", 50, 100);
-		imagen.setBounds(50, 200, 50, 100);
+		imagen1 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloQuieto1.png", 250, 400);
+		imagen1.setBounds(250, 500, 200, 400);
+		imagen2 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloPuño2.png", 250, 400);
+		imagen2.setBounds(700, 500, 200, 400);
+		imagen2.setHorFlip(true);
+		
 		
 		PanelSup.add(vacio1);
 		PanelSup.add(vacio2);
 		PanelSup.add(vacio3);
 
-		
 		PanelCentral.setLayout(null);
+		PanelCentral.add(imagen1);
+		PanelCentral.add(imagen2);
 		
-		fondo.add(PanelSup, BorderLayout.NORTH);
 		fondo.add(PanelCentral, BorderLayout.CENTER);
+		fondo.add(PanelSup, BorderLayout.NORTH);
 		
 		
-		PanelCentral.add(imagen);
+		
+		
 		
 		loop = Sonido.music("canciones/juego.wav");
 
