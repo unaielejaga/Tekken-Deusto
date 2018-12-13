@@ -88,6 +88,12 @@ public class Personajes {
 
 	}
 	
+	public String toString() {
+		String personaje = "Nombre: " + nombre + ", Vida: " + vida + ", Energia: " + energia +
+		", DamageB: " + damageB + ", DamageP: " + damageP + ", PosX: " + posX + ", Posy: " + posY +
+		", Vel: " + vel;
+		return personaje;
+	}
 	
 	//Metodo en el que se le resta vida al Personaje utilizado cuando recibe daño
 	public void RecebirDamage(int damageRecibido) {

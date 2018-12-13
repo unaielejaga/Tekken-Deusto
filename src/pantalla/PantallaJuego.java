@@ -10,6 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.sql.Connection;
+import java.sql.Statement;
 
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -19,6 +21,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 
+import bd.BD;
+import personajes.Personajes;
 import sonido.Sonido;
 
 public class PantallaJuego extends JFrame{
@@ -39,23 +43,38 @@ public class PantallaJuego extends JFrame{
 	private JProgressBar JPB12;
 	private JProgressBar JPB22;
 	private JLabel lTiempo;
-	private int vida1;
 	private int contador = 60;
+	private Personajes J1;
+	private Personajes J2;
+	private int J1VidaIni;
+	private int J1EnergiaIni;
 	
-	public PantallaJuego(String fondoImagen) {
-		
-		vida1 = 10;
+	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
-		loop = Sonido.music("canciones/juego.wav");
 		fondo = new JPanelBackgroundGif("imagenes/" + fondoImagen + ".gif");
 		//setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());	
 		getContentPane().add(fondo);
 
+		Connection con = BD.initBD("BD");
+		Statement st = BD.usarBD(con);
+		if(J2B) {
+			J1 = BD.personajeSelect(st, nombreJ1);
+			J2 = BD.personajeSelect(st, nombreJ2);
+		}else {
+			J1 = BD.personajeSelect(st, nombreJ1);
+			J2 = BD.personajeSelect(st, "Donatello");
+		}
+	
+		BD.cerrarBD(con, st);	
+		
+		
+		J1VidaIni = J1.getVida();
+		J1EnergiaIni = J1.getEnergia();
 		
 		PanelSup = new JPanel();
 		PanelSup.setOpaque(false);
@@ -88,14 +107,14 @@ public class PantallaJuego extends JFrame{
 		JPB21.setForeground(Color.WHITE);
 		
 		lTiempo = new JLabel();
-		lTiempo.setFont(new Font("Apple Casual", Font.BOLD, 60));
-		lTiempo.setForeground(Color.BLACK);
+		lTiempo.setFont(new Font("Apple Casual", Font.BOLD, 70));
+		lTiempo.setForeground(Color.GREEN);
 		lTiempo.setHorizontalAlignment(JLabel.CENTER);
 		
-		JPB11.setValue(vida1);
-		JPB21.setValue(30);
-		JPB12.setValue(6);
-		JPB22.setValue(40);
+		JPB11.setValue(100-J1.getVida());
+		JPB21.setValue(100-J1.getEnergia());
+		JPB12.setValue(J2.getVida());
+		JPB22.setValue(J2.getEnergia());
 		
 		PanelJ1.add(JPB11);
 		PanelJ1.add(JPB21);
@@ -116,13 +135,19 @@ public class PantallaJuego extends JFrame{
 		
 		fondo.add(PanelSup, BorderLayout.NORTH);
 		
+		loop = Sonido.music("canciones/juego.wav");
+
+		
 		Thread cuentaAtras = new Thread() {
 			public void run() {
 				while(contador>=0) {
 					try {
 						if(contador == 0) {
-							lTiempo.setText("¡Muerte Subita!");
+							lTiempo.setText("¡Muerte Súbita!");
+							JPB12.setValue(JPB12.getValue() - 5);
+							JPB11.setValue(JPB11.getValue() + 5);
 							repaint();
+							Thread.sleep(1000);
 						}else {
 							contador--;
 							lTiempo.setText(String.valueOf(contador));
@@ -137,8 +162,6 @@ public class PantallaJuego extends JFrame{
 		};
 		cuentaAtras.start();
 		
-		
-		
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosed(WindowEvent e) {
@@ -146,12 +169,6 @@ public class PantallaJuego extends JFrame{
 				cuentaAtras.stop();
 			}
 		});
-	}
-
-	public static void main(String[] args) {
-		PantallaJuego p = new PantallaJuego("Escenario2");
-		p.setVisible(true);
-
 	}
 
 }

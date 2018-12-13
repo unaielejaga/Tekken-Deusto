@@ -401,7 +401,7 @@ public class PantallaSelEscenario extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if(J2B) {
 				if(fondoImagen != null && J1t != null && J2t != null) {
-					PantallaJuego p = new PantallaJuego(fondoImagen);
+					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t);
 					p.setVisible(true);
 					dispose();
 				}else {
@@ -409,7 +409,7 @@ public class PantallaSelEscenario extends JFrame {
 				}
 			}else {
 				if(fondoImagen != null && J1t != null) {
-					PantallaJuego p = new PantallaJuego(fondoImagen);
+					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t);
 					p.setVisible(true);
 					dispose();
 				}else {

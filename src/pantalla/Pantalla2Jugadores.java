@@ -124,6 +124,9 @@ public class Pantalla2Jugadores extends JFrame{
 				}else {
 					JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
 				}
+				
+				BD.cerrarBD(con, st);
+				
 			}
 		});
 		
@@ -134,6 +137,7 @@ public class Pantalla2Jugadores extends JFrame{
 				ventanaAnterior.setEnabled(true);	
 				dispose();
 			}
+			
 		});
 		
 	}

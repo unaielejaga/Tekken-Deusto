@@ -160,6 +160,8 @@ public class Pantalla1Jugador extends JFrame{
 				}else {
 					JOptionPane.showMessageDialog(Pantalla1Jugador.this, "Usuario o Contraseña Incorrectas", "Warning!", JOptionPane.ERROR_MESSAGE);
 				}
+				
+				BD.cerrarBD(con, st);
 			}
 	
 		});

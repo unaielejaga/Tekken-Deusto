@@ -174,9 +174,9 @@ public class BD {
 		}
 	}
 	
-	public static ArrayList<Integer> personajeSelect( Statement st, String nombre ) {
+	public static Personajes personajeSelect( Statement st, String nombre ) {
 		String sentSQL = "";
-		ArrayList<Integer> personaje = new ArrayList<>();
+		Personajes p = null;
 		try {
 			sentSQL = "select * from personajes where nombre='" + nombre + "'";
 			ResultSet rs = st.executeQuery( sentSQL );
@@ -189,12 +189,11 @@ public class BD {
 				int posY = rs.getInt("posY");
 				int vel = rs.getInt("vel");
 				
-				personaje.add(vida); personaje.add(energia); personaje.add(damageB); personaje.add(damageP);
-				personaje.add(posX); personaje.add(posY); personaje.add(vel);
+				p = new Personajes(nombre, vida, energia, damageB, damageP, posX, posY, vel);
 			}
 			rs.close();
-			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + personaje, null);
-			return personaje;
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + p, null);
+			return p;
 			
 
 		} catch (Exception e) {
