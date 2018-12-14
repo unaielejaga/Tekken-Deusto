@@ -55,8 +55,8 @@ public class Personajes {
 		return posX;
 	}
 
-	public void setPosX(int posX) {
-		this.posX = posX;
+	public void setPosX(int d) {
+		this.posX = d;
 	}
 
 	public double getPosY() {

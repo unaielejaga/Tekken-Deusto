@@ -9,6 +9,8 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
@@ -52,7 +54,10 @@ public class PantallaJuego extends JFrame{
 	private int J1VidaIni;
 	private int J1EnergiaIni;
 	private JLabelGraficoAjustado imagen1;
+	private JLabelGraficoAjustado imagen1Ant;
 	private JLabelGraficoAjustado imagen2;
+	private boolean botonPulsado = true;
+	private boolean anteriorIzq = false;
 	
 	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
 		
@@ -138,10 +143,10 @@ public class PantallaJuego extends JFrame{
 		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
 		
 		imagen1 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloQuieto1.png", 250, 400);
-		imagen1.setBounds(250, 500, 200, 400);
-		imagen2 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloPuño2.png", 250, 400);
-		imagen2.setBounds(700, 500, 200, 400);
-		imagen2.setHorFlip(true);
+		imagen1.setBounds((int) J1.getPosX(), 500, 350, 450);
+//		imagen2 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloPuño2.png", 250, 400);
+//		imagen2.setBounds(700, 500, 300, 450);
+//		imagen2.setHorFlip(true);
 		
 		
 		PanelSup.add(vacio1);
@@ -150,14 +155,14 @@ public class PantallaJuego extends JFrame{
 
 		PanelCentral.setLayout(null);
 		PanelCentral.add(imagen1);
-		PanelCentral.add(imagen2);
+		//PanelCentral.add(imagen2);
 		
 		fondo.add(PanelCentral, BorderLayout.CENTER);
 		fondo.add(PanelSup, BorderLayout.NORTH);
 		
 		
 		
-		
+
 		
 		loop = Sonido.music("canciones/juego.wav");
 
@@ -186,11 +191,86 @@ public class PantallaJuego extends JFrame{
 		};
 		cuentaAtras.start();
 		
+		
+		addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent ke) {
+				if(ke.getKeyCode() == ke.VK_D) {
+					Thread movimientoJ1 = new Thread() {
+						public void run() {
+							if(!botonPulsado) {
+								try {
+									for(int i=1; i<5; i++) {
+										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											J1.MoverseX(20);
+											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+											imagen1.setHorFlip(false);
+											repaint();
+											Thread.sleep(50);
+										}if(J1.getPosX()<0) {
+											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											int moverse = (int) (0-J1.getPosX());
+											J1.MoverseX(moverse);
+											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+											imagen1.setHorFlip(false);
+											repaint();
+										}
+									}
+									botonPulsado=true;
+									this.stop();	
+								}catch (Exception e) {
+									
+								}
+							}
+						}
+					}; movimientoJ1.start();
+					botonPulsado = false;
+				}if(ke.getKeyCode() == ke.VK_A) {
+					Thread movimientoJ1I = new Thread() {
+						public void run() {
+							if(!botonPulsado) {
+								try {
+									for(int i=1; i<5; i++) {
+										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											imagen1.setHorFlip(true);
+											J1.MoverseX(-20);
+											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+											repaint();
+											Thread.sleep(50);
+										}if(J1.getPosX()>1580) {
+											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											int moverse = (int) (1580-J1.getPosX());
+											J1.MoverseX(moverse);
+											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+											imagen1.setHorFlip(false);
+											repaint();
+										}
+									}
+									botonPulsado=true;
+									this.stop();	
+								}catch (Exception e) {
+									
+								}
+							}
+						}
+					}; movimientoJ1I.start();
+					anteriorIzq = true;
+					botonPulsado = false;
+				}if(ke.getKeyCode() == ke.VK_W) {
+					System.out.println("Salto");
+				}
+				
+			}
+		});
+		
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosed(WindowEvent e) {
 				Sonido.stop(loop);
 				cuentaAtras.stop();
+				
 			}
 		});
 	}
