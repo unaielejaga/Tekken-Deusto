@@ -5896,3 +5896,2029 @@
   <thread>17</thread>
   <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
 </record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-14T21:53:16</date>
+  <millis>1544820796129</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-14T21:53:16</date>
+  <millis>1544820796132</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-14T21:53:24</date>
+  <millis>1544820804984</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-14T21:53:24</date>
+  <millis>1544820804986</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-14T21:53:24</date>
+  <millis>1544820804986</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-14T21:55:44</date>
+  <millis>1544820944740</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-14T21:55:44</date>
+  <millis>1544820944742</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-14T21:55:48</date>
+  <millis>1544820948069</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-14T21:55:48</date>
+  <millis>1544820948070</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-14T21:55:48</date>
+  <millis>1544820948071</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:38:51</date>
+  <millis>1544913531028</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:38:51</date>
+  <millis>1544913531032</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:38:54</date>
+  <millis>1544913534224</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:38:54</date>
+  <millis>1544913534225</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:38:54</date>
+  <millis>1544913534226</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>19</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:39:55</date>
+  <millis>1544913595686</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:39:55</date>
+  <millis>1544913595689</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:39:58</date>
+  <millis>1544913598397</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:39:58</date>
+  <millis>1544913598399</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:39:58</date>
+  <millis>1544913598400</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:40:56</date>
+  <millis>1544913656782</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:40:56</date>
+  <millis>1544913656784</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:40:59</date>
+  <millis>1544913659448</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:40:59</date>
+  <millis>1544913659450</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:40:59</date>
+  <millis>1544913659451</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:46:58</date>
+  <millis>1544914018636</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:46:58</date>
+  <millis>1544914018638</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:47:03</date>
+  <millis>1544914023006</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:47:03</date>
+  <millis>1544914023008</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:47:03</date>
+  <millis>1544914023009</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:55:32</date>
+  <millis>1544914532203</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:55:32</date>
+  <millis>1544914532206</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:55:35</date>
+  <millis>1544914535237</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:55:35</date>
+  <millis>1544914535238</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:55:35</date>
+  <millis>1544914535239</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:56:40</date>
+  <millis>1544914600421</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:56:40</date>
+  <millis>1544914600423</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:56:43</date>
+  <millis>1544914603260</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:56:43</date>
+  <millis>1544914603261</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:56:43</date>
+  <millis>1544914603262</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:57:35</date>
+  <millis>1544914655719</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:57:35</date>
+  <millis>1544914655722</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:57:38</date>
+  <millis>1544914658741</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:57:38</date>
+  <millis>1544914658742</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:57:38</date>
+  <millis>1544914658743</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:58:09</date>
+  <millis>1544914689954</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:58:09</date>
+  <millis>1544914689956</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:58:12</date>
+  <millis>1544914692885</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:58:12</date>
+  <millis>1544914692887</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:58:12</date>
+  <millis>1544914692888</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:59:30</date>
+  <millis>1544914770137</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:59:30</date>
+  <millis>1544914770139</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-15T23:59:32</date>
+  <millis>1544914772540</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:59:32</date>
+  <millis>1544914772542</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-15T23:59:32</date>
+  <millis>1544914772543</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-15T23:59:57</date>
+  <millis>1544914797420</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-15T23:59:57</date>
+  <millis>1544914797422</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:00:00</date>
+  <millis>1544914800033</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:00:00</date>
+  <millis>1544914800034</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:00:00</date>
+  <millis>1544914800035</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:01:00</date>
+  <millis>1544914860550</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:00</date>
+  <millis>1544914860553</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:06</date>
+  <millis>1544914866222</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:06</date>
+  <millis>1544914866223</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:09</date>
+  <millis>1544914869351</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:09</date>
+  <millis>1544914869353</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:01:09</date>
+  <millis>1544914869354</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:02:02</date>
+  <millis>1544914922682</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:02:02</date>
+  <millis>1544914922685</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:02:06</date>
+  <millis>1544914926890</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:02:06</date>
+  <millis>1544914926892</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:02:06</date>
+  <millis>1544914926893</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:05:31</date>
+  <millis>1544915131287</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:05:31</date>
+  <millis>1544915131290</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:05:34</date>
+  <millis>1544915134463</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:05:34</date>
+  <millis>1544915134465</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:05:34</date>
+  <millis>1544915134466</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:06:15</date>
+  <millis>1544915175231</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:15</date>
+  <millis>1544915175233</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:18</date>
+  <millis>1544915178224</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:18</date>
+  <millis>1544915178226</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:18</date>
+  <millis>1544915178227</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:06:45</date>
+  <millis>1544915205694</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:45</date>
+  <millis>1544915205696</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:49</date>
+  <millis>1544915209624</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:49</date>
+  <millis>1544915209625</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:06:49</date>
+  <millis>1544915209626</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:07:12</date>
+  <millis>1544915232254</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:12</date>
+  <millis>1544915232257</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:15</date>
+  <millis>1544915235191</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:15</date>
+  <millis>1544915235192</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:15</date>
+  <millis>1544915235193</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:07:36</date>
+  <millis>1544915256174</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:36</date>
+  <millis>1544915256177</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:38</date>
+  <millis>1544915258870</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:38</date>
+  <millis>1544915258871</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:07:38</date>
+  <millis>1544915258872</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:09:32</date>
+  <millis>1544915372368</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:09:32</date>
+  <millis>1544915372370</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:09:35</date>
+  <millis>1544915375265</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:09:35</date>
+  <millis>1544915375266</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:09:35</date>
+  <millis>1544915375267</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:10:16</date>
+  <millis>1544915416162</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:10:16</date>
+  <millis>1544915416165</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:10:18</date>
+  <millis>1544915418788</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:10:18</date>
+  <millis>1544915418790</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:10:18</date>
+  <millis>1544915418791</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:11:09</date>
+  <millis>1544915469006</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:11:09</date>
+  <millis>1544915469008</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:11:12</date>
+  <millis>1544915472508</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:11:12</date>
+  <millis>1544915472510</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:11:12</date>
+  <millis>1544915472511</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:12:47</date>
+  <millis>1544915567552</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:12:47</date>
+  <millis>1544915567555</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:12:51</date>
+  <millis>1544915571615</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:12:51</date>
+  <millis>1544915571616</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:12:51</date>
+  <millis>1544915571617</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:14:31</date>
+  <millis>1544915671970</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:14:31</date>
+  <millis>1544915671973</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:14:35</date>
+  <millis>1544915675036</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:14:35</date>
+  <millis>1544915675037</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:14:35</date>
+  <millis>1544915675038</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:16:08</date>
+  <millis>1544915768810</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:08</date>
+  <millis>1544915768813</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:13</date>
+  <millis>1544915773028</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:13</date>
+  <millis>1544915773030</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:13</date>
+  <millis>1544915773031</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:16:48</date>
+  <millis>1544915808849</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:48</date>
+  <millis>1544915808852</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:51</date>
+  <millis>1544915811240</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:51</date>
+  <millis>1544915811242</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:16:51</date>
+  <millis>1544915811243</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:18:18</date>
+  <millis>1544915898679</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:18</date>
+  <millis>1544915898682</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:21</date>
+  <millis>1544915901701</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:21</date>
+  <millis>1544915901702</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:21</date>
+  <millis>1544915901703</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:18:50</date>
+  <millis>1544915930294</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:50</date>
+  <millis>1544915930297</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:53</date>
+  <millis>1544915933024</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:53</date>
+  <millis>1544915933025</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:18:53</date>
+  <millis>1544915933026</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:19:51</date>
+  <millis>1544915991774</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:19:51</date>
+  <millis>1544915991777</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:19:54</date>
+  <millis>1544915994295</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:19:54</date>
+  <millis>1544915994296</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:19:54</date>
+  <millis>1544915994298</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:20:23</date>
+  <millis>1544916023188</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:20:23</date>
+  <millis>1544916023191</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:20:26</date>
+  <millis>1544916026238</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:20:26</date>
+  <millis>1544916026239</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:20:26</date>
+  <millis>1544916026240</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:21:52</date>
+  <millis>1544916112120</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:21:52</date>
+  <millis>1544916112123</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:21:55</date>
+  <millis>1544916115198</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:21:55</date>
+  <millis>1544916115200</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:21:55</date>
+  <millis>1544916115202</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:22:47</date>
+  <millis>1544916167157</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:22:47</date>
+  <millis>1544916167160</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:22:49</date>
+  <millis>1544916169598</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:22:49</date>
+  <millis>1544916169599</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:22:49</date>
+  <millis>1544916169600</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:23:12</date>
+  <millis>1544916192391</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:23:12</date>
+  <millis>1544916192393</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:23:15</date>
+  <millis>1544916195182</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:23:15</date>
+  <millis>1544916195184</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:23:15</date>
+  <millis>1544916195184</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-16T00:24:38</date>
+  <millis>1544916278013</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:24:38</date>
+  <millis>1544916278017</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2018-12-16T00:24:40</date>
+  <millis>1544916280524</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2018-12-16T00:24:40</date>
+  <millis>1544916280526</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+<record>
+  <date>2018-12-16T00:24:40</date>
+  <millis>1544916280527</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 20, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 4</message>
+</record>
+</log>

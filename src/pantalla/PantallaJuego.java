@@ -202,14 +202,14 @@ public class PantallaJuego extends JFrame{
 								try {
 									for(int i=1; i<5; i++) {
 										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
-											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Quieto"+i+".png");
 											J1.MoverseX(20);
 											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
 											imagen1.setHorFlip(false);
 											repaint();
 											Thread.sleep(50);
 										}if(J1.getPosX()<0) {
-											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Quieto"+i+".png");
 											int moverse = (int) (0-J1.getPosX());
 											J1.MoverseX(moverse);
 											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
@@ -226,6 +226,7 @@ public class PantallaJuego extends JFrame{
 						}
 					}; movimientoJ1.start();
 					botonPulsado = false;
+					anteriorIzq = false;
 				}if(ke.getKeyCode() == ke.VK_A) {
 					Thread movimientoJ1I = new Thread() {
 						public void run() {
@@ -233,14 +234,14 @@ public class PantallaJuego extends JFrame{
 								try {
 									for(int i=1; i<5; i++) {
 										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
-											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Quieto"+i+".png");
 											imagen1.setHorFlip(true);
 											J1.MoverseX(-20);
 											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
 											repaint();
 											Thread.sleep(50);
 										}if(J1.getPosX()>1580) {
-											imagen1.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Quieto"+i+".png");
 											int moverse = (int) (1580-J1.getPosX());
 											J1.MoverseX(moverse);
 											imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
@@ -259,7 +260,59 @@ public class PantallaJuego extends JFrame{
 					anteriorIzq = true;
 					botonPulsado = false;
 				}if(ke.getKeyCode() == ke.VK_W) {
-					System.out.println("Salto");
+					Thread saltoJ1 = new Thread() {
+						public void run() {
+							if(!botonPulsado) {
+								try {
+									for(int i=1; i<4; i++) {
+										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
+											imagen1.setSize(350, 450);
+											J1.MoverseY(-40);
+											imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
+											imagen1.setHorFlip(anteriorIzq);
+											repaint();
+											Thread.sleep(100);
+										}
+									}for(int i=3; i<5; i++) {
+										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
+											J1.MoverseY(60);
+											imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
+											imagen1.setHorFlip(anteriorIzq);
+											repaint();
+											Thread.sleep(100);
+											if(i==4) {
+												imagen1.setSize(250, 400);
+												imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
+												imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
+												imagen1.setHorFlip(anteriorIzq);
+												repaint();
+											}
+										}
+									}
+								
+									botonPulsado=true;
+									this.stop();
+								} catch (Exception e) {
+									// TODO: handle exception
+								}
+							}
+						}
+					};saltoJ1.start();
+					botonPulsado = false;
+				}if(ke.getKeyCode() == ke.VK_Q) {
+					System.out.println("Patada");
+				}if(ke.getKeyCode() == ke.VK_E) {
+					System.out.println("Puño");
+				}if(J2B) {
+					if(ke.getKeyCode() == ke.VK_LEFT) {
+						
+					}if(ke.getKeyCode() == ke.VK_RIGHT) {
+						
+					}if(ke.getKeyCode() == ke.VK_UP) {
+						
+					}
 				}
 				
 			}
