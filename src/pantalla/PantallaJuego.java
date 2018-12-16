@@ -144,9 +144,9 @@ public class PantallaJuego extends JFrame{
 		
 		imagen1 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloQuieto1.png", 250, 400);
 		imagen1.setBounds((int) J1.getPosX(), 500, 350, 450);
-//		imagen2 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloPuño2.png", 250, 400);
-//		imagen2.setBounds(700, 500, 300, 450);
-//		imagen2.setHorFlip(true);
+		imagen2 = new JLabelGraficoAjustado("imagenes/raphael/RaphaelQuieto1.png", 250, 400);
+		imagen2.setBounds(1500, 500, 350, 450);
+		imagen2.setHorFlip(true);
 		
 		
 		PanelSup.add(vacio1);
@@ -155,7 +155,7 @@ public class PantallaJuego extends JFrame{
 
 		PanelCentral.setLayout(null);
 		PanelCentral.add(imagen1);
-		//PanelCentral.add(imagen2);
+		PanelCentral.add(imagen2);
 		
 		fondo.add(PanelCentral, BorderLayout.CENTER);
 		fondo.add(PanelSup, BorderLayout.NORTH);
@@ -199,6 +199,7 @@ public class PantallaJuego extends JFrame{
 					Thread movimientoJ1 = new Thread() {
 						public void run() {
 							if(!botonPulsado) {
+								botonPulsado=true;
 								try {
 									for(int i=1; i<5; i++) {
 										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
@@ -217,7 +218,6 @@ public class PantallaJuego extends JFrame{
 											repaint();
 										}
 									}
-									botonPulsado=true;
 									this.stop();	
 								}catch (Exception e) {
 									
@@ -231,6 +231,7 @@ public class PantallaJuego extends JFrame{
 					Thread movimientoJ1I = new Thread() {
 						public void run() {
 							if(!botonPulsado) {
+								botonPulsado=true;
 								try {
 									for(int i=1; i<5; i++) {
 										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
@@ -249,7 +250,6 @@ public class PantallaJuego extends JFrame{
 											repaint();
 										}
 									}
-									botonPulsado=true;
 									this.stop();	
 								}catch (Exception e) {
 									
@@ -263,36 +263,35 @@ public class PantallaJuego extends JFrame{
 					Thread saltoJ1 = new Thread() {
 						public void run() {
 							if(!botonPulsado) {
+								botonPulsado=true;
 								try {
 									for(int i=1; i<4; i++) {
-										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+										if(J1.getPosY()>=-120) {
 											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
-											imagen1.setSize(350, 450);
 											J1.MoverseY(-40);
 											imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
 											imagen1.setHorFlip(anteriorIzq);
 											repaint();
 											Thread.sleep(100);
 										}
+										if(J1.getPosY()<-120) {
+											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
+											int moverse = (int) (-120-J1.getPosY());
+											J1.MoverseY(moverse);
+											imagen1.setBounds((int)J1.getPosX(), (int) J1.getPosY() + 500, 350, 450);
+											imagen1.setHorFlip(anteriorIzq);
+											repaint();
+										}
 									}for(int i=3; i<5; i++) {
-										if(J1.getPosX()>=0 && J1.getPosX()<=1580) {
+										if(J1.getPosY()>=-120) {
 											imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
 											J1.MoverseY(60);
 											imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
 											imagen1.setHorFlip(anteriorIzq);
 											repaint();
 											Thread.sleep(100);
-											if(i==4) {
-												imagen1.setSize(250, 400);
-												imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Salto"+i+".png");
-												imagen1.setBounds((int)J1.getPosX(),(int) J1.getPosY() + 500 , 350, 450);
-												imagen1.setHorFlip(anteriorIzq);
-												repaint();
-											}
 										}
 									}
-								
-									botonPulsado=true;
 									this.stop();
 								} catch (Exception e) {
 									// TODO: handle exception
@@ -300,17 +299,80 @@ public class PantallaJuego extends JFrame{
 							}
 						}
 					};saltoJ1.start();
-					botonPulsado = false;
+					if(J1.getPosY()==0) {
+						botonPulsado = false;
+					}
+			
+				
 				}if(ke.getKeyCode() == ke.VK_Q) {
-					System.out.println("Patada");
+					Thread patadaJ1 = new Thread() {
+						public void run() {
+							if(!botonPulsado) {
+								botonPulsado=true;
+								try {
+									for(int i=1; i<4; i++) {
+										imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Patada"+i+".png");
+										if(i!=2) {
+											imagen1.setSize(200, 400);
+										}else {
+											imagen1.setSize(350, 400);
+											int distancia = (int) ((J1.getPosX() +350)-imagen2.getX());
+											System.out.println(Math.abs(distancia));
+											if(Math.abs(distancia)< 250) {
+												JPB12.setValue(JPB12.getValue() - J1.getDamageP());
+											}
+										
+										}
+										imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+										imagen1.setHorFlip(anteriorIzq);
+										repaint();
+										Thread.sleep(150);
+									}
+									this.stop();	
+								}catch (Exception e) {
+									
+								}
+							}
+						}
+					}; patadaJ1.start();
+					botonPulsado = false;
+					
 				}if(ke.getKeyCode() == ke.VK_E) {
-					System.out.println("Puño");
+					Thread punyoJ1 = new Thread() {
+						public void run() {
+							if(!botonPulsado) {
+								botonPulsado=true;
+								try {
+									for(int i=1; i<6; i++) {
+										imagen1.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Puño"+i+".png");
+										if(i!=4) {
+											imagen1.setSize(200, 400);
+										}else {
+											imagen1.setSize(350, 400);
+										}
+										imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
+										imagen1.setHorFlip(anteriorIzq);
+										repaint();
+										Thread.sleep(150);
+									}
+									this.stop();	
+								}catch (Exception e) {
+									
+								}
+							}
+						}
+					}; punyoJ1.start();
+					botonPulsado = false;
 				}if(J2B) {
-					if(ke.getKeyCode() == ke.VK_LEFT) {
+					if(ke.getKeyCode() == ke.VK_L) {
 						
-					}if(ke.getKeyCode() == ke.VK_RIGHT) {
+					}if(ke.getKeyCode() == ke.VK_J) {
 						
-					}if(ke.getKeyCode() == ke.VK_UP) {
+					}if(ke.getKeyCode() == ke.VK_I) {
+						
+					}if(ke.getKeyCode() == ke.VK_U) {
+						
+					}if(ke.getKeyCode() == ke.VK_O) {
 						
 					}
 				}
