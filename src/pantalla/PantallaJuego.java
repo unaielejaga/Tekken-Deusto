@@ -58,6 +58,8 @@ public class PantallaJuego extends JFrame{
 	private JLabelGraficoAjustado imagen2;
 	private boolean botonPulsado = true;
 	private boolean anteriorIzq = false;
+	private boolean botonPulsado2 = true;
+	private boolean anteriorIzq2 = false;
 	
 	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
 		
@@ -136,17 +138,26 @@ public class PantallaJuego extends JFrame{
 		
 		vacio1.add(PanelJ1);
 		vacio2.add(lTiempo);
-		vacio3.add(PanelJ2);
+		vacio3.add(PanelJ2); 
 		
 		PanelJ1.setAlignmentX(CENTER_ALIGNMENT);
 		vacio2.setAlignmentX(CENTER_ALIGNMENT);
 		PanelJ2.setAlignmentX(CENTER_ALIGNMENT);
 		
-		imagen1 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloQuieto1.png", 250, 400);
+		imagen1 = new JLabelGraficoAjustado("imagenes/" + nombreJ1.toLowerCase()+ "/"+ nombreJ1 +"Quieto1.png", 250, 400);
 		imagen1.setBounds((int) J1.getPosX(), 500, 350, 450);
-		imagen2 = new JLabelGraficoAjustado("imagenes/raphael/RaphaelQuieto1.png", 250, 400);
-		imagen2.setBounds(1500, 500, 350, 450);
-		imagen2.setHorFlip(true);
+		if(J2B) {
+			imagen2 = new JLabelGraficoAjustado("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Quieto1.png", 250, 400);
+			imagen2.setBounds(1500, 500, 350, 450);
+			J2.setPosX(1500);
+			imagen2.setHorFlip(true);
+		}else {
+			imagen2 = new JLabelGraficoAjustado("imagenes/donatello/DonatelloQuieto1.png", 250, 400);
+			imagen2.setBounds(1500, 500, 350, 450);
+			J2.setPosX(1500);
+			imagen2.setHorFlip(true);
+		}
+		
 		
 		
 		PanelSup.add(vacio1);
@@ -316,9 +327,8 @@ public class PantallaJuego extends JFrame{
 											imagen1.setSize(200, 400);
 										}else {
 											imagen1.setSize(350, 400);
-											int distancia = (int) ((J1.getPosX() +350)-imagen2.getX());
-											System.out.println(Math.abs(distancia));
-											if(Math.abs(distancia)< 250) {
+											int distancia = (int) (J1.getPosX()-imagen2.getX());
+											if(Math.abs(distancia) < 150) {
 												JPB12.setValue(JPB12.getValue() - J1.getDamageP());
 											}
 										
@@ -349,6 +359,10 @@ public class PantallaJuego extends JFrame{
 											imagen1.setSize(200, 400);
 										}else {
 											imagen1.setSize(350, 400);
+											int distancia = (int) (J1.getPosX()-imagen2.getX());
+											if(Math.abs(distancia) < 150) {
+												JPB12.setValue(JPB12.getValue() - J1.getDamageB());
+											}
 										}
 										imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
 										imagen1.setHorFlip(anteriorIzq);
@@ -365,14 +379,176 @@ public class PantallaJuego extends JFrame{
 					botonPulsado = false;
 				}if(J2B) {
 					if(ke.getKeyCode() == ke.VK_L) {
-						
+						Thread movimientoJ2 = new Thread() {
+							public void run() {
+								if(!botonPulsado2) {
+									botonPulsado2=true;
+									try {
+										for(int i=1; i<5; i++) {
+											if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Quieto"+i+".png");
+												J2.MoverseX(20);
+												imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+												imagen2.setHorFlip(false);
+												repaint();
+												Thread.sleep(50);
+											}if(J2.getPosX()<0) {
+												imagen2.setImagen("imagenes/"+nombreJ1.toLowerCase()+"/"+nombreJ1+"Quieto"+i+".png");
+												int moverse = (int) (0-J2.getPosX());
+												J2.MoverseX(moverse);
+												imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+												imagen2.setHorFlip(false);
+												repaint();
+											}
+										}
+										this.stop();	
+									}catch (Exception e) {
+										
+									}
+								}
+							}
+						}; movimientoJ2.start();
+						botonPulsado2 = false;
+						anteriorIzq2 = false;
 					}if(ke.getKeyCode() == ke.VK_J) {
+						Thread movimientoJ2I = new Thread() {
+							public void run() {
+								if(!botonPulsado2) {
+									botonPulsado2=true;
+									try {
+										for(int i=1; i<5; i++) {
+											if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Quieto"+i+".png");
+												imagen2.setHorFlip(true);
+												J2.MoverseX(-20);
+												imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+												repaint();
+												Thread.sleep(50);
+											}if(J2.getPosX()>1580) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Quieto"+i+".png");
+												int moverse = (int) (1580-J2.getPosX());
+												J2.MoverseX(moverse);
+												imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+												imagen2.setHorFlip(false);
+												repaint();
+											}
+										}
+										this.stop();	
+									}catch (Exception e) {
+										
+									}
+								}
+							}
+						}; movimientoJ2I.start();
+						anteriorIzq2 = true;
+						botonPulsado2 = false;
 						
 					}if(ke.getKeyCode() == ke.VK_I) {
+						Thread saltoJ2 = new Thread() {
+							public void run() {
+								if(!botonPulsado2) {
+									botonPulsado2=true;
+									try {
+										for(int i=1; i<4; i++) {
+											if(J2.getPosY()>=-120) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Salto"+i+".png");
+												J2.MoverseY(-40);
+												imagen2.setBounds((int)J2.getPosX(),(int) J2.getPosY() + 500 , 350, 450);
+												imagen2.setHorFlip(anteriorIzq2);
+												repaint();
+												Thread.sleep(100);
+											}
+											if(J2.getPosY()<-120) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Salto"+i+".png");
+												int moverse = (int) (-120-J2.getPosY());
+												J2.MoverseY(moverse);
+												imagen2.setBounds((int)J2.getPosX(), (int) J2.getPosY() + 500, 350, 450);
+												imagen2.setHorFlip(anteriorIzq2);
+												repaint();
+											}
+										}for(int i=3; i<5; i++) {
+											if(J2.getPosY()>=-120) {
+												imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Salto"+i+".png");
+												J2.MoverseY(60);
+												imagen2.setBounds((int)J2.getPosX(),(int) J2.getPosY() + 500 , 350, 450);
+												imagen2.setHorFlip(anteriorIzq2);
+												repaint();
+												Thread.sleep(100);
+											}
+										}
+										this.stop();
+									} catch (Exception e) {
+										// TODO: handle exception
+									}
+								}
+							}
+						};saltoJ2.start();
+						if(J2.getPosY()==0) {
+							botonPulsado2 = false;
+						}
 						
 					}if(ke.getKeyCode() == ke.VK_U) {
+						Thread patadaJ2 = new Thread() {
+							public void run() {
+								if(!botonPulsado2) {
+									botonPulsado2=true;
+									try {
+										for(int i=1; i<4; i++) {
+											imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Patada"+i+".png");
+											if(i!=2) {
+												imagen2.setSize(200, 400);
+											}else {
+												imagen2.setSize(350, 400);
+												int distancia = (int) (J2.getPosX()-imagen1.getX());
+												if(Math.abs(distancia) < 150) {
+													JPB11.setValue(JPB11.getValue() + J2.getDamageP());
+												}
+											
+											}
+											imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+											imagen2.setHorFlip(anteriorIzq2);
+											repaint();
+											Thread.sleep(150);
+										}
+										this.stop();	
+									}catch (Exception e) {
+										
+									}
+								}
+							}
+						}; patadaJ2.start();
+						botonPulsado2 = false;
 						
 					}if(ke.getKeyCode() == ke.VK_O) {
+						Thread punyoJ2 = new Thread() {
+							public void run() {
+								if(!botonPulsado2) {
+									botonPulsado2=true;
+									try {
+										for(int i=1; i<6; i++) {
+											imagen2.setImagen("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Puño"+i+".png");
+											if(i!=4) {
+												imagen2.setSize(200, 400);
+											}else {
+												imagen2.setSize(350, 400);
+												int distancia = (int) (J2.getPosX()-imagen1.getX());
+												if(Math.abs(distancia) < 150) {
+													JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+												}
+											}
+											imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+											imagen2.setHorFlip(anteriorIzq2);
+											repaint();
+											Thread.sleep(150);
+										}
+										this.stop();	
+									}catch (Exception e) {
+										
+									}
+								}
+							}
+						}; punyoJ2.start();
+						botonPulsado2 = false;
 						
 					}
 				}
