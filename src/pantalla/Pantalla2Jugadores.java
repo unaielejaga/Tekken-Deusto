@@ -19,6 +19,7 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
 import bd.BD;
+import usuario.Usuario;
 
 public class Pantalla2Jugadores extends JFrame{
 	
@@ -114,7 +115,9 @@ public class Pantalla2Jugadores extends JFrame{
 					String contra2 = BD.usuarioSelect(st, usuariot2.getText());
 					if(contra1.equals(contrasenyap1.getText()) && contra2.equals(contrasenyap2.getText())) {
 					//	JOptionPane.showMessageDialog(Pantalla2Jugadores.this, "Enhorabuena, te has loggeado corectamente");
-						PantallaSelEscenario p = new PantallaSelEscenario(true);
+						Usuario u1 = BD.usuarioSelectUsuario(st, usuariot1.getText());
+						Usuario u2 = BD.usuarioSelectUsuario(st, usuariot2.getText());
+						PantallaSelEscenario p = new PantallaSelEscenario(true, u1, u2);
 						p.setVisible(true);
 						dispose();
 						v.dispose();

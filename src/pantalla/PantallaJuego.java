@@ -15,6 +15,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -28,6 +29,7 @@ import javax.swing.SwingConstants;
 import bd.BD;
 import personajes.Personajes;
 import sonido.Sonido;
+import usuario.Usuario;
 
 public class PantallaJuego extends JFrame{
 	
@@ -60,8 +62,10 @@ public class PantallaJuego extends JFrame{
 	private boolean anteriorIzq = false;
 	private boolean botonPulsado2 = true;
 	private boolean anteriorIzq2 = false;
+	private ArrayList<Integer> combates1;
+	private ArrayList<Integer> combates2;
 	
-	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2) {
+	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2, Usuario U1, Usuario U2) {
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
@@ -82,8 +86,7 @@ public class PantallaJuego extends JFrame{
 			J1 = BD.personajeSelect(st, nombreJ1);
 			J2 = BD.personajeSelect(st, "Donatello");
 		}
-	
-		BD.cerrarBD(con, st);	
+		
 		
 		
 		J1VidaIni = J1.getVida();
@@ -188,11 +191,13 @@ public class PantallaJuego extends JFrame{
 							JPB11.setValue(JPB11.getValue() + 5);
 							repaint();
 							Thread.sleep(1000);
+							muerte(U1, U2, st);
 						}else {
 							contador--;
 							lTiempo.setText(String.valueOf(contador));
 							repaint();
 							Thread.sleep(1000);
+							muerte(U1, U2, st);
 						}
 					} catch (InterruptedException e) {
 						e.printStackTrace();
@@ -329,7 +334,16 @@ public class PantallaJuego extends JFrame{
 											imagen1.setSize(350, 400);
 											int distancia = (int) (J1.getPosX()-imagen2.getX());
 											if(Math.abs(distancia) < 150) {
-												JPB12.setValue(JPB12.getValue() - J1.getDamageP());
+												if(JPB21.getValue() == 0) {
+													JPB12.setValue(JPB12.getValue() - J1.getDamageP()*3);
+													JPB21.setValue(100);
+													JPB22.setValue(JPB22.getValue() + 10);
+												}else {
+													JPB12.setValue(JPB12.getValue() - J1.getDamageP());
+													JPB21.setValue(JPB21.getValue() - 5 );
+													JPB22.setValue(JPB22.getValue() + 10);
+												}
+											
 											}
 										
 										}
@@ -361,7 +375,16 @@ public class PantallaJuego extends JFrame{
 											imagen1.setSize(350, 400);
 											int distancia = (int) (J1.getPosX()-imagen2.getX());
 											if(Math.abs(distancia) < 150) {
-												JPB12.setValue(JPB12.getValue() - J1.getDamageB());
+												if(JPB21.getValue() == 0) {
+													JPB12.setValue(JPB12.getValue() - J1.getDamageB()*3);
+													JPB21.setValue(100);
+													JPB22.setValue(JPB22.getValue() + 10);
+												}else {
+													JPB12.setValue(JPB12.getValue() - J1.getDamageB());
+													JPB21.setValue(JPB21.getValue() - 5 );
+													JPB22.setValue(JPB22.getValue() + 10);
+												}
+											
 											}
 										}
 										imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
@@ -501,7 +524,16 @@ public class PantallaJuego extends JFrame{
 												imagen2.setSize(350, 400);
 												int distancia = (int) (J2.getPosX()-imagen1.getX());
 												if(Math.abs(distancia) < 150) {
-													JPB11.setValue(JPB11.getValue() + J2.getDamageP());
+													if(JPB22.getValue() == 100) {
+														JPB11.setValue(JPB11.getValue() + J2.getDamageP()*3);
+														JPB22.setValue(0);
+														JPB21.setValue(JPB21.getValue() - 10);
+													}else {
+														JPB11.setValue(JPB11.getValue() + J2.getDamageP());
+														JPB22.setValue(JPB22.getValue() + 5 );
+														JPB21.setValue(JPB21.getValue() - 10);
+													}
+													
 												}
 											
 											}
@@ -533,7 +565,15 @@ public class PantallaJuego extends JFrame{
 												imagen2.setSize(350, 400);
 												int distancia = (int) (J2.getPosX()-imagen1.getX());
 												if(Math.abs(distancia) < 150) {
-													JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+													if(JPB22.getValue() == 100) {
+														JPB11.setValue(JPB11.getValue() + J2.getDamageB()*3);
+														JPB22.setValue(0);
+														JPB21.setValue(JPB21.getValue() - 10);
+													}else {
+														JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+														JPB22.setValue(JPB22.getValue() + 5 );
+														JPB21.setValue(JPB21.getValue() - 10);
+													}	
 												}
 											}
 											imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
@@ -556,14 +596,91 @@ public class PantallaJuego extends JFrame{
 			}
 		});
 		
+	
+		
 		addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosed(WindowEvent e) {
 				Sonido.stop(loop);
 				cuentaAtras.stop();
+				BD.cerrarBD(con, st);
 				
 			}
 		});
+		
+	
+	}	
+	
+	public void muerte(Usuario U1, Usuario U2, Statement st) {
+		if(JPB12.getValue() == 0) {
+			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
+				combates1 = BD.partidaSelect(st, U1, J1);
+				combates2 = BD.partidaSelect(st, U2, J2);
+				int combG1 = combates1.get(0);
+				int combP1 = combates1.get(1);
+				int combG2 = combates2.get(0);
+				int combP2 = combates2.get(1);
+				combG1 = combG1 + 1;
+				combP2 = combP2 + 1;
+				BD.partidaUpdate(st, combG1, combP1, U1, J1);
+				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				dispose();
+			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
+				combates1 = BD.partidaSelect(st, U1, J1);
+				int combG1 = combates1.get(0);
+				int combP1 = combates1.get(1);
+				combG1 = combG1 + 1;
+				BD.partidaUpdate(st, combG1, combP1, U1, J1);
+				BD.partidaInsert(st, U2, J2, 0, 1);
+				dispose();
+			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
+				combates2 = BD.partidaSelect(st, U2, J2);
+				int combG2 = combates2.get(0);
+				int combP2 = combates2.get(1);
+				combP2 = combP2 + 1;
+				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				BD.partidaInsert(st, U1, J1, 1, 0);
+				dispose();
+			}if(!BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
+				System.out.println(!BD.partidaExiste(st, U2, J2));
+				BD.partidaInsert(st, U1, J1, 1, 0);
+				BD.partidaInsert(st, U2, J2, 0, 1);
+				dispose();
+			}
+		}if(JPB11.getValue() == 100) {
+			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
+				combates1 = BD.partidaSelect(st, U1, J1);
+				combates2 = BD.partidaSelect(st, U2, J2);
+				int combG1 = combates1.get(0);
+				int combP1 = combates1.get(1);
+				int combG2 = combates2.get(0);
+				int combP2 = combates2.get(1);
+				combG2 = combG2 + 1;
+				combP1 = combP1 + 1;
+				BD.partidaUpdate(st, combG1, combP1, U1, J1);
+				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				dispose();
+			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
+				combates1 = BD.partidaSelect(st, U1, J1);
+				int combG1 = combates1.get(0);
+				int combP1 = combates1.get(1);
+				combP1 = combP1 + 1;
+				BD.partidaUpdate(st, combG1, combP1, U1, J1);
+				BD.partidaInsert(st, U2, J2, 1, 0);
+				dispose();
+			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
+				combates2 = BD.partidaSelect(st, U2, J2);
+				int combG2 = combates2.get(0);
+				int combP2 = combates2.get(1);
+				combG2 = combG2 + 1;
+				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				BD.partidaInsert(st, U1, J1, 0, 1);
+				dispose();
+			}else {
+				BD.partidaInsert(st, U1, J1, 0, 1);
+				BD.partidaInsert(st, U2, J2, 1, 0);
+				dispose();
+			}
+		}
 	}
-
 }

@@ -146,6 +146,28 @@ public class BD {
 		}
 	}
 	
+	public static Usuario usuarioSelectUsuario( Statement st, String nombre ) {
+		String sentSQL = "";
+		Usuario u = null;
+		try {
+			sentSQL = "select contrasenya from usuario where nick='" + nombre + "'";
+			ResultSet rs = st.executeQuery( sentSQL );
+			while(rs.next()) {
+				String contra = rs.getString("contrasenya");
+				u = new Usuario(nombre, contra);
+			}
+			rs.close();
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + u.toString(), null);
+			return u;
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	
 	public static boolean personajesInsert( Statement st, Personajes p ) {
 		String sentSQL = "";
 		try {
@@ -225,6 +247,21 @@ public class BD {
 		}
 	}
 	
+	public static boolean partidaExiste( Statement st, Usuario u, Personajes p ) {
+		String sentSQL = "";
+		try {
+			sentSQL = "select * from partida where (usuario='" + secu(u.getNick()) + "' and" +
+		" personaje='" + secu(p.getNombre())+ "' )";
+			ResultSet rs = st.executeQuery( sentSQL );
+			boolean existe = rs.next();
+			rs.close();
+			return existe;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
 	public static boolean partidaUpdate( Statement st, int combG, int combP, Usuario u, Personajes p) {
 		String sentSQL = "";
 		try {
@@ -246,6 +283,32 @@ public class BD {
 			lastError = e;
 			e.printStackTrace();
 			return false;
+		}
+	}
+	
+	public static ArrayList<Integer> partidaSelect( Statement st, Usuario u, Personajes p ) {
+		String sentSQL = "";
+		int combG = 0;
+		int combP = 0;
+		ArrayList<Integer> combates = new ArrayList<>();
+		try {
+			sentSQL = "select combG, combP from partida where (usuario='" + secu(u.getNick()) + "' and" +
+					" personaje='" + secu(p.getNombre()) + "' )";
+			ResultSet rs = st.executeQuery( sentSQL );
+			while(rs.next()) {
+				combG = rs.getInt("combG");
+				combP = rs.getInt("combP");
+			}
+			rs.close();
+			combates.add(combG); 
+			combates.add(combP);
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + combates, null);
+			return combates;
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
 	

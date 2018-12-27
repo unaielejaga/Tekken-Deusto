@@ -24,6 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
 import sonido.Sonido;
+import usuario.Usuario;
 
 public class PantallaSelEscenario extends JFrame {
 
@@ -80,7 +81,7 @@ public class PantallaSelEscenario extends JFrame {
 	private String fondoImagen;
 	
 	
-	public PantallaSelEscenario(boolean J2B) {
+	public PantallaSelEscenario(boolean J2B, Usuario U1, Usuario U2) {
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(1920, 1080);
@@ -401,7 +402,7 @@ public class PantallaSelEscenario extends JFrame {
 		public void actionPerformed(ActionEvent e) {
 			if(J2B) {
 				if(fondoImagen != null && J1t != null && J2t != null) {
-					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t);
+					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t, U1, U2);
 					p.setVisible(true);
 					dispose();
 				}else {
@@ -409,7 +410,7 @@ public class PantallaSelEscenario extends JFrame {
 				}
 			}else {
 				if(fondoImagen != null && J1t != null) {
-					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t);
+					PantallaJuego p = new PantallaJuego(fondoImagen, J2B, J1t, J2t, U1, U2);
 					p.setVisible(true);
 					dispose();
 				}else {
@@ -548,11 +549,6 @@ public class PantallaSelEscenario extends JFrame {
 		}
 	});
 		
-	}
-	public static void main(String[] args) {
-		PantallaSelEscenario p = new PantallaSelEscenario(true);
-		p.setVisible(true);
-
 	}
 }
 
