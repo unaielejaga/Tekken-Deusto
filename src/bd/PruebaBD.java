@@ -14,7 +14,7 @@ public class PruebaBD {
 		BD.usarCrearTablasBD(con);
 //		Usuario u = new Usuario("Guilemo", "juan");
 //		Usuario u1 = new Usuario("Aie", "ramon");
-		Personajes p = new Personajes("Raphael", 80, 40, 15, 20, 0, 0, 4);
+		Personajes p = new Personajes("Mike", 100, 10, 15,10, 0, 0, 10);
 		Statement st1;
 		try {
 			st1 = con.createStatement();
