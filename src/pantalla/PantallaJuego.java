@@ -64,6 +64,7 @@ public class PantallaJuego extends JFrame{
 	private boolean anteriorIzq2 = false;
 	private ArrayList<Integer> combates1;
 	private ArrayList<Integer> combates2;
+	Thread IA;
 	
 	public PantallaJuego(String fondoImagen, boolean J2B, String nombreJ1, String nombreJ2, Usuario U1, Usuario U2) {
 		
@@ -79,6 +80,7 @@ public class PantallaJuego extends JFrame{
 
 		Connection con = BD.initBD("BD");
 		Statement st = BD.usarBD(con);
+		
 		if(J2B) {
 			J1 = BD.personajeSelect(st, nombreJ1);
 			J2 = BD.personajeSelect(st, nombreJ2);
@@ -149,6 +151,7 @@ public class PantallaJuego extends JFrame{
 		
 		imagen1 = new JLabelGraficoAjustado("imagenes/" + nombreJ1.toLowerCase()+ "/"+ nombreJ1 +"Quieto1.png", 250, 400);
 		imagen1.setBounds((int) J1.getPosX(), 500, 350, 450);
+		
 		if(J2B) {
 			imagen2 = new JLabelGraficoAjustado("imagenes/"+nombreJ2.toLowerCase()+"/"+nombreJ2+"Quieto1.png", 250, 400);
 			imagen2.setBounds(1500, 500, 350, 450);
@@ -173,10 +176,6 @@ public class PantallaJuego extends JFrame{
 		
 		fondo.add(PanelCentral, BorderLayout.CENTER);
 		fondo.add(PanelSup, BorderLayout.NORTH);
-		
-		
-		
-
 		
 		loop = Sonido.music("canciones/juego.wav");
 
@@ -206,6 +205,90 @@ public class PantallaJuego extends JFrame{
 			}
 		};
 		cuentaAtras.start();
+		
+		if(!J2B) {
+			IA = new Thread() {
+				public void run() {
+					while(true) {
+						try {
+							int distancia = (int) (J2.getPosX()-imagen1.getX());
+							System.out.println(distancia);
+							if(Math.abs(distancia)<150) {
+								Thread punyoIA = new Thread() {
+									public void run() {
+											try {
+												System.out.println("Entre");
+												for(int i=1; i<6; i++) {
+													if(distancia > 0) {
+														imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
+														imagen2.setHorFlip(true);
+													}else {
+														imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
+													}
+													if(i!=4) {
+														imagen2.setSize(200, 400);
+													}else {
+														imagen2.setSize(350, 400);
+															if(JPB22.getValue() == 100) {
+																JPB11.setValue(JPB11.getValue() + J2.getDamageB()*3);
+																JPB22.setValue(0);
+																JPB21.setValue(JPB21.getValue() - 10);
+															}else {
+																JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+																JPB22.setValue(JPB22.getValue() + 5 );
+																JPB21.setValue(JPB21.getValue() - 10);
+															}	
+													}
+													imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+													imagen2.setHorFlip(anteriorIzq2);
+													repaint();
+													Thread.sleep(150);
+												}
+												this.stop();	
+											}catch (Exception e) {
+												
+											}
+									}
+								}; punyoIA.start();
+							}Thread.sleep(1000);
+							if(Math.abs(distancia)>150) {
+								Thread movimientoIA = new Thread() {
+									public void run() {
+										while(true) {
+											try {
+												for(int i=1; i<5; i++) {
+													if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
+														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+														imagen2.setHorFlip(true);
+														J2.MoverseX(-20);
+														imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+														repaint();
+														Thread.sleep(50);
+													}if(J2.getPosX()>1580) {
+														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+														int moverse = (int) (1580-J2.getPosX());
+														J2.MoverseX(moverse);
+														imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+														imagen2.setHorFlip(false);
+														repaint();
+													}
+												}
+											}catch (Exception e) {
+												// TODO: handle exception
+											}
+										}
+									}
+								};movimientoIA.start();
+								
+							}Thread.sleep(100);
+							System.out.println(distancia);
+						}catch (Exception e) {
+							// TODO: handle exception
+						}
+					}
+				}
+			};IA.start();
+		}
 		
 		
 		addKeyListener(new KeyAdapter() {
@@ -603,6 +686,9 @@ public class PantallaJuego extends JFrame{
 			public void windowClosed(WindowEvent e) {
 				Sonido.stop(loop);
 				cuentaAtras.stop();
+				if(!J2B) {
+					IA.stop();	
+				}
 				BD.cerrarBD(con, st);
 				
 			}
