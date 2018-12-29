@@ -211,13 +211,12 @@ public class PantallaJuego extends JFrame{
 				public void run() {
 					while(true) {
 						try {
-							int distancia = (int) (J2.getPosX()-imagen1.getX());
+							int distancia = (int) (imagen2.getX()-imagen1.getX());
 							System.out.println(distancia);
-							if(Math.abs(distancia)<150) {
+							if(Math.abs(distancia)<300) {
 								Thread punyoIA = new Thread() {
 									public void run() {
 											try {
-												System.out.println("Entre");
 												for(int i=1; i<6; i++) {
 													if(distancia > 0) {
 														imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
@@ -242,7 +241,7 @@ public class PantallaJuego extends JFrame{
 													imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
 													imagen2.setHorFlip(anteriorIzq2);
 													repaint();
-													Thread.sleep(150);
+													Thread.sleep(1000);
 												}
 												this.stop();	
 											}catch (Exception e) {
@@ -251,11 +250,12 @@ public class PantallaJuego extends JFrame{
 									}
 								}; punyoIA.start();
 							}Thread.sleep(1000);
-							if(Math.abs(distancia)>150) {
+							if(Math.abs(distancia)>300) {
 								Thread movimientoIA = new Thread() {
 									public void run() {
-										while(true) {
+										while(Math.abs(distancia)>300) {
 											try {
+												if(distancia > 0) {
 												for(int i=1; i<5; i++) {
 													if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
 														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
@@ -263,7 +263,7 @@ public class PantallaJuego extends JFrame{
 														J2.MoverseX(-20);
 														imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
 														repaint();
-														Thread.sleep(50);
+														Thread.sleep(1000);
 													}if(J2.getPosX()>1580) {
 														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
 														int moverse = (int) (1580-J2.getPosX());
@@ -273,6 +273,25 @@ public class PantallaJuego extends JFrame{
 														repaint();
 													}
 												}
+												}if(distancia < 0) {
+													for(int i=1; i<5; i++) {
+														if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
+															imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+															imagen2.setHorFlip(true);
+															J2.MoverseX(-20);
+															imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+															repaint();
+															Thread.sleep(50);
+														}if(J2.getPosX()>1580) {
+															imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+															int moverse = (int) (1580-J2.getPosX());
+															J2.MoverseX(moverse);
+															imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+															imagen2.setHorFlip(false);
+															repaint();
+														}
+													}
+												}
 											}catch (Exception e) {
 												// TODO: handle exception
 											}
@@ -280,7 +299,7 @@ public class PantallaJuego extends JFrame{
 									}
 								};movimientoIA.start();
 								
-							}Thread.sleep(100);
+							}Thread.sleep(1000);
 							System.out.println(distancia);
 						}catch (Exception e) {
 							// TODO: handle exception

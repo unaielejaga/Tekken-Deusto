@@ -142,6 +142,17 @@ public class PantallaMenuPrin extends JFrame{
 				
 			}
 		});
+		
+		bMarc.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				PantallaMarcadores p = new PantallaMarcadores();
+				p.setVisible(true);
+				
+				
+			}
+		});
 	
 	}
 
