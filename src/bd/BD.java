@@ -167,6 +167,43 @@ public class BD {
 		}
 	}
 	
+	public static int usuarioContador(Statement st) {
+		int contador = 0;
+		String sentSQL = "";
+		try {
+			sentSQL = "select count(nick) from usuario";
+			ResultSet rs = st.executeQuery(sentSQL);
+			while(rs.next()) {
+				contador = rs.getInt("count(nick)");
+			}
+			rs.close();
+			log(Level.INFO, "Numero de usuarios: " + contador, null);
+			return contador;
+		}catch (Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
+	}
+	
+	public static ArrayList<String> usuarioUsuarios(Statement st) {
+		ArrayList<String> usuarios = new ArrayList<>();
+		String sentSQL = "";
+		try {
+			sentSQL = "select nick from usuario";
+			ResultSet rs = st.executeQuery(sentSQL);
+			while(rs.next()) {
+				usuarios.add(rs.getString("nick"));
+			}
+			rs.close();
+			log(Level.INFO, "Usuarios: " + usuarios, null);
+			return usuarios;
+		}catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+	
 	
 	public static boolean personajesInsert( Statement st, Personajes p ) {
 		String sentSQL = "";
@@ -262,6 +299,21 @@ public class BD {
 		}
 	}
 	
+	public static boolean partidaExisteString( Statement st, String usuario, String personajes ) {
+		String sentSQL = "";
+		try {
+			sentSQL = "select * from partida where (usuario='" + usuario + "' and" +
+		" personaje='" + personajes + "' )";
+			ResultSet rs = st.executeQuery( sentSQL );
+			boolean existe = rs.next();
+			rs.close();
+			return existe;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
 	public static boolean partidaUpdate( Statement st, int combG, int combP, Usuario u, Personajes p) {
 		String sentSQL = "";
 		try {
@@ -294,6 +346,32 @@ public class BD {
 		try {
 			sentSQL = "select combG, combP from partida where (usuario='" + secu(u.getNick()) + "' and" +
 					" personaje='" + secu(p.getNombre()) + "' )";
+			ResultSet rs = st.executeQuery( sentSQL );
+			while(rs.next()) {
+				combG = rs.getInt("combG");
+				combP = rs.getInt("combP");
+			}
+			rs.close();
+			combates.add(combG); 
+			combates.add(combP);
+			log(Level.INFO, "BD seleccionada" + sentSQL + "valor: " + combates, null);
+			return combates;
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public static ArrayList<Integer> partidaSelectString( Statement st, String usuario, String personaje ) {
+		String sentSQL = "";
+		int combG = 0;
+		int combP = 0;
+		ArrayList<Integer> combates = new ArrayList<>();
+		try {
+			sentSQL = "select combG, combP from partida where (usuario='" + usuario + "' and" +
+					" personaje='" + personaje + "' )";
 			ResultSet rs = st.executeQuery( sentSQL );
 			while(rs.next()) {
 				combG = rs.getInt("combG");

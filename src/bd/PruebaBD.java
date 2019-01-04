@@ -18,13 +18,15 @@ public class PruebaBD {
 		Statement st1;
 		try {
 			st1 = con.createStatement();
+			int contador = BD.usuarioContador(st1);
+			System.out.println(contador);
 //			BD.usuarioInsert(st1, u);
-			BD.personajesInsert(st1, p);
+//			BD.personajesInsert(st1, p);
 //			BD.partidaInsert(st1, u, p, 10, 3);
 //			BD.partidaUpdate(st1, 11, 2, u, p);
 //			String contra = BD.usuarioSelect(st1, u.getNick());
-			Personajes per = BD.personajeSelect(st1, p.getNombre());
-			System.out.println(per.toString());
+//			Personajes per = BD.personajeSelect(st1, p.getNombre());
+//			System.out.println(per.toString());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
