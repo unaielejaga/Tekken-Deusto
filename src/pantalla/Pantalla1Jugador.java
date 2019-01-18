@@ -47,7 +47,6 @@ public class Pantalla1Jugador extends JFrame{
 	
 	public Pantalla1Jugador(JFrame v) {
 		ventanaAnterior = v;
-		JFrame frame = new JFrame();
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(800, 1000);
 		setTitle("Pantalla 1 Jugador");

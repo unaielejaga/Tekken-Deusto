@@ -193,9 +193,7 @@ public class PantallaJuego extends JFrame{
 							Thread.sleep(1000);
 							if(J2B) {
 								muerte(U1, U2, st);
-							}else {
-								PantallaMenuPrin p = new PantallaMenuPrin();
-								p.setVisible(true);
+							}else if(JPB11.getValue() ==100 || JPB12.getValue() == 0){
 								dispose();
 							}
 						
@@ -206,9 +204,7 @@ public class PantallaJuego extends JFrame{
 							Thread.sleep(1000);
 							if(J2B) {
 								muerte(U1, U2, st);
-							}else {
-								PantallaMenuPrin p = new PantallaMenuPrin();
-								p.setVisible(true);
+							}else if(JPB11.getValue() ==100 || JPB12.getValue() == 0){
 								dispose();
 							}
 							
@@ -226,101 +222,81 @@ public class PantallaJuego extends JFrame{
 				public void run() {
 					while(true) {
 						try {
-							int distancia = (int) (imagen2.getX()-imagen1.getX());
-							System.out.println(distancia);
-							if(Math.abs(distancia)<300) {
-								Thread punyoIA = new Thread() {
-									public void run() {
-											try {
-												for(int i=1; i<6; i++) {
-													if(distancia > 0) {
-														imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
-														imagen2.setHorFlip(true);
-													}else {
-														imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
-													}
-													if(i!=4) {
-														imagen2.setSize(200, 400);
-													}else {
-														imagen2.setSize(350, 400);
-															if(JPB22.getValue() == 100) {
-																JPB11.setValue(JPB11.getValue() + J2.getDamageB()*3);
-																JPB22.setValue(0);
-																JPB21.setValue(JPB21.getValue() - 10);
-															}else {
-																JPB11.setValue(JPB11.getValue() + J2.getDamageB());
-																JPB22.setValue(JPB22.getValue() + 5 );
-																JPB21.setValue(JPB21.getValue() - 10);
-															}	
-													}
-													imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
-													imagen2.setHorFlip(anteriorIzq2);
-													repaint();
-													Thread.sleep(1000);
-												}
-												this.stop();	
-											}catch (Exception e) {
-												
-											}
+							int distancia = (int) J1.getPosX() - (int) J2.getPosX();
+							int distanciaAbs = Math.abs(distancia);
+							if(distanciaAbs > 150) {
+								for(int i=0; i<5; i++) {
+									if(distancia > 0) {
+										imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+										J2.MoverseX(20);
+										imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+										imagen2.setHorFlip(false);
+										repaint();
+									}else {
+										imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
+										J2.MoverseX(-20);
+										imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+										imagen2.setHorFlip(true);
+										repaint();
+										
 									}
-								}; punyoIA.start();
-							}Thread.sleep(1000);
-							if(Math.abs(distancia)>300) {
-								Thread movimientoIA = new Thread() {
-									public void run() {
-										while(Math.abs(distancia)>300) {
-											try {
-												if(distancia > 0) {
-												for(int i=1; i<5; i++) {
-													if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
-														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
-														imagen2.setHorFlip(true);
-														J2.MoverseX(-20);
-														imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
-														repaint();
-														Thread.sleep(1000);
-													}if(J2.getPosX()>1580) {
-														imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
-														int moverse = (int) (1580-J2.getPosX());
-														J2.MoverseX(moverse);
-														imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
-														imagen2.setHorFlip(false);
-														repaint();
-													}
-												}
-												}if(distancia < 0) {
-													for(int i=1; i<5; i++) {
-														if(J2.getPosX()>=0 && J2.getPosX()<=1580) {
-															imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
-															imagen2.setHorFlip(true);
-															J2.MoverseX(-20);
-															imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
-															repaint();
-															Thread.sleep(50);
-														}if(J2.getPosX()>1580) {
-															imagen2.setImagen("imagenes/donatello/DonatelloQuieto"+i+".png");
-															int moverse = (int) (1580-J2.getPosX());
-															J2.MoverseX(moverse);
-															imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
-															imagen2.setHorFlip(false);
-															repaint();
-														}
-													}
-												}
-											}catch (Exception e) {
-												// TODO: handle exception
-											}
-										}
-									}
-								};movimientoIA.start();
+									Thread.sleep(50);
+								}
 								
-							}Thread.sleep(1000);
-							System.out.println(distancia);
+							}if(distanciaAbs <= 150) {
+								for(int i=1; i<6; i++) {
+									if(distancia > 0) {
+										imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
+											if(i!=4) {
+												imagen2.setSize(200, 400);
+											}else {
+												imagen2.setSize(350, 400);
+												if(JPB22.getValue() == 100) {
+													JPB11.setValue(JPB11.getValue() + J2.getDamageB()*3);
+													JPB22.setValue(0);
+													JPB21.setValue(JPB21.getValue() - 10);
+												}else {
+													JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+													JPB22.setValue(JPB22.getValue() + 5 );
+													JPB21.setValue(JPB21.getValue() - 10);
+													}
+											}
+											imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+											imagen2.setHorFlip(false);
+											repaint();		
+									}else {
+										imagen2.setImagen("imagenes/donatello/DonatelloPuño"+i+".png");
+										if(i!=4) {
+											imagen2.setSize(200, 400);
+										}else {
+											imagen2.setSize(350, 400);
+											if(JPB22.getValue() == 100) {
+												JPB11.setValue(JPB11.getValue() + J2.getDamageB()*3);
+												JPB22.setValue(0);
+												JPB21.setValue(JPB21.getValue() - 10);
+											}else {
+												JPB11.setValue(JPB11.getValue() + J2.getDamageB());
+												JPB22.setValue(JPB22.getValue() + 5 );
+												JPB21.setValue(JPB21.getValue() - 10);
+												}
+										}
+										imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
+										imagen2.setHorFlip(true);
+										repaint();
+									}
+									Thread.sleep(150);
+									
+								}
+						
+							}
+							
+							
 						}catch (Exception e) {
-							// TODO: handle exception
+			
 						}
 					}
 				}
+				
 			};IA.start();
 		}
 		
@@ -722,8 +698,11 @@ public class PantallaJuego extends JFrame{
 				cuentaAtras.stop();
 				if(!J2B) {
 					IA.stop();	
+					PantallaMenuPrin p = new PantallaMenuPrin();
+					p.setVisible(true);
 				}
 				BD.cerrarBD(con, st);
+				
 				
 			}
 		});
@@ -733,7 +712,8 @@ public class PantallaJuego extends JFrame{
 	
 	public void muerte(Usuario U1, Usuario U2, Statement st) {
 		if(JPB12.getValue() == 0) {
-			JOptionPane.showMessageDialog(PantallaJuego.this, "Ha Ganado el Jugador 1");
+			PantallaGanador p = new PantallaGanador("Jugador 1", U1, U2);
+			p.setVisible(true);
 			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -745,8 +725,6 @@ public class PantallaJuego extends JFrame{
 				combP2 = combP2 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
@@ -755,8 +733,6 @@ public class PantallaJuego extends JFrame{
 				combG1 = combG1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaInsert(st, U2, J2, 0, 1);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -765,19 +741,16 @@ public class PantallaJuego extends JFrame{
 				combP2 = combP2 + 1;
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
 				BD.partidaInsert(st, U1, J1, 1, 0);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}if(!BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				System.out.println(!BD.partidaExiste(st, U2, J2));
 				BD.partidaInsert(st, U1, J1, 1, 0);
 				BD.partidaInsert(st, U2, J2, 0, 1);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}
 		}if(JPB11.getValue() == 100) {
-			JOptionPane.showMessageDialog(PantallaJuego.this, "Ha Ganado el Jugador 2");
+			PantallaGanador p = new PantallaGanador("Jugador 2", U1, U2);
+			p.setVisible(true);
 			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -789,8 +762,6 @@ public class PantallaJuego extends JFrame{
 				combP1 = combP1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
@@ -799,8 +770,6 @@ public class PantallaJuego extends JFrame{
 				combP1 = combP1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaInsert(st, U2, J2, 1, 0);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -809,14 +778,10 @@ public class PantallaJuego extends JFrame{
 				combG2 = combG2 + 1;
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
 				BD.partidaInsert(st, U1, J1, 0, 1);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}else {
 				BD.partidaInsert(st, U1, J1, 0, 1);
 				BD.partidaInsert(st, U2, J2, 1, 0);
-				PantallaMenuPrin p = new PantallaMenuPrin();
-				p.setVisible(true);
 				dispose();
 			}
 		}

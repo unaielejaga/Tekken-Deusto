@@ -10,27 +10,17 @@ public class PruebaBD {
 
 	public static void main(String[] args) {
 		Connection con = BD.initBD("BD");
-		BD.usarBD(con);
+		Statement st = BD.usarBD(con);
 		BD.usarCrearTablasBD(con);
-//		Usuario u = new Usuario("Guilemo", "juan");
-//		Usuario u1 = new Usuario("Aie", "ramon");
-		Personajes p = new Personajes("Mike", 100, 10, 15,10, 0, 0, 10);
-		Statement st1;
-		try {
-			st1 = con.createStatement();
-			int contador = BD.usuarioContador(st1);
-			System.out.println(contador);
-//			BD.usuarioInsert(st1, u);
-//			BD.personajesInsert(st1, p);
-//			BD.partidaInsert(st1, u, p, 10, 3);
-//			BD.partidaUpdate(st1, 11, 2, u, p);
-//			String contra = BD.usuarioSelect(st1, u.getNick());
-//			Personajes per = BD.personajeSelect(st1, p.getNombre());
-//			System.out.println(per.toString());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Personajes p1 = new Personajes("Donatello", 100, 50, 10, 15, 0, 0, 10);
+		Personajes p2 = new Personajes("Leonardo", 70, 30, 20, 25, 0, 0, 25);
+		Personajes p3 = new Personajes("Raphael", 100, 50, 15, 20, 0, 0, 10);
+		Personajes p4 = new Personajes("Mike", 60, 80, 25, 30, 0, 0, 30);
+		
+		BD.personajesInsert(st, p1);
+		BD.personajesInsert(st, p2);
+		BD.personajesInsert(st, p3);
+		BD.personajesInsert(st, p4);
 
 	}
 

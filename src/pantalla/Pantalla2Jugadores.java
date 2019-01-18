@@ -42,7 +42,6 @@ public class Pantalla2Jugadores extends JFrame{
 	
 	public Pantalla2Jugadores(JFrame v) {
 		ventanaAnterior = v;
-		JFrame frame = new JFrame();
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setSize(800, 1000);
 		setTitle("Pantalla 1 Jugador");

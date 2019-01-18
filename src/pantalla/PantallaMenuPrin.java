@@ -39,7 +39,6 @@ public class PantallaMenuPrin extends JFrame{
 	private JButton bMarc;
 	private JButton bSalir;
 	private Clip loop;
-	private static PantallaMenuPrin p;
 	
 	
 	public PantallaMenuPrin() {
@@ -125,7 +124,7 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Pantalla1Jugador p1 = new Pantalla1Jugador(p);
+				Pantalla1Jugador p1 = new Pantalla1Jugador(PantallaMenuPrin.this);
 				p1.setVisible(true);
 				setEnabled(false);
 				
@@ -136,7 +135,7 @@ public class PantallaMenuPrin extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Pantalla2Jugadores p1 = new Pantalla2Jugadores(p);
+				Pantalla2Jugadores p1 = new Pantalla2Jugadores(PantallaMenuPrin.this);
 				p1.setVisible(true);
 				setEnabled(false);
 				
@@ -154,13 +153,6 @@ public class PantallaMenuPrin extends JFrame{
 			}
 		});
 	
-	}
-
-	public static void main(String[] args) {
-		p = new PantallaMenuPrin();
-		p.setVisible(true);
-				
-
 	}
 
 }
