@@ -22,6 +22,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
@@ -190,13 +191,27 @@ public class PantallaJuego extends JFrame{
 							JPB11.setValue(JPB11.getValue() + 5);
 							repaint();
 							Thread.sleep(1000);
-							muerte(U1, U2, st);
+							if(J2B) {
+								muerte(U1, U2, st);
+							}else {
+								PantallaMenuPrin p = new PantallaMenuPrin();
+								p.setVisible(true);
+								dispose();
+							}
+						
 						}else {
 							contador--;
 							lTiempo.setText(String.valueOf(contador));
 							repaint();
 							Thread.sleep(1000);
-							muerte(U1, U2, st);
+							if(J2B) {
+								muerte(U1, U2, st);
+							}else {
+								PantallaMenuPrin p = new PantallaMenuPrin();
+								p.setVisible(true);
+								dispose();
+							}
+							
 						}
 					} catch (InterruptedException e) {
 						e.printStackTrace();
@@ -718,6 +733,7 @@ public class PantallaJuego extends JFrame{
 	
 	public void muerte(Usuario U1, Usuario U2, Statement st) {
 		if(JPB12.getValue() == 0) {
+			JOptionPane.showMessageDialog(PantallaJuego.this, "Ha Ganado el Jugador 1");
 			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -729,6 +745,8 @@ public class PantallaJuego extends JFrame{
 				combP2 = combP2 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
@@ -737,6 +755,8 @@ public class PantallaJuego extends JFrame{
 				combG1 = combG1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaInsert(st, U2, J2, 0, 1);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -745,14 +765,19 @@ public class PantallaJuego extends JFrame{
 				combP2 = combP2 + 1;
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
 				BD.partidaInsert(st, U1, J1, 1, 0);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}if(!BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				System.out.println(!BD.partidaExiste(st, U2, J2));
 				BD.partidaInsert(st, U1, J1, 1, 0);
 				BD.partidaInsert(st, U2, J2, 0, 1);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}
 		}if(JPB11.getValue() == 100) {
+			JOptionPane.showMessageDialog(PantallaJuego.this, "Ha Ganado el Jugador 2");
 			if(BD.partidaExiste(st, U1, J1) && BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -764,6 +789,8 @@ public class PantallaJuego extends JFrame{
 				combP1 = combP1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U1, J1) && !BD.partidaExiste(st, U2, J2)) {
 				combates1 = BD.partidaSelect(st, U1, J1);
@@ -772,6 +799,8 @@ public class PantallaJuego extends JFrame{
 				combP1 = combP1 + 1;
 				BD.partidaUpdate(st, combG1, combP1, U1, J1);
 				BD.partidaInsert(st, U2, J2, 1, 0);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}if(BD.partidaExiste(st, U2, J2) && !BD.partidaExiste(st, U1, J1)) {
 				combates2 = BD.partidaSelect(st, U2, J2);
@@ -780,10 +809,14 @@ public class PantallaJuego extends JFrame{
 				combG2 = combG2 + 1;
 				BD.partidaUpdate(st, combG2, combP2, U2, J2);
 				BD.partidaInsert(st, U1, J1, 0, 1);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}else {
 				BD.partidaInsert(st, U1, J1, 0, 1);
 				BD.partidaInsert(st, U2, J2, 1, 0);
+				PantallaMenuPrin p = new PantallaMenuPrin();
+				p.setVisible(true);
 				dispose();
 			}
 		}
