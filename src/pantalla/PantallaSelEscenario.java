@@ -544,8 +544,6 @@ public class PantallaSelEscenario extends JFrame {
 		@Override
 		public void windowClosed(WindowEvent e) {
 			Sonido.stop(loop);
-			System.out.println(J1t);
-			System.out.println(J2t);
 		}
 	});
 		

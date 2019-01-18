@@ -74,7 +74,7 @@ public class PantallaJuego extends JFrame{
 		setTitle("Pantalla Menú Principal");
 		setResizable(false);
 		fondo = new JPanelBackgroundGif("imagenes/" + fondoImagen + ".gif");
-		//setUndecorated(true);
+		setUndecorated(true);
 		getContentPane().setLayout(new BorderLayout());	
 		fondo.setLayout(new BorderLayout());
 		getContentPane().add(fondo);
@@ -483,7 +483,7 @@ public class PantallaJuego extends JFrame{
 										imagen1.setBounds((int)J1.getPosX(), 500, 350, 450);
 										imagen1.setHorFlip(anteriorIzq);
 										repaint();
-										Thread.sleep(150);
+										Thread.sleep((int) J1.getVel() * 10);
 									}
 									this.stop();	
 								}catch (Exception e) {
@@ -672,7 +672,7 @@ public class PantallaJuego extends JFrame{
 											imagen2.setBounds((int)J2.getPosX(), 500, 350, 450);
 											imagen2.setHorFlip(anteriorIzq2);
 											repaint();
-											Thread.sleep(150);
+											Thread.sleep((int) J2.getVel() * 10);
 										}
 										this.stop();	
 									}catch (Exception e) {

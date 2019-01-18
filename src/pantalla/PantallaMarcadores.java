@@ -31,6 +31,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
 
 import org.jfree.chart.ChartFactory;
@@ -94,9 +95,15 @@ public class PantallaMarcadores extends JFrame {
 		
 		usuarios = BD.usuarioUsuarios(st);
 		
+		String[] columnas = {"Usuario", "Personaje", "P. Ganadas", "P. Perdidas"};
+		
 		DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
 		centerRenderer.setHorizontalAlignment( SwingConstants.CENTER );
 		for(int i = 0; i<4; i++) {
+			TableColumn tc = tMarcadores.getColumnModel().getColumn(i);
+			tc.setHeaderValue(columnas[i]);
+			tMarcadores.getTableHeader().setFont(new Font("Apple Casual",Font.CENTER_BASELINE, 50));
+			tMarcadores.getTableHeader().setForeground(Color.RED);
 			tMarcadores.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
 		}
 		
