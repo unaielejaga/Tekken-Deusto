@@ -6400,3 +6400,2928 @@
   <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
 </record>
 </log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130602</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130605</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130630</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130632</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130632</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [4, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130633</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130634</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [3, 3]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130636</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130636</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:18:50</date>
+  <millis>1547839130637</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:05</date>
+  <millis>1547839205575</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:05</date>
+  <millis>1547839205577</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:05</date>
+  <millis>1547839205577</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: antonio</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:05</date>
+  <millis>1547839205587</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@57dd2b95</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:05</date>
+  <millis>1547839205588</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: usuario.Usuario@6e372080</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:13</date>
+  <millis>1547839213043</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:13</date>
+  <millis>1547839213044</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:13</date>
+  <millis>1547839213045</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Leonardo'valor: Nombre: Leonardo, Vida: 70, Energia: 30, DamageB: 20, DamageP: 25, PosX: 0, Posy: 0, Vel: 25</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:44</date>
+  <millis>1547839244388</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [3, 3]</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:44</date>
+  <millis>1547839244393</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:44</date>
+  <millis>1547839244405</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>BD modificada 14 fila	update partida set combG=4,  combP=3 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:44</date>
+  <millis>1547839244405</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>Error en update de BD	update partida set combG=4,  combP=3 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:20:44</date>
+  <millis>1547839244419</millis>
+  <sequence>22</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>42</thread>
+  <message>BD modificada 1 fila	update partida set combG=1,  combP=3 where (usuario='Antonio' and personaje='Leonardo' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:02</date>
+  <millis>1547839262059</millis>
+  <sequence>23</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:02</date>
+  <millis>1547839262060</millis>
+  <sequence>24</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:02</date>
+  <millis>1547839262061</millis>
+  <sequence>25</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Raphael'valor: Nombre: Raphael, Vida: 100, Energia: 50, DamageB: 15, DamageP: 20, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268185</millis>
+  <sequence>26</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [4, 3]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268186</millis>
+  <sequence>27</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [4, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268212</millis>
+  <sequence>28</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>BD modificada 14 fila	update partida set combG=4,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268212</millis>
+  <sequence>29</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>Error en update de BD	update partida set combG=4,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268225</millis>
+  <sequence>30</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>BD modificada 12 fila	update partida set combG=5,  combP=2 where (usuario='Antonio' and personaje='Raphael' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:08</date>
+  <millis>1547839268226</millis>
+  <sequence>31</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>81</thread>
+  <message>Error en update de BD	update partida set combG=5,  combP=2 where (usuario='Antonio' and personaje='Raphael' )</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275567</millis>
+  <sequence>32</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275568</millis>
+  <sequence>33</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275569</millis>
+  <sequence>34</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275570</millis>
+  <sequence>35</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275571</millis>
+  <sequence>36</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275571</millis>
+  <sequence>37</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 3]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275572</millis>
+  <sequence>38</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [4, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275573</millis>
+  <sequence>39</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275574</millis>
+  <sequence>40</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:15</date>
+  <millis>1547839275575</millis>
+  <sequence>41</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-18T20:21:53</date>
+  <millis>1547839313005</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:53</date>
+  <millis>1547839313008</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-18T20:21:53</date>
+  <millis>1547839313009</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@5135dd7</message>
+</record>
+<record>
+  <date>2019-01-18T20:22:00</date>
+  <millis>1547839320850</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T20:22:00</date>
+  <millis>1547839320852</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T20:22:00</date>
+  <millis>1547839320853</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-18T21:32:47</date>
+  <millis>1547843567519</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:47</date>
+  <millis>1547843567522</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:47</date>
+  <millis>1547843567523</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: antonio</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:47</date>
+  <millis>1547843567529</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@7e9f2527</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:47</date>
+  <millis>1547843567530</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: usuario.Usuario@44b7d05c</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:55</date>
+  <millis>1547843575230</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:55</date>
+  <millis>1547843575231</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T21:32:55</date>
+  <millis>1547843575232</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Leonardo'valor: Nombre: Leonardo, Vida: 70, Energia: 30, DamageB: 20, DamageP: 25, PosX: 0, Posy: 0, Vel: 25</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:21</date>
+  <millis>1547843601546</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>43</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [4, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:21</date>
+  <millis>1547843601571</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>43</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 3]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:21</date>
+  <millis>1547843601583</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>43</thread>
+  <message>BD modificada 14 fila	update partida set combG=5,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:21</date>
+  <millis>1547843601583</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>43</thread>
+  <message>Error en update de BD	update partida set combG=5,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:21</date>
+  <millis>1547843601594</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>43</thread>
+  <message>BD modificada 1 fila	update partida set combG=1,  combP=4 where (usuario='Antonio' and personaje='Leonardo' )</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612371</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612373</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612393</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612395</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612395</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612396</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612397</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [5, 4]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612398</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612399</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-18T21:33:32</date>
+  <millis>1547843612400</millis>
+  <sequence>22</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:01</date>
+  <millis>1547843641415</millis>
+  <sequence>23</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:01</date>
+  <millis>1547843641416</millis>
+  <sequence>24</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:01</date>
+  <millis>1547843641416</millis>
+  <sequence>25</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@364dea07</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:17</date>
+  <millis>1547843657829</millis>
+  <sequence>26</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:17</date>
+  <millis>1547843657830</millis>
+  <sequence>27</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Raphael'valor: Nombre: Raphael, Vida: 100, Energia: 50, DamageB: 15, DamageP: 20, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-18T21:34:17</date>
+  <millis>1547843657831</millis>
+  <sequence>28</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859189</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859192</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859217</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859220</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859222</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859223</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859225</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [5, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859226</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859227</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:27:39</date>
+  <millis>1547918859229</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:23</date>
+  <millis>1547918903643</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:23</date>
+  <millis>1547918903644</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:23</date>
+  <millis>1547918903652</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@1882eca9</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:32</date>
+  <millis>1547918912153</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:32</date>
+  <millis>1547918912154</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:32</date>
+  <millis>1547918912154</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928149</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928150</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928151</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928152</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928153</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928154</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928155</millis>
+  <sequence>22</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [5, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928156</millis>
+  <sequence>23</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928157</millis>
+  <sequence>24</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:28:48</date>
+  <millis>1547918928158</millis>
+  <sequence>25</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:04</date>
+  <millis>1547918944228</millis>
+  <sequence>26</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:04</date>
+  <millis>1547918944229</millis>
+  <sequence>27</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:04</date>
+  <millis>1547918944230</millis>
+  <sequence>28</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: antonio</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:04</date>
+  <millis>1547918944230</millis>
+  <sequence>29</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@22fcc6a5</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:04</date>
+  <millis>1547918944231</millis>
+  <sequence>30</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: usuario.Usuario@28bfc843</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:46</date>
+  <millis>1547918986690</millis>
+  <sequence>31</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:46</date>
+  <millis>1547918986691</millis>
+  <sequence>32</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Raphael'valor: Nombre: Raphael, Vida: 100, Energia: 50, DamageB: 15, DamageP: 20, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:46</date>
+  <millis>1547918986691</millis>
+  <sequence>33</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:57</date>
+  <millis>1547918997912</millis>
+  <sequence>34</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>108</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:57</date>
+  <millis>1547918997915</millis>
+  <sequence>35</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>108</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:57</date>
+  <millis>1547918997934</millis>
+  <sequence>36</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>108</thread>
+  <message>BD modificada 1 fila	update partida set combG=2,  combP=1 where (usuario='Unai' and personaje='Raphael' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:29:57</date>
+  <millis>1547918997948</millis>
+  <sequence>37</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>108</thread>
+  <message>BD modificada 1 fila	update partida set combG=2,  combP=5 where (usuario='Antonio' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:21</date>
+  <millis>1547919021793</millis>
+  <sequence>38</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:21</date>
+  <millis>1547919021794</millis>
+  <sequence>39</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:21</date>
+  <millis>1547919021795</millis>
+  <sequence>40</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Mike'valor: Nombre: Mike, Vida: 60, Energia: 80, DamageB: 25, DamageP: 30, PosX: 0, Posy: 0, Vel: 30</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:29</date>
+  <millis>1547919029905</millis>
+  <sequence>41</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>198</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [5, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:29</date>
+  <millis>1547919029935</millis>
+  <sequence>42</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>198</thread>
+  <message>BD modificada 14 fila	update partida set combG=6,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:29</date>
+  <millis>1547919029936</millis>
+  <sequence>43</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>198</thread>
+  <message>Error en update de BD	update partida set combG=6,  combP=4 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:29</date>
+  <millis>1547919029957</millis>
+  <sequence>44</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>198</thread>
+  <message>BD añadida 1 fila	insert into partida values( 0, 1, 'Antonio', 'Mike')</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038890</millis>
+  <sequence>45</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038891</millis>
+  <sequence>46</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038893</millis>
+  <sequence>47</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038893</millis>
+  <sequence>48</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038894</millis>
+  <sequence>49</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038895</millis>
+  <sequence>50</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038896</millis>
+  <sequence>51</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038897</millis>
+  <sequence>52</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038897</millis>
+  <sequence>53</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038898</millis>
+  <sequence>54</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:30:38</date>
+  <millis>1547919038898</millis>
+  <sequence>55</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>18</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264633</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264636</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264649</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264650</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264651</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264652</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264652</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264653</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264654</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264655</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:24</date>
+  <millis>1547919264656</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265799</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265800</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265801</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265807</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265809</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265810</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265812</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265813</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265814</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265815</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:34:25</date>
+  <millis>1547919265815</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-19T18:36:42</date>
+  <millis>1547919402219</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:36:42</date>
+  <millis>1547919402222</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:36:42</date>
+  <millis>1547919402233</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628360</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628362</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628375</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628377</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628378</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628379</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628380</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628381</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628382</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628382</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628383</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628711</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628712</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628714</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628716</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628721</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628723</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628723</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628724</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628726</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628728</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:08</date>
+  <millis>1547920628728</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:46</date>
+  <millis>1547920666719</millis>
+  <sequence>22</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:46</date>
+  <millis>1547920666721</millis>
+  <sequence>23</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: antonio</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:46</date>
+  <millis>1547920666722</millis>
+  <sequence>24</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:46</date>
+  <millis>1547920666723</millis>
+  <sequence>25</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Antonio'valor: usuario.Usuario@2168ddfd</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:46</date>
+  <millis>1547920666723</millis>
+  <sequence>26</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@3ca20c88</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:52</date>
+  <millis>1547920672164</millis>
+  <sequence>27</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:52</date>
+  <millis>1547920672165</millis>
+  <sequence>28</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:57:52</date>
+  <millis>1547920672166</millis>
+  <sequence>29</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:00</date>
+  <millis>1547920680438</millis>
+  <sequence>30</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [2, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:00</date>
+  <millis>1547920680441</millis>
+  <sequence>31</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:00</date>
+  <millis>1547920680463</millis>
+  <sequence>32</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message>BD modificada 1 fila	update partida set combG=3,  combP=5 where (usuario='Antonio' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:00</date>
+  <millis>1547920680479</millis>
+  <sequence>33</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message>BD modificada 14 fila	update partida set combG=6,  combP=5 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:00</date>
+  <millis>1547920680479</millis>
+  <sequence>34</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>39</thread>
+  <message>Error en update de BD	update partida set combG=6,  combP=5 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687153</millis>
+  <sequence>35</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687154</millis>
+  <sequence>36</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 2</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687155</millis>
+  <sequence>37</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687156</millis>
+  <sequence>38</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [3, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687157</millis>
+  <sequence>39</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687158</millis>
+  <sequence>40</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687159</millis>
+  <sequence>41</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687160</millis>
+  <sequence>42</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687160</millis>
+  <sequence>43</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687161</millis>
+  <sequence>44</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:07</date>
+  <millis>1547920687162</millis>
+  <sequence>45</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:34</date>
+  <millis>1547920714290</millis>
+  <sequence>46</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:34</date>
+  <millis>1547920714292</millis>
+  <sequence>47</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T18:58:44</date>
+  <millis>1547920724100</millis>
+  <sequence>48</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:07</date>
+  <millis>1547920747623</millis>
+  <sequence>49</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:07</date>
+  <millis>1547920747637</millis>
+  <sequence>50</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD añadida 1 fila	insert into usuario values('Aitor', 'aitor')</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:22</date>
+  <millis>1547920762013</millis>
+  <sequence>51</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:22</date>
+  <millis>1547920762014</millis>
+  <sequence>52</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:24</date>
+  <millis>1547920764557</millis>
+  <sequence>53</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769716</millis>
+  <sequence>54</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769717</millis>
+  <sequence>55</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Numero de usuarios: 3</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769718</millis>
+  <sequence>56</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Usuarios: [Aitor, Antonio, Unai]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769720</millis>
+  <sequence>57</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Donatello' )valor: [3, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769720</millis>
+  <sequence>58</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Raphael' )valor: [5, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769721</millis>
+  <sequence>59</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Leonardo' )valor: [1, 4]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769721</millis>
+  <sequence>60</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Antonio' and personaje='Mike' )valor: [0, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769722</millis>
+  <sequence>61</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769723</millis>
+  <sequence>62</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Raphael' )valor: [2, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769724</millis>
+  <sequence>63</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Leonardo' )valor: [1, 2]</message>
+</record>
+<record>
+  <date>2019-01-19T18:59:29</date>
+  <millis>1547920769725</millis>
+  <sequence>64</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Mike' )valor: [1, 1]</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:02</date>
+  <millis>1547920802551</millis>
+  <sequence>65</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:02</date>
+  <millis>1547920802552</millis>
+  <sequence>66</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:02</date>
+  <millis>1547920802552</millis>
+  <sequence>67</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: usuario.Usuario@46376214</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:50</date>
+  <millis>1547920850529</millis>
+  <sequence>68</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:50</date>
+  <millis>1547920850530</millis>
+  <sequence>69</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:00:50</date>
+  <millis>1547920850531</millis>
+  <sequence>70</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:13</date>
+  <millis>1547920873281</millis>
+  <sequence>71</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:13</date>
+  <millis>1547920873282</millis>
+  <sequence>72</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:13</date>
+  <millis>1547920873282</millis>
+  <sequence>73</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: usuario.Usuario@6c1da7c7</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:21</date>
+  <millis>1547920881430</millis>
+  <sequence>74</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:21</date>
+  <millis>1547920881430</millis>
+  <sequence>75</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Leonardo'valor: Nombre: Leonardo, Vida: 70, Energia: 30, DamageB: 20, DamageP: 25, PosX: 0, Posy: 0, Vel: 25</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:21</date>
+  <millis>1547920881431</millis>
+  <sequence>76</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:43</date>
+  <millis>1547920903161</millis>
+  <sequence>77</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:43</date>
+  <millis>1547920903162</millis>
+  <sequence>78</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:43</date>
+  <millis>1547920903162</millis>
+  <sequence>79</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: usuario.Usuario@5d98c4a7</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:50</date>
+  <millis>1547920910126</millis>
+  <sequence>80</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:50</date>
+  <millis>1547920910127</millis>
+  <sequence>81</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Mike'valor: Nombre: Mike, Vida: 60, Energia: 80, DamageB: 25, DamageP: 30, PosX: 0, Posy: 0, Vel: 30</message>
+</record>
+<record>
+  <date>2019-01-19T19:01:50</date>
+  <millis>1547920910128</millis>
+  <sequence>82</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-01-19T19:03:01</date>
+  <millis>1547920981348</millis>
+  <sequence>0</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:01</date>
+  <millis>1547920981351</millis>
+  <sequence>1</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:01</date>
+  <millis>1547920981352</millis>
+  <sequence>2</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:15</date>
+  <millis>1547920995977</millis>
+  <sequence>3</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:15</date>
+  <millis>1547920995979</millis>
+  <sequence>4</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: aitor</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:15</date>
+  <millis>1547920995980</millis>
+  <sequence>5</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: unai</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:15</date>
+  <millis>1547920995981</millis>
+  <sequence>6</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Aitor'valor: usuario.Usuario@1771ffd9</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:15</date>
+  <millis>1547920995983</millis>
+  <sequence>7</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect contrasenya from usuario where nick='Unai'valor: usuario.Usuario@2041486e</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:38</date>
+  <millis>1547921018586</millis>
+  <sequence>8</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:38</date>
+  <millis>1547921018588</millis>
+  <sequence>9</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Leonardo'valor: Nombre: Leonardo, Vida: 70, Energia: 30, DamageB: 20, DamageP: 25, PosX: 0, Posy: 0, Vel: 25</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:38</date>
+  <millis>1547921018588</millis>
+  <sequence>10</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:43</date>
+  <millis>1547921023746</millis>
+  <sequence>11</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>41</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 5]</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:43</date>
+  <millis>1547921023773</millis>
+  <sequence>12</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>41</thread>
+  <message>BD modificada 14 fila	update partida set combG=6,  combP=6 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:43</date>
+  <millis>1547921023774</millis>
+  <sequence>13</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>41</thread>
+  <message>Error en update de BD	update partida set combG=6,  combP=6 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T19:03:43</date>
+  <millis>1547921023788</millis>
+  <sequence>14</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>41</thread>
+  <message>BD añadida 1 fila	insert into partida values( 1, 0, 'Aitor', 'Leonardo')</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:00</date>
+  <millis>1547921040065</millis>
+  <sequence>15</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>Conectada base de datos BD</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:00</date>
+  <millis>1547921040066</millis>
+  <sequence>16</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:00</date>
+  <millis>1547921040067</millis>
+  <sequence>17</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>17</thread>
+  <message>BD seleccionadaselect * from personajes where nombre='Donatello'valor: Nombre: Donatello, Vida: 100, Energia: 50, DamageB: 10, DamageP: 15, PosX: 0, Posy: 0, Vel: 10</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:06</date>
+  <millis>1547921046300</millis>
+  <sequence>18</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>92</thread>
+  <message>BD seleccionadaselect combG, combP from partida where (usuario='Unai' and personaje='Donatello' )valor: [6, 6]</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:06</date>
+  <millis>1547921046318</millis>
+  <sequence>19</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>92</thread>
+  <message>BD modificada 14 fila	update partida set combG=7,  combP=6 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:06</date>
+  <millis>1547921046319</millis>
+  <sequence>20</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>SEVERE</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>92</thread>
+  <message>Error en update de BD	update partida set combG=7,  combP=6 where (usuario='Unai' and personaje='Donatello' )</message>
+</record>
+<record>
+  <date>2019-01-19T19:04:06</date>
+  <millis>1547921046330</millis>
+  <sequence>21</sequence>
+  <logger>BD-server-ejemplocs</logger>
+  <level>INFO</level>
+  <class>bd.BD</class>
+  <method>log</method>
+  <thread>92</thread>
+  <message>BD añadida 1 fila	insert into partida values( 0, 1, 'Aitor', 'Donatello')</message>
+</record>
+</log>
